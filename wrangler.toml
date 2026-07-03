@@ -1,6 +1,7 @@
 name = "arca-flam-duelo"
 main = "src/worker/index.js"
 compatibility_date = "2025-07-18"
+account_id = "5658ba756c77c636cffb59087d47e8fd"
 
 [vars]
 ALLOWED_ORIGINS = "http://127.0.0.1:8787,http://localhost:8787,https://gabrielabreuhubi.github.io"
@@ -13,5 +14,5 @@ not_found_handling = "single-page-application"
 [[d1_databases]]
 binding = "DB"
 database_name = "arca-flam-duelo"
-database_id = "replace-with-cloudflare-d1-database-id"
+database_id = "ed87a34b-9a5d-4eb3-bf90-fb0f37b05647"
 migrations_dir = "migrations"
