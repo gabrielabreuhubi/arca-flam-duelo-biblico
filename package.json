@@ -1,0 +1,24 @@
+{
+  "name": "arca-flam-duelo-biblico",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "worker:dev": "wrangler dev",
+    "d1:migrate:local": "wrangler d1 migrations apply arca-flam-duelo --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply arca-flam-duelo --remote",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7",
+    "typescript": "^5.7.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "wrangler": "^3.99.0"
+  },
+  "devDependencies": {}
+}

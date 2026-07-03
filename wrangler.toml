@@ -1,0 +1,17 @@
+name = "arca-flam-duelo"
+main = "src/worker/index.js"
+compatibility_date = "2025-07-18"
+
+[vars]
+ALLOWED_ORIGINS = "http://127.0.0.1:8787,http://localhost:8787,https://gabrielabreuhubi.github.io"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "arca-flam-duelo"
+database_id = "replace-with-cloudflare-d1-database-id"
+migrations_dir = "migrations"
