@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import QRCode from "qrcode";
+import flamLogo from "./assets/flam-logo.png";
+import flamLogoWhite from "./assets/flam-logo-white.png";
 import "./styles.css";
 
 const BASE = import.meta.env.BASE_URL;
@@ -53,7 +55,7 @@ function Shell({ children, path, navigate }) {
     <div className="app">
       <header className="topbar">
         <span className="brand">
-          <span className="brand-mark">A</span>
+          <img className="brand-mark" src={flamLogo} alt="FLAM" />
           <span>
             <strong>ARCA · FLAM</strong>
             <small>Duelo biblico</small>
@@ -131,7 +133,7 @@ function ParticipantRegistration() {
     <main className="registration-page">
       <section className="registration-hero">
         <div className="mini-brand">
-          <span className="brand-mark small">A</span>
+          <img className="brand-mark small" src={flamLogo} alt="FLAM" />
           <span>ARCA · FLAM</span>
         </div>
         <h1>Duelo biblico</h1>
@@ -366,7 +368,7 @@ function PublicPanel() {
     <main className="public-screen">
       <section className="public-inner">
         <div className="public-brand">
-          <span className="brand-mark">A</span>
+          <img className="brand-mark" src={flamLogoWhite} alt="FLAM" />
           <strong>ARCA · Duelo biblico · FLAM</strong>
         </div>
         <div className="public-duel">

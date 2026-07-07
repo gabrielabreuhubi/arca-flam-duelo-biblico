@@ -1,13 +1,14 @@
 :root {
-  --ink: #4a2e18;
-  --ink-2: #7a4e2b;
-  --paper: #f7f1e6;
-  --surface: #fffdf8;
-  --line: #e2d6be;
-  --gold: #c99a4a;
-  --accent: #e2712a;
-  --danger: #a33f2e;
-  --green: #4c7a4c;
+  --ink: #16305a;
+  --ink-2: #4e6a8c;
+  --paper: #ffffff;
+  --surface: #f3f8fc;
+  --line: #d6e4f0;
+  --accent-light: #bfe0f5;
+  --accent: #116bb3;
+  --accent-dark: #0d4e85;
+  --danger: #c0392b;
+  --green: #2e7d52;
   color: var(--ink);
   font-family: "Public Sans", system-ui, sans-serif;
   background: var(--paper);
@@ -38,7 +39,7 @@ button {
 
 .topbar {
   align-items: center;
-  background: rgba(247, 241, 230, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--line);
   display: flex;
   gap: 20px;
@@ -69,22 +70,14 @@ button {
 }
 
 .brand-mark {
-  align-items: center;
-  background: var(--ink);
-  border-radius: 9px;
-  color: var(--paper);
-  display: inline-flex;
   flex: 0 0 auto;
-  font-family: "Fraunces", serif;
-  font-weight: 700;
-  height: 34px;
-  justify-content: center;
-  width: 34px;
+  height: 30px;
+  object-fit: contain;
+  width: auto;
 }
 
 .brand-mark.small {
-  height: 30px;
-  width: 30px;
+  height: 24px;
 }
 
 .icon,
@@ -203,7 +196,7 @@ button {
 
 .registration-stats span {
   align-items: center;
-  background: rgba(255, 253, 248, 0.72);
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid var(--line);
   border-radius: 12px;
   color: var(--ink-2);
@@ -214,10 +207,10 @@ button {
 }
 
 .registration-card {
-  background: rgba(255, 253, 248, 0.82);
+  background: rgba(255, 255, 255, 0.85);
   border: 1px solid var(--line);
   border-radius: 20px;
-  box-shadow: 0 22px 70px rgba(74, 46, 24, 0.08);
+  box-shadow: 0 22px 70px rgba(22, 48, 90, 0.08);
   padding: 28px;
   width: 100%;
 }
@@ -284,7 +277,7 @@ p {
 
 .level.selected,
 .queue-item.selected {
-  background: #fdf1e7;
+  background: #e8f2fb;
   border-color: var(--accent);
 }
 
@@ -359,7 +352,7 @@ textarea {
 
 .ghost {
   background: transparent;
-  border: 1.5px dashed #c9b896;
+  border: 1.5px dashed #b7cfe3;
   color: var(--ink-2);
 }
 
@@ -430,7 +423,7 @@ button:disabled {
 }
 
 .selected-pill {
-  background: rgba(247, 241, 230, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 999px;
   display: inline-flex;
   margin-right: 8px;
@@ -447,7 +440,7 @@ button:disabled {
 }
 
 .notice {
-  background: #f1e6ce;
+  background: #e3eef9;
   color: var(--ink-2);
 }
 
@@ -462,7 +455,7 @@ button:disabled {
 }
 
 .empty {
-  border: 1px dashed #c9b896;
+  border: 1px dashed #b7cfe3;
   color: var(--ink-2);
   text-align: center;
 }
@@ -473,7 +466,7 @@ button:disabled {
 }
 
 .level-badge {
-  background: var(--gold);
+  background: var(--accent-light);
   border-radius: 999px;
   color: var(--ink);
   display: inline-flex;
@@ -518,7 +511,7 @@ button:disabled {
 }
 
 .question-box small {
-  color: #d9be95;
+  color: var(--accent-light);
   display: block;
   margin-top: 10px;
 }
@@ -562,17 +555,12 @@ button:disabled {
 
 .public-brand {
   align-items: center;
-  color: #d9be95;
+  color: var(--accent-light);
   display: flex;
   gap: 10px;
   justify-content: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.public-brand .brand-mark {
-  background: var(--accent);
-  color: var(--ink);
 }
 
 .public-duel {
@@ -581,7 +569,7 @@ button:disabled {
 }
 
 .public-duel small {
-  color: var(--gold);
+  color: var(--accent-light);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -594,7 +582,7 @@ button:disabled {
 }
 
 .public-duel h1 span {
-  color: var(--gold);
+  color: var(--accent-light);
   font-size: 0.5em;
 }
 
@@ -605,7 +593,7 @@ button:disabled {
 }
 
 .public-counts div {
-  background: rgba(247, 241, 230, 0.08);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 22px;
   text-align: center;
@@ -618,7 +606,7 @@ button:disabled {
 }
 
 .public-counts span {
-  color: #d9be95;
+  color: var(--accent-light);
 }
 
 .admin-tabs {
@@ -639,7 +627,7 @@ button:disabled {
 
 .upload-box {
   background: var(--surface);
-  border: 1.5px dashed #c9b896;
+  border: 1.5px dashed #b7cfe3;
   border-radius: 14px;
   padding: 18px;
 }
@@ -720,7 +708,7 @@ button:disabled {
 }
 
 .question-row small {
-  background: #f1e6ce;
+  background: #e3eef9;
   border-radius: 999px;
   color: var(--ink-2);
   padding: 4px 9px;
