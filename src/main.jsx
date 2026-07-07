@@ -1,31 +1,29 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import QRCode from "qrcode";
 import "./styles.css";
 
-const LEVELS = ["basic", "intermediate", "expert"];
-const LEVEL_LABELS = {
-  basic: "Basico",
-  intermediate: "Intermediario",
-  expert: "Especialista"
-};
+const BASE = import.meta.env.BASE_URL;
 
-const LEVEL_DESCRIPTIONS = {
-  basic: "Conhecimento geral da Biblia",
-  intermediate: "Teologia biblica",
-  expert: "Nivel seminario"
-};
+function stripBase(pathname) {
+  if (BASE !== "/" && pathname.startsWith(BASE)) {
+    return "/" + pathname.slice(BASE.length);
+  }
+  return pathname;
+}
 
 function App() {
-  const [path, setPath] = useState(window.location.pathname);
+  const [path, setPath] = useState(stripBase(window.location.pathname));
 
   useEffect(() => {
-    const onPop = () => setPath(window.location.pathname);
+    const onPop = () => setPath(stripBase(window.location.pathname));
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
   }, []);
 
   const navigate = (nextPath) => {
-    window.history.pushState({}, "", nextPath);
+    const fullPath = BASE.replace(/\/$/, "") + nextPath;
+    window.history.pushState({}, "", fullPath);
     setPath(nextPath);
   };
 
@@ -42,9 +40,10 @@ function Route({ path, navigate }) {
   if (path.startsWith("/duelo/")) return <Protected><DuelScreen duelId={path.split("/")[2]} navigate={navigate} /></Protected>;
   if (path.startsWith("/resultado/")) return <Protected><ResultScreen duelId={path.split("/")[2]} navigate={navigate} /></Protected>;
   if (path === "/publico") return <PublicPanel />;
-  if (path === "/admin/identidade") return <Protected><BrandingAdmin /></Protected>;
-  if (path === "/admin/formulario") return <Protected><FormAdmin /></Protected>;
-  if (path === "/admin/perguntas") return <Protected><QuestionsAdmin /></Protected>;
+  if (path === "/admin/identidade") return <Protected><BrandingAdmin navigate={navigate} /></Protected>;
+  if (path === "/admin/formulario") return <Protected><FormAdmin navigate={navigate} /></Protected>;
+  if (path === "/admin/perguntas") return <Protected><QuestionsAdmin navigate={navigate} /></Protected>;
+  if (path === "/admin/leads") return <Protected><LeadsAdmin navigate={navigate} /></Protected>;
   return <NotFound navigate={navigate} />;
 }
 
@@ -53,19 +52,20 @@ function Shell({ children, path, navigate }) {
   return (
     <div className="app">
       <header className="topbar">
-        <button className="brand" onClick={() => navigate("/cadastro")}>
+        <span className="brand">
           <span className="brand-mark">A</span>
           <span>
             <strong>ARCA · FLAM</strong>
             <small>Duelo biblico</small>
           </span>
-        </button>
-        <nav className="nav">
-          <button className={path === "/cadastro" ? "active" : ""} onClick={() => navigate("/cadastro")}>Cadastro</button>
-          <button className={path === "/operador" ? "active" : ""} onClick={() => navigate("/operador")}>Operador</button>
-          <button className={path === "/publico" ? "active" : ""} onClick={() => navigate("/publico")}>Publico</button>
-          <button className={staff ? "active" : ""} onClick={() => navigate("/admin/identidade")}>Admin</button>
-        </nav>
+        </span>
+        {staff && (
+          <nav className="nav">
+            <button className={path === "/operador" ? "active" : ""} onClick={() => navigate("/operador")}>Operador</button>
+            <button className={path === "/publico" ? "active" : ""} onClick={() => navigate("/publico")}>Publico</button>
+            <button className={staff && !path.startsWith("/operador") && !path.startsWith("/publico") ? "active" : ""} onClick={() => navigate("/admin/identidade")}>Admin</button>
+          </nav>
+        )}
       </header>
       {children}
     </div>
@@ -98,7 +98,6 @@ function Protected({ children }) {
 function ParticipantRegistration() {
   const [event, setEvent] = useState(null);
   const [fields, setFields] = useState([]);
-  const [level, setLevel] = useState("basic");
   const [values, setValues] = useState({ full_name: "", phone: "" });
   const [status, setStatus] = useState(null);
 
@@ -119,7 +118,7 @@ function ParticipantRegistration() {
       for (const field of customFields) custom_answers[field.field_key] = values[field.field_key] || "";
       await api("/api/participants", {
         method: "POST",
-        body: { full_name: values.full_name, phone: values.phone, level, custom_answers }
+        body: { full_name: values.full_name, phone: values.phone, custom_answers }
       });
       setStatus("success");
       setValues({ full_name: "", phone: "" });
@@ -138,7 +137,6 @@ function ParticipantRegistration() {
         <h1>Duelo biblico</h1>
         <p>{event?.welcome_text || "Entre na fila do duelo biblico."}</p>
         <div className="registration-stats">
-          <span>Escolha seu nivel</span>
           <span>Entre na fila do estande</span>
         </div>
       </section>
@@ -147,17 +145,6 @@ function ParticipantRegistration() {
         <div className="form-heading">
           <h2>Cadastro do participante</h2>
           <p>Preencha seus dados para entrar na lista de espera.</p>
-        </div>
-        <div className="level-list">
-          {LEVELS.map((item) => (
-            <button type="button" key={item} className={level === item ? "level selected" : "level"} onClick={() => setLevel(item)}>
-              <span>
-                <strong>{LEVEL_LABELS[item]}</strong>
-                <small>{LEVEL_DESCRIPTIONS[item]}</small>
-              </span>
-              {level === item && <span className="icon">OK</span>}
-            </button>
-          ))}
         </div>
         <Field label="Nome completo" value={values.full_name} onChange={(value) => setValues({ ...values, full_name: value })} required />
         <Field label="Telefone" value={values.phone} onChange={(value) => setValues({ ...values, phone: value })} required type="tel" />
@@ -180,7 +167,7 @@ function ParticipantRegistration() {
 }
 
 function OperatorPanel({ navigate }) {
-  const [queue, setQueue] = useState(emptyQueue());
+  const [queue, setQueue] = useState([]);
   const [selected, setSelected] = useState([]);
   const [error, setError] = useState("");
 
@@ -192,8 +179,7 @@ function OperatorPanel({ navigate }) {
     return () => clearInterval(timer);
   }, []);
 
-  const selectedEntries = selected.map((id) => LEVELS.flatMap((level) => queue[level] || []).find((entry) => entry.queue_entry_id === id)).filter(Boolean);
-  const effective = selectedEntries.length === 2 ? lowerLevel(selectedEntries[0].level, selectedEntries[1].level) : null;
+  const selectedEntries = selected.map((id) => queue.find((entry) => entry.queue_entry_id === id)).filter(Boolean);
 
   const toggle = (entry) => {
     if (selected.includes(entry.queue_entry_id)) {
@@ -227,40 +213,35 @@ function OperatorPanel({ navigate }) {
       </section>
 
       <section className="queue-grid">
-        {LEVELS.map((level) => (
-          <div className="panel queue-column" key={level}>
-            <h2>{LEVEL_LABELS[level]} · {(queue[level] || []).length} esperando</h2>
-            <div className="queue-list">
-              {(queue[level] || []).map((entry) => (
-                <button
-                  key={entry.queue_entry_id}
-                  className={selected.includes(entry.queue_entry_id) ? "queue-item selected" : "queue-item"}
-                  onClick={() => toggle(entry)}
-                >
-                  <span>
-                    <strong>{entry.name}</strong>
-                    {entry.lonely_warning && <small className="warning"><span className="icon">!</span> esperando sozinho</small>}
-                  </span>
-                  <small>{entry.waiting_minutes} min</small>
-                </button>
-              ))}
-              {!(queue[level] || []).length && <div className="empty">Sem participantes neste nivel.</div>}
-            </div>
+        <div className="panel queue-column">
+          <h2>Fila · {queue.length} esperando</h2>
+          <div className="queue-list">
+            {queue.map((entry) => (
+              <button
+                key={entry.queue_entry_id}
+                className={selected.includes(entry.queue_entry_id) ? "queue-item selected" : "queue-item"}
+                onClick={() => toggle(entry)}
+              >
+                <span>
+                  <strong>{entry.name}</strong>
+                  {entry.lonely_warning && <small className="warning"><span className="icon">!</span> esperando sozinho</small>}
+                </span>
+                <small>{entry.waiting_minutes} min</small>
+              </button>
+            ))}
+            {!queue.length && <div className="empty">Sem participantes na fila.</div>}
           </div>
-        ))}
+        </div>
       </section>
 
       <section className="duel-dock">
         <div>
           {selectedEntries.length ? selectedEntries.map((entry) => (
-            <span className="selected-pill" key={entry.queue_entry_id}>{entry.name} · {LEVEL_LABELS[entry.level]}</span>
+            <span className="selected-pill" key={entry.queue_entry_id}>{entry.name}</span>
           )) : <span>Selecione duas pessoas para iniciar.</span>}
         </div>
         <button className="primary" disabled={selected.length !== 2} onClick={start}>Iniciar duelo</button>
       </section>
-      {effective && selectedEntries[0].level !== selectedEntries[1].level && (
-        <div className="notice">Niveis diferentes selecionados: o duelo usara perguntas do nivel {LEVEL_LABELS[effective].toLowerCase()}.</div>
-      )}
       {error && <div className="error">{error}</div>}
     </main>
   );
@@ -304,7 +285,6 @@ function DuelScreen({ duelId, navigate }) {
   return (
     <main className="center-page">
       <section className="duel-card">
-        <div className="level-badge">{LEVEL_LABELS[duel.effective_level]}</div>
         <div className="scoreboard">
           <Score name={duel.participant_a.name} score={duel.score_a} />
           <div className="round-label">pergunta {Math.min(duel.current_round, 3)} de 3</div>
@@ -357,7 +337,6 @@ function ResultScreen({ duelId, navigate }) {
     <main className="center-page">
       <section className="panel result-panel">
         <span className="icon-xl">1</span>
-        <div className="level-badge">{LEVEL_LABELS[duel.effective_level]}</div>
         <h1>{winner ? `${winner.name} venceu` : "Empate"}</h1>
         <div className="result-score">{duel.score_a} · {duel.score_b}</div>
         <p>{duel.participant_a.name} vs {duel.participant_b.name}</p>
@@ -393,10 +372,7 @@ function PublicPanel() {
         <div className="public-duel">
           <small>Duelo agora</small>
           {duel ? (
-            <>
-              <h1>{duel.participant_a_name} <span>vs</span> {duel.participant_b_name}</h1>
-              <p>nivel {LEVEL_LABELS[duel.effective_level].toLowerCase()}</p>
-            </>
+            <h1>{duel.participant_a_name} <span>vs</span> {duel.participant_b_name}</h1>
           ) : (
             <>
               <h1>Aguardando proximo duelo</h1>
@@ -405,19 +381,17 @@ function PublicPanel() {
           )}
         </div>
         <div className="public-counts">
-          {LEVELS.map((level) => (
-            <div key={level}>
-              <strong>{status?.waiting_counts?.[level] || 0}</strong>
-              <span>aguardando · {LEVEL_LABELS[level].toLowerCase()}</span>
-            </div>
-          ))}
+          <div>
+            <strong>{status?.waiting_count || 0}</strong>
+            <span>aguardando</span>
+          </div>
         </div>
       </section>
     </main>
   );
 }
 
-function BrandingAdmin() {
+function BrandingAdmin({ navigate }) {
   const [branding, setBranding] = useState({ logo_url: "", accent_color: "#E2712A", welcome_text: "" });
   const [saved, setSaved] = useState(false);
 
@@ -432,7 +406,7 @@ function BrandingAdmin() {
   };
 
   return (
-    <AdminLayout active="identidade">
+    <AdminLayout active="identidade" navigate={navigate}>
       <section className="panel">
         <StepLabel step="1 de 3" title="Identidade visual" />
         <div className="two-col">
@@ -455,7 +429,7 @@ function BrandingAdmin() {
   );
 }
 
-function FormAdmin() {
+function FormAdmin({ navigate }) {
   const [fields, setFields] = useState([]);
 
   useEffect(() => {
@@ -478,7 +452,7 @@ function FormAdmin() {
   };
 
   return (
-    <AdminLayout active="formulario">
+    <AdminLayout active="formulario" navigate={navigate}>
       <section className="panel">
         <StepLabel step="2 de 3" title="Formulario de cadastro" />
         <div className="field-list">
@@ -504,22 +478,27 @@ function FormAdmin() {
   );
 }
 
-function QuestionsAdmin() {
-  const [level, setLevel] = useState("basic");
+function QuestionsAdmin({ navigate }) {
   const [questions, setQuestions] = useState([]);
   const [form, setForm] = useState({ prompt: "", answer: "", options: "" });
   const [importText, setImportText] = useState("");
   const [message, setMessage] = useState("");
+  const [qrDataUrl, setQrDataUrl] = useState("");
 
-  const load = () => api(`/api/admin/questions?level=${level}`).then((data) => setQuestions(data.questions));
+  const load = () => api("/api/admin/questions").then((data) => setQuestions(data.questions));
   useEffect(() => {
     load();
-  }, [level]);
+  }, []);
+
+  useEffect(() => {
+    const registrationUrl = `${window.location.origin}${BASE}cadastro`;
+    QRCode.toDataURL(registrationUrl, { width: 320, margin: 1 }).then(setQrDataUrl);
+  }, []);
 
   const create = async () => {
     await api("/api/admin/questions", {
       method: "POST",
-      body: { level, prompt: form.prompt, answer: form.answer, options: form.options }
+      body: { prompt: form.prompt, answer: form.answer, options: form.options }
     });
     setForm({ prompt: "", answer: "", options: "" });
     load();
@@ -533,7 +512,7 @@ function QuestionsAdmin() {
   };
 
   return (
-    <AdminLayout active="perguntas">
+    <AdminLayout active="perguntas" navigate={navigate}>
       <section className="panel">
         <StepLabel step="3 de 3" title="Perguntas, formato e QR code" />
         <div className="format-grid">
@@ -541,7 +520,6 @@ function QuestionsAdmin() {
           <Metric label="sem alternativa" value="1" />
           <Metric label="pontos p/ vencer" value="2" />
         </div>
-        <Segmented value={level} onChange={setLevel} />
         <div className="question-form">
           <input placeholder="Pergunta" value={form.prompt} onChange={(event) => setForm({ ...form, prompt: event.target.value })} />
           <input placeholder="Resposta correta" value={form.answer} onChange={(event) => setForm({ ...form, answer: event.target.value })} />
@@ -555,17 +533,21 @@ function QuestionsAdmin() {
               <small>usada {question.used_count}x</small>
             </div>
           ))}
-          {!questions.length && <div className="empty">Espaco reservado para as perguntas deste nivel.</div>}
+          {!questions.length && <div className="empty">Espaco reservado para as perguntas.</div>}
         </div>
-        <textarea className="import-box" value={importText} onChange={(event) => setImportText(event.target.value)} placeholder='Cole CSV ou JSON depois. Ex.: level,prompt,answer,options' />
+        <textarea className="import-box" value={importText} onChange={(event) => setImportText(event.target.value)} placeholder='Cole CSV ou JSON depois. Ex.: prompt,answer,options' />
         <button className="secondary" onClick={importNow}><span className="icon">UP</span>Importar CSV/JSON</button>
         {message && <div className="success">{message}</div>}
         <div className="qr-panel">
-          <div className="qr-mark">QR</div>
+          {qrDataUrl ? <img className="qr-mark" src={qrDataUrl} alt="QR code do cadastro" /> : <div className="qr-mark">QR</div>}
           <div>
             <h3>QR code do evento</h3>
-            <p>Fixo para todo o Pomar 2026. Aponte para /cadastro.</p>
-            <button className="dark"><span className="icon">DL</span>Baixar para impressao</button>
+            <p>Fixo para todo o Pomar 2026. Aponte para a tela de cadastro.</p>
+            {qrDataUrl && (
+              <a className="dark" href={qrDataUrl} download="qr-cadastro-arca-flam.png">
+                <span className="icon">DL</span>Baixar para impressao
+              </a>
+            )}
           </div>
         </div>
       </section>
@@ -573,16 +555,47 @@ function QuestionsAdmin() {
   );
 }
 
-function AdminLayout({ active, children }) {
+function AdminLayout({ active, navigate, children }) {
   return (
     <main className="wide-page">
       <section className="admin-tabs">
-        <a className={active === "identidade" ? "active" : ""} href="/admin/identidade">Identidade</a>
-        <a className={active === "formulario" ? "active" : ""} href="/admin/formulario">Formulario</a>
-        <a className={active === "perguntas" ? "active" : ""} href="/admin/perguntas">Perguntas + QR</a>
+        <a className={active === "identidade" ? "active" : ""} onClick={() => navigate("/admin/identidade")}>Identidade</a>
+        <a className={active === "formulario" ? "active" : ""} onClick={() => navigate("/admin/formulario")}>Formulario</a>
+        <a className={active === "perguntas" ? "active" : ""} onClick={() => navigate("/admin/perguntas")}>Perguntas + QR</a>
+        <a className={active === "leads" ? "active" : ""} onClick={() => navigate("/admin/leads")}>Leads</a>
       </section>
       {children}
     </main>
+  );
+}
+
+function LeadsAdmin({ navigate }) {
+  const [leads, setLeads] = useState([]);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    api("/api/admin/leads").then((data) => setLeads(data.leads)).catch((err) => setError(err.message));
+  }, []);
+
+  return (
+    <AdminLayout active="leads" navigate={navigate}>
+      <section className="panel">
+        <StepLabel step="leads" title="Participantes e resultados" />
+        <div className="question-list">
+          {leads.map((lead) => (
+            <div className="question-row" key={lead.id}>
+              <span>
+                <strong>{lead.full_name}</strong> · {lead.phone}
+                <small className="muted"> · cadastrado em {lead.created_at}</small>
+              </span>
+              <small className={lead.result === "Venceu" ? "success" : lead.result === "Perdeu" ? "error" : ""}>{lead.result}</small>
+            </div>
+          ))}
+          {!leads.length && <div className="empty">Nenhum participante cadastrado ainda.</div>}
+        </div>
+        {error && <div className="error">{error}</div>}
+      </section>
+    </AdminLayout>
   );
 }
 
@@ -622,18 +635,6 @@ function Metric({ label, value }) {
   );
 }
 
-function Segmented({ value, onChange }) {
-  return (
-    <div className="segmented">
-      {LEVELS.map((level) => (
-        <button key={level} className={value === level ? "active" : ""} onClick={() => onChange(level)}>
-          {LEVEL_LABELS[level]}
-        </button>
-      ))}
-    </div>
-  );
-}
-
 function Loading() {
   return <main className="center-page"><div className="panel">Carregando...</div></main>;
 }
@@ -648,14 +649,6 @@ function NotFound({ navigate }) {
       </section>
     </main>
   );
-}
-
-function emptyQueue() {
-  return LEVELS.reduce((acc, level) => ({ ...acc, [level]: [] }), {});
-}
-
-function lowerLevel(a, b) {
-  return LEVELS[Math.min(LEVELS.indexOf(a), LEVELS.indexOf(b))];
 }
 
 async function api(path, options = {}) {

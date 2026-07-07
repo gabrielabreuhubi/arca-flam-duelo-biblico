@@ -1,6 +1,4 @@
 import {
-  LEVELS,
-  effectiveLevel,
   isDuelReadyToFinish,
   operatorParticipantName,
   publicParticipantName,
@@ -9,6 +7,7 @@ import {
 
 const EVENT_ID = "event_flam_pomar_2026";
 const DEFAULT_PIN = "2468";
+const LEVEL = "intermediate";
 
 export default {
   async fetch(request, env) {
@@ -67,9 +66,11 @@ async function routeApi(request, env, url) {
   if (path === "/api/admin/registration-fields" && method === "GET") return getRegistrationFields(env.DB);
   if (path === "/api/admin/registration-fields" && method === "PUT") return updateRegistrationFields(request, env.DB);
 
-  if (path === "/api/admin/questions" && method === "GET") return getQuestions(env.DB, url);
+  if (path === "/api/admin/questions" && method === "GET") return getQuestions(env.DB);
   if (path === "/api/admin/questions" && method === "POST") return createQuestion(request, env.DB);
   if (path === "/api/admin/questions/import" && method === "POST") return importQuestions(request, env.DB);
+
+  if (path === "/api/admin/leads" && method === "GET") return getLeads(env.DB);
 
   throw httpError(404, "Rota nao encontrada");
 }
@@ -135,7 +136,6 @@ async function createParticipant(request, db) {
   const body = await readJson(request);
   if (!body.full_name?.trim()) throw httpError(400, "Nome completo e obrigatorio");
   if (!body.phone?.trim()) throw httpError(400, "Telefone e obrigatorio");
-  if (!LEVELS.includes(body.level)) throw httpError(400, "Nivel invalido");
 
   const participantId = id("participant");
   const queueId = id("queue");
@@ -146,10 +146,10 @@ async function createParticipant(request, db) {
       .prepare(
         "INSERT INTO participants (id, event_id, full_name, phone, level, custom_answers_json) VALUES (?, ?, ?, ?, ?, ?)"
       )
-      .bind(participantId, EVENT_ID, body.full_name.trim(), body.phone.trim(), body.level, customAnswers),
+      .bind(participantId, EVENT_ID, body.full_name.trim(), body.phone.trim(), LEVEL, customAnswers),
     db
       .prepare("INSERT INTO queue_entries (id, event_id, participant_id, level, status) VALUES (?, ?, ?, ?, 'waiting')")
-      .bind(queueId, EVENT_ID, participantId, body.level)
+      .bind(queueId, EVENT_ID, participantId, LEVEL)
   ]);
 
   return json({ participant_id: participantId, queue_entry_id: queueId }, 201);
@@ -158,37 +158,31 @@ async function createParticipant(request, db) {
 async function operatorQueue(db) {
   const rows = await db
     .prepare(
-      `SELECT q.id AS queue_entry_id, q.level, q.arrived_at, p.id AS participant_id, p.full_name, p.phone
+      `SELECT q.id AS queue_entry_id, q.arrived_at, p.id AS participant_id, p.full_name, p.phone
        FROM queue_entries q
        JOIN participants p ON p.id = q.participant_id
        WHERE q.event_id = ? AND q.status = 'waiting'
-       ORDER BY q.level, q.arrived_at ASC`
+       ORDER BY q.arrived_at ASC`
     )
     .bind(EVENT_ID)
     .all();
 
-  const grouped = groupLevels();
-  for (const row of rows.results || []) {
-    grouped[row.level].push({
-      queue_entry_id: row.queue_entry_id,
-      participant_id: row.participant_id,
-      name: operatorParticipantName(row.full_name),
-      full_name: row.full_name,
-      phone: row.phone,
-      level: row.level,
-      arrived_at: row.arrived_at,
-      waiting_minutes: minutesSince(row.arrived_at),
-      lonely_warning: false
-    });
+  const queue = (rows.results || []).map((row) => ({
+    queue_entry_id: row.queue_entry_id,
+    participant_id: row.participant_id,
+    name: operatorParticipantName(row.full_name),
+    full_name: row.full_name,
+    phone: row.phone,
+    arrived_at: row.arrived_at,
+    waiting_minutes: minutesSince(row.arrived_at),
+    lonely_warning: false
+  }));
+
+  if (queue.length === 1 && queue[0].waiting_minutes >= 15) {
+    queue[0].lonely_warning = true;
   }
 
-  for (const level of LEVELS) {
-    if (grouped[level].length === 1 && grouped[level][0].waiting_minutes >= 15) {
-      grouped[level][0].lonely_warning = true;
-    }
-  }
-
-  return json({ queue: grouped });
+  return json({ queue });
 }
 
 async function createDuel(request, db) {
@@ -198,7 +192,7 @@ async function createDuel(request, db) {
 
   const entries = await db
     .prepare(
-      `SELECT q.id AS queue_entry_id, q.level, q.status, p.id AS participant_id, p.full_name
+      `SELECT q.id AS queue_entry_id, q.status, p.id AS participant_id, p.full_name
        FROM queue_entries q
        JOIN participants p ON p.id = q.participant_id
        WHERE q.event_id = ? AND q.id IN (?, ?)`
@@ -212,8 +206,7 @@ async function createDuel(request, db) {
   }
 
   const [a, b] = ids.map((entryId) => entries.results.find((entry) => entry.queue_entry_id === entryId));
-  const level = effectiveLevel(a.level, b.level);
-  const question = await pickQuestion(db, level);
+  const question = await pickQuestion(db, LEVEL);
   const duelId = id("duel");
 
   await db.batch([
@@ -231,15 +224,15 @@ async function createDuel(request, db) {
         b.participant_id,
         a.queue_entry_id,
         b.queue_entry_id,
-        a.level,
-        b.level,
-        level,
+        LEVEL,
+        LEVEL,
+        LEVEL,
         question?.id || null
       ),
     db.prepare("UPDATE queue_entries SET status = 'in_duel', updated_at = datetime('now') WHERE id IN (?, ?)").bind(ids[0], ids[1])
   ]);
 
-  if (question?.id) await recordQuestionUse(db, question.id, level);
+  if (question?.id) await recordQuestionUse(db, question.id, LEVEL);
 
   return getDuel(db, duelId, 201);
 }
@@ -309,14 +302,10 @@ async function finishDuel(db, duelId) {
 }
 
 async function publicStatus(db) {
-  const counts = groupLevels(0);
-  const countRows = await db
-    .prepare(
-      "SELECT level, COUNT(*) AS total FROM queue_entries WHERE event_id = ? AND status = 'waiting' GROUP BY level"
-    )
+  const countRow = await db
+    .prepare("SELECT COUNT(*) AS total FROM queue_entries WHERE event_id = ? AND status = 'waiting'")
     .bind(EVENT_ID)
-    .all();
-  for (const row of countRows.results || []) counts[row.level] = row.total;
+    .first();
 
   const current = await db
     .prepare(
@@ -337,13 +326,52 @@ async function publicStatus(db) {
           id: current.id,
           participant_a_name: publicParticipantName(current.participant_a_name),
           participant_b_name: publicParticipantName(current.participant_b_name),
-          effective_level: current.effective_level,
           score_a: current.score_a,
           score_b: current.score_b
         }
       : null,
-    waiting_counts: counts
+    waiting_count: countRow?.total || 0
   });
+}
+
+async function getLeads(db) {
+  const rows = await db
+    .prepare(
+      `SELECT
+        p.id, p.full_name, p.phone, p.created_at,
+        COUNT(d.id) AS duel_count,
+        SUM(CASE WHEN d.status = 'completed' AND d.winner_participant_id = p.id THEN 1 ELSE 0 END) AS wins,
+        SUM(CASE WHEN d.status = 'completed' AND d.winner_participant_id IS NOT NULL AND d.winner_participant_id != p.id THEN 1 ELSE 0 END) AS losses,
+        SUM(CASE WHEN d.status IN ('active', 'ready_to_finish') THEN 1 ELSE 0 END) AS active_duels
+       FROM participants p
+       LEFT JOIN duels d ON d.event_id = p.event_id AND (d.participant_a_id = p.id OR d.participant_b_id = p.id)
+       WHERE p.event_id = ?
+       GROUP BY p.id
+       ORDER BY p.created_at DESC`
+    )
+    .bind(EVENT_ID)
+    .all();
+
+  const leads = (rows.results || []).map((row) => ({
+    id: row.id,
+    full_name: row.full_name,
+    phone: row.phone,
+    created_at: row.created_at,
+    wins: row.wins || 0,
+    losses: row.losses || 0,
+    result: resultTag(row)
+  }));
+
+  return json({ leads });
+}
+
+function resultTag(row) {
+  if (row.active_duels > 0) return "Em andamento";
+  if (row.wins > 0 && row.losses > 0) return "Venceu e perdeu";
+  if (row.wins > 0) return "Venceu";
+  if (row.losses > 0) return "Perdeu";
+  if (row.duel_count > 0) return "Empate";
+  return "Aguardando";
 }
 
 async function getBranding(db) {
@@ -414,24 +442,16 @@ async function updateRegistrationFields(request, db) {
   return getRegistrationFields(db);
 }
 
-async function getQuestions(db, url) {
-  const level = url.searchParams.get("level");
-  const bind = [EVENT_ID];
-  let where = "q.event_id = ?";
-  if (LEVELS.includes(level)) {
-    where += " AND q.level = ?";
-    bind.push(level);
-  }
-
+async function getQuestions(db) {
   const rows = await db
     .prepare(
       `SELECT q.*, COALESCE(u.used_count, 0) AS used_count, u.last_used_at
        FROM questions q
        LEFT JOIN question_usage u ON u.question_id = q.id
-       WHERE ${where}
-       ORDER BY q.level ASC, COALESCE(u.used_count, 0) DESC, q.created_at DESC`
+       WHERE q.event_id = ? AND q.level = ?
+       ORDER BY COALESCE(u.used_count, 0) DESC, q.created_at DESC`
     )
-    .bind(...bind)
+    .bind(EVENT_ID, LEVEL)
     .all();
 
   return json({ questions: (rows.results || []).map(serializeQuestion) });
@@ -439,7 +459,6 @@ async function getQuestions(db, url) {
 
 async function createQuestion(request, db) {
   const body = await readJson(request);
-  if (!LEVELS.includes(body.level)) throw httpError(400, "Nivel invalido");
   if (!body.prompt?.trim()) throw httpError(400, "Pergunta obrigatoria");
   if (!body.answer?.trim()) throw httpError(400, "Resposta obrigatoria");
 
@@ -448,7 +467,7 @@ async function createQuestion(request, db) {
     .prepare(
       "INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled) VALUES (?, ?, ?, ?, ?, ?, 1)"
     )
-    .bind(questionId, EVENT_ID, body.level, body.prompt.trim(), body.answer.trim(), JSON.stringify(normalizeOptions(body.options)))
+    .bind(questionId, EVENT_ID, LEVEL, body.prompt.trim(), body.answer.trim(), JSON.stringify(normalizeOptions(body.options)))
     .run();
   return json({ question_id: questionId }, 201);
 }
@@ -469,10 +488,9 @@ async function importQuestions(request, db) {
   let skipped = 0;
   const statements = [];
   for (const item of items) {
-    const level = item.level;
     const prompt = item.prompt || item.question || item.pergunta;
     const answer = item.answer || item.resposta;
-    if (!LEVELS.includes(level) || !prompt || !answer) {
+    if (!prompt || !answer) {
       skipped += 1;
       continue;
     }
@@ -480,7 +498,7 @@ async function importQuestions(request, db) {
     statements.push(
       db
         .prepare("INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled) VALUES (?, ?, ?, ?, ?, ?, 1)")
-        .bind(id("question"), EVENT_ID, level, String(prompt).trim(), String(answer).trim(), JSON.stringify(normalizeOptions(item.options || item.alternativas)))
+        .bind(id("question"), EVENT_ID, LEVEL, String(prompt).trim(), String(answer).trim(), JSON.stringify(normalizeOptions(item.options || item.alternativas)))
     );
   }
 
@@ -594,13 +612,6 @@ function sanitizeEvent(event) {
   return publicEvent;
 }
 
-function groupLevels(value = []) {
-  return LEVELS.reduce((acc, level) => {
-    acc[level] = Array.isArray(value) ? [] : value;
-    return acc;
-  }, {});
-}
-
 function minutesSince(value) {
   const timestamp = new Date(`${value.replace(" ", "T")}Z`).getTime();
   if (Number.isNaN(timestamp)) return 0;
@@ -620,9 +631,7 @@ function normalizeOptions(options) {
 }
 
 function flattenQuestionMap(map) {
-  return LEVELS.flatMap((level) =>
-    Array.isArray(map?.[level]) ? map[level].map((item) => ({ ...item, level })) : []
-  );
+  return Object.values(map || {}).flatMap((value) => (Array.isArray(value) ? value : []));
 }
 
 function parseCsvQuestions(text) {

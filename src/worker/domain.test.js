@@ -1,18 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  effectiveLevel,
   firstName,
   isDuelReadyToFinish,
   publicParticipantName,
   winnerIdForDuel
 } from "./domain.js";
-
-test("effectiveLevel uses the lower level for crossed duels", () => {
-  assert.equal(effectiveLevel("basic", "expert"), "basic");
-  assert.equal(effectiveLevel("intermediate", "expert"), "intermediate");
-  assert.equal(effectiveLevel("expert", "expert"), "expert");
-});
 
 test("public participant names expose only first name", () => {
   assert.equal(publicParticipantName("Mariana Costa Silva"), "Mariana");
