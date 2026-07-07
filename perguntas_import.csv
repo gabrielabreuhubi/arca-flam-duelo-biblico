@@ -1,517 +1,401 @@
 level,prompt,answer,options
-basic,Qual e o primeiro livro da Biblia?,Genesis,Genesis;Exodo;Levitico
-basic,Qual e o ultimo livro da Biblia?,Apocalipse,Apocalipse;Judas;Hebreus
-basic,Quantos livros tem o Novo Testamento?,27,27;39;66
-basic,Quantos livros tem o Antigo Testamento?,39,39;27;66
-basic,Qual livro conta a criacao do mundo?,Genesis,Genesis;Exodo;Numeros
-basic,Qual livro narra a saida do povo do Egito?,Exodo,Exodo;Genesis;Josue
-basic,Qual livro reune os salmos de louvor e lamento?,Salmos,Salmos;Provérbios;Eclesiastes
-basic,Qual livro e conhecido por suas licoes de sabedoria pratica?,Proverbios,Proverbios;Salmos;Cantares
-basic,Qual dos quatro evangelhos foi escrito por um medico?,Lucas,Lucas;Marcos;Mateus
-basic,Qual evangelho e conhecido por comecar com 'No principio era o Verbo'?,Joao,Joao;Mateus;Marcos
-basic,Qual livro do Novo Testamento narra a historia da igreja primitiva?,Atos,Atos;Apocalipse;Hebreus
-basic,Qual profeta tem um livro que fala de um grande peixe?,Jonas,Jonas;Amos;Miqueias
-basic,Qual livro conta a historia de uma rainha judia na Persia?,Ester,Ester;Rute;Judite
-basic,Qual livro narra a fidelidade de uma moabita a sua sogra?,Rute,Rute;Ester;Débora
-basic,Qual e o menor livro do Antigo Testamento?,Obadias,Obadias;Ageu;Malaquias
-basic,Qual livro reune ditos de sabedoria atribuidos a Salomao sobre o sentido da vida?,Eclesiastes,Eclesiastes;Proverbios;Job
-basic,Qual livro poetico narra o sofrimento de um homem justo?,Jo,Jo;Salmos;Lamentacoes
-basic,Qual carta de Paulo fala mais extensamente sobre o amor?,1 Corintios,1 Corintios;Romanos;Filipenses
-basic,Para qual cidade Paulo escreveu a carta conhecida como Romanos?,Roma,Roma;Corinto;Efeso
-basic,Para qual cidade foi escrita a carta aos Efesios?,Efeso,Efeso;Colossos;Filipos
-basic,Qual carta de Paulo fala sobre a alegria mesmo na prisao?,Filipenses,Filipenses;Colossenses;Gálatas
-basic,Quem escreveu a maior parte das cartas do Novo Testamento?,Paulo,Paulo;Pedro;Joao
-basic,Qual apostolo escreveu o livro de Apocalipse?,Joao,Joao;Pedro;Tiago
-basic,Qual livro narra a conquista da terra prometida sob a lideranca de Josue?,Josue,Josue;Juizes;Numeros
-basic,Qual livro reune historias de lideres levantados por Deus antes dos reis de Israel?,Juizes,Juizes;Reis;Cronicas
-basic,Qual livro descreve a construcao do tabernaculo no deserto?,Exodo,Exodo;Levitico;Numeros
-basic,Qual livro contem principalmente leis cerimoniais e sacerdotais de Israel?,Levitico,Levitico;Deuteronomio;Josue
-basic,Qual livro e o discurso final de Moises antes de Israel entrar na terra prometida?,Deuteronomio,Deuteronomio;Numeros;Levitico
-basic,Qual profeta maior escreveu sobre a queda de Jerusalem e lamentou por ela?,Jeremias,Jeremias;Isaias;Ezequiel
-basic,Qual e o livro mais longo da Biblia em numero de capitulos?,Salmos,Salmos;Genesis;Isaias
-basic,Quem foi o primeiro rei de Israel?,Saul,Saul;Davi;Salomao
-basic,Quem sucedeu Saul como rei de Israel?,Davi,Davi;Salomao;Roboao
-basic,Qual rei e conhecido por construir o primeiro templo em Jerusalem?,Salomao,Salomao;Davi;Ezequias
-basic,Qual rei derrotou o gigante Golias quando ainda era jovem?,Davi,Davi;Saul;Jonatas
-basic,"Apos a morte de Salomao, quem foi o primeiro rei do reino do norte (Israel)?",Jeroboao,Jeroboao;Roboao;Acabe
-basic,Qual rei de Israel e mais lembrado por sua esposa Jezabel e pela idolatria?,Acabe,Acabe;Jeu;Onri
-basic,Qual rei de Juda promoveu uma grande reforma religiosa apos encontrar o livro da lei?,Josias,Josias;Ezequias;Manasses
-basic,Qual rei de Juda ficou gravemente doente e teve sua vida prolongada apos orar?,Ezequias,Ezequias;Josias;Acaz
-basic,Qual foi o filho de Davi que se rebelou contra o proprio pai?,Absalao,Absalao;Salomao;Amnom
-basic,Quem foi o rei que pediu sabedoria a Deus em vez de riquezas?,Salomao,Salomao;Davi;Ezequias
-basic,Qual rei da Babilonia levou o povo de Juda para o exilio?,Nabucodonosor,Nabucodonosor;Ciro;Dario
-basic,Qual rei persa autorizou o retorno dos judeus do exilio para reconstruir Jerusalem?,Ciro,Ciro;Nabucodonosor;Dario
-basic,Qual rei viu escrita na parede a mensagem que anunciava a queda de seu reino?,Belsazar,Belsazar;Nabucodonosor;Dario
-basic,Quem foi o ultimo rei de Juda antes da queda de Jerusalem para a Babilonia?,Zedequias,Zedequias;Josias;Joaquim
-basic,Qual rei mandou matar os meninos de Belem apos o nascimento de Jesus?,Herodes,Herodes;Pilatos;Cesar Augusto
-basic,Qual imperador romano ordenou o recenseamento que levou Jose e Maria a Belem?,Cesar Augusto,Cesar Augusto;Nero;Tiberio
-basic,Qual governador romano julgou Jesus e autorizou sua crucificacao?,Poncio Pilatos,Poncio Pilatos;Herodes;Felix
-basic,Qual rei ouviu Paulo defender sua fe e quase se converteu?,Agripa,Agripa;Herodes Antipas;Felix
-basic,Quem foi o rei que mandou decapitar Joao Batista?,Herodes Antipas,"Herodes Antipas;Herodes Agripa;Herodes, o Grande"
-basic,"Qual rei de Israel foi ungido em segredo pelo profeta Samuel ainda jovem, cuidando de ovelhas?",Davi,Davi;Saul;Salomao
-basic,Qual juiz derrotou os midianitas com apenas 300 homens?,Gideao,Gideao;Sansao;Jefte
-basic,Qual juiza tambem foi profetisa e liderou Israel na batalha?,Debora,Debora;Ester;Miriam
-basic,Qual juiz teve forca sobre-humana e a perdeu ao cortar o cabelo?,Sansao,Sansao;Gideao;Eude
-basic,Quem foi Delila na historia de Sansao?,A mulher que descobriu o segredo de sua forca,A mulher que descobriu o segredo de sua forca;Sua mae;Sua irma
-basic,Qual juiz fez um voto precipitado que custou a vida de sua filha?,Jefte,Jefte;Gideao;Sansao
-basic,"Quantos anos, aproximadamente, o livro de Juizes cobre na historia de Israel?",Cerca de 300 anos,Cerca de 300 anos;Cerca de 40 anos;Cerca de 1000 anos
-basic,O que os israelitas costumavam fazer repetidamente no ciclo do livro de Juizes?,Abandonar a Deus e cair em idolatria,Abandonar a Deus e cair em idolatria;Construir templos;Escrever novas leis
-basic,Quem matou o rei Eglom escondendo uma espada sob a roupa?,Eude,Eude;Gideao;Sansao
-basic,Sansao matou um leao usando o que?,Suas proprias maos,Suas proprias maos;Uma espada;Uma pedra
-basic,Qual foi o pedido feito por Gideao a Deus com um velo de la para confirmar seu chamado?,O sinal do orvalho no velo,O sinal do orvalho no velo;Um sinal com fogo do ceu;Uma voz do ceu
-basic,"Quem foi o pai da fe, chamado por Deus para deixar sua terra?",Abraao,Abraao;Isaque;Jaco
-basic,Qual foi o filho da promessa nascido a Abraao e Sara na velhice?,Isaque,Isaque;Ismael;Ese
-basic,"Quem foi o filho de Abraao nascido de Hagar, serva de Sara?",Ismael,Ismael;Isaque;Jaco
-basic,Quem enganou o irmao gemeo para obter a bencao do pai Isaque?,Jaco,Jaco;Ese;Jose
-basic,Qual filho de Jaco foi vendido como escravo pelos proprios irmaos?,Jose,Jose;Benjamim;Ruben
-basic,"Quantos filhos teve Jaco, que deram origem as doze tribos de Israel?",12,12;10;7
-basic,Jose se tornou governador de qual pais apos interpretar sonhos de Faraó?,Egito,Egito;Babilonia;Assiria
-basic,Quem foi a esposa de Abraao que riu ao ouvir que teria um filho na velhice?,Sara,Sara;Rebeca;Raquel
-basic,"Quem foi a esposa amada de Jaco, pela qual ele trabalhou sete anos extras?",Raquel,Raquel;Lia;Rebeca
-basic,Qual foi o nome dado a Jaco apos lutar com um anjo durante a noite?,Israel,Israel;Isaque;Efraim
-basic,Quem foi o irmao mais velho que vendeu seu direito de primogenitura por um prato de comida?,Ese,Ese;Jaco;Jose
-basic,"Qual patriarca quase sacrificou o proprio filho no Monte Moria, em obediencia a Deus?",Abraao,Abraao;Isaque;Jaco
-basic,Quem foi o irmao de Moises que o ajudou a falar com Faraó?,Arao,Arao;Josue;Calebe
-basic,Qual foi a irma de Moises que vigiou o cesto no rio Nilo?,Miriam,Miriam;Debora;Ana
-basic,"Quem foi o sogro de Moises, sacerdote de Midia?",Jetro,Jetro;Labao;Balaao
-basic,"Qual foi o primeiro milagre publico de Jesus, nas bodas de Cana?",Transformar agua em vinho,Transformar agua em vinho;Multiplicar paes;Andar sobre as aguas
-basic,Com quantos paes e peixes Jesus alimentou uma multidao de cerca de cinco mil pessoas?,5 paes e 2 peixes,5 paes e 2 peixes;7 paes e 3 peixes;2 paes e 5 peixes
-basic,O que Jesus fez ao caminhar sobre o mar da Galileia durante uma tempestade?,Andou sobre as aguas,Andou sobre as aguas;Fez o mar secar;Construiu uma ponte
-basic,Qual amigo de Jesus foi ressuscitado apos quatro dias no tumulo?,Lazaro,Lazaro;Joao Batista;Estevao
-basic,O que Jesus fez a um homem cego de nascenca em Joao 9?,Devolveu-lhe a visao,Devolveu-lhe a visao;Curou sua febre;Ressuscitou-o
-basic,Que tipo de doenca Jesus curou ao tocar em um homem considerado impuro pela lei?,Lepra,Lepra;Cegueira;Paralisia
-basic,O que aconteceu quando Jesus acalmou a tempestade no mar da Galileia?,O vento e o mar obedeceram e se acalmaram,O vento e o mar obedeceram e se acalmaram;O barco afundou;Os discipulos remaram ate a praia
-basic,Como uma mulher com um fluxo de sangue foi curada ao se aproximar de Jesus?,Tocou na borda de seu manto,Tocou na borda de seu manto;Jesus a tocou primeiro;Ela bebeu agua benta
-basic,Jesus ressuscitou a filha de um lider da sinagoga chamado como?,Jairo,Jairo;Nicodemos;Zaqueu
-basic,"Quantos leprosos Jesus curou em Lucas 17, dos quais so um voltou para agradecer?",10,10;7;12
-basic,O que Jesus fez ao homem paralitico trazido por quatro amigos atraves do telhado?,Curou-o e perdoou seus pecados,Curou-o e perdoou seus pecados;Mandou-o embora;Pediu que ele jejuasse
-basic,"Em qual milagre Jesus multiplicou alimentos pela segunda vez, alimentando cerca de quatro mil pessoas?",Multiplicacao dos sete paes,Multiplicacao dos sete paes;Multiplicacao dos cinco paes;As bodas de Cana
-basic,"O que Jesus fez ao servo do centuriao romano, sem nem precisar ir ate ele?",Curou-o a distancia,Curou-o a distancia;Ressuscitou-o;Pediu que fosse ao templo
-basic,Qual foi a reacao dos discipulos apos Jesus acalmar a tempestade?,Ficaram admirados com sua autoridade,Ficaram admirados com sua autoridade;Ficaram com raiva;Nao perceberam nada
-basic,"O que Jesus fez ao filho da viuva de Naim, no meio de um cortejo funebre?",Ressuscitou-o,Ressuscitou-o;Curou sua febre;Deu-lhe uma bencao
-basic,"Quem foi curado por Jesus apos gritar 'Filho de Davi, tem misericordia de mim' a beira da estrada?",O cego Bartimeu,O cego Bartimeu;O leproso Naama;O paralitico de Betesda
-basic,"O que Jesus fez com uma figueira que nao dava frutos, como sinal simbolico?",Amaldicoou-a e ela secou,Amaldicoou-a e ela secou;Regou-a;Cortou-a
-basic,Qual foi o milagre realizado no tanque de Betesda?,A cura de um paralitico que esperava havia 38 anos,A cura de um paralitico que esperava havia 38 anos;A multiplicacao de paes;A cura de dez leprosos
-basic,O que aconteceu com a rede de pesca dos discipulos apos eles obedecerem a ordem de Jesus?,Ficou tao cheia que quase rompeu,Ficou tao cheia que quase rompeu;Ficou vazia;Se perdeu no mar
-basic,"Qual foi um dos ultimos milagres de Jesus antes de sua prisao, envolvendo a orelha de um servo?",Curou a orelha cortada de um servo do sumo sacerdote,Curou a orelha cortada de um servo do sumo sacerdote;Curou um cego;Ressuscitou um morto
-basic,"Na parabola do filho prodigo, o que o pai fez quando o filho voltou para casa?",Correu ao encontro dele e o recebeu com festa,Correu ao encontro dele e o recebeu com festa;Recusou recebe-lo;Mandou-o embora novamente
-basic,"Na parabola do bom samaritano, quem ajudou o homem ferido na estrada?",Um samaritano,Um samaritano;Um sacerdote;Um levita
-basic,"Na parabola do semeador, o que representa a semente que cai em boa terra?","Quem ouve a palavra e a compreende, dando fruto","Quem ouve a palavra e a compreende, dando fruto;Quem nunca ouve a palavra;Quem rejeita a palavra imediatamente"
-basic,"Na parabola dos talentos, o que aconteceu com o servo que enterrou seu talento?",Foi repreendido por nao ter usado o que recebeu,Foi repreendido por nao ter usado o que recebeu;Foi elogiado pela prudencia;Recebeu o dobro de talentos
-basic,"Na parabola da ovelha perdida, quantas ovelhas o pastor deixou para buscar a que se perdeu?",99,99;50;10
-basic,O que representa o joio na parabola do joio e do trigo?,Os filhos do maligno misturados aos filhos do Reino,Os filhos do maligno misturados aos filhos do Reino;Apenas plantas daninhas comuns;Uma metafora sobre agricultura
-basic,"Na parabola dos dez talentos e minas, o que caracteriza os servos aprovados pelo senhor?",Foram fieis e produtivos com o que receberam,Foram fieis e produtivos com o que receberam;Guardaram tudo sem usar;Reclamaram do senhor
-basic,"Na parabola do fariseu e do publicano, quem foi justificado diante de Deus?","O publicano, que reconheceu sua necessidade de misericordia","O publicano, que reconheceu sua necessidade de misericordia;O fariseu, por sua religiosidade;Nenhum dos dois"
-basic,O que a parabola da porta estreita ensina sobre entrar no Reino de Deus?,"Requer esforco e decisao, poucos a encontram","Requer esforco e decisao, poucos a encontram;E facil e automatico para todos;So os ricos podem entrar"
-basic,"Na parabola das dez virgens, o que diferenciou as sabias das insensatas?",As sabias levaram azeite extra para suas lampadas,As sabias levaram azeite extra para suas lampadas;As sabias eram mais ricas;As sabias chegaram primeiro
-basic,"Na parabola do rico insensato, por que Deus o chamou de insensato?",Porque acumulou riquezas sem se importar com Deus,Porque acumulou riquezas sem se importar com Deus;Porque nao tinha filhos;Porque nao trabalhava
-basic,O que a parabola do fariseu que orava em publico condena?,A hipocrisia religiosa e o orgulho espiritual,A hipocrisia religiosa e o orgulho espiritual;A pratica da oracao em si;A frequencia ao templo
-basic,"Na parabola do credor incompassivo, por que o servo perdoado foi condenado ao final?",Porque nao perdoou uma divida pequena de outro servo,Porque nao perdoou uma divida pequena de outro servo;Porque nao pagou sua propria divida;Porque fugiu do rei
-basic,"Na parabola da rede de pesca, o que representam os peixes bons e ruins?",A separacao final entre justos e injustos,A separacao final entre justos e injustos;Diferentes tipos de discipulos apenas;Apenas uma historia sobre pescadores
-basic,O que a parabola do graozinho de mostarda ilustra sobre o Reino de Deus?,Comeca pequeno mas cresce imensamente,Comeca pequeno mas cresce imensamente;E sempre visivelmente grande desde o inicio;Nao tem relacao com crescimento
-basic,"Quantos dias durou o dilúvio de chuva sobre a terra, segundo Genesis?",40 dias,40 dias;7 dias;100 dias
-basic,Quantos discipulos Jesus escolheu como apostolos?,12,12;10;7
-basic,Quantas pragas caíram sobre o Egito antes da libertacao de Israel?,10,10;7;12
-basic,Quantos anos o povo de Israel andou pelo deserto antes de entrar na terra prometida?,40 anos,40 anos;12 anos;70 anos
-basic,Quantos dias Jesus jejuou no deserto antes de ser tentado?,40 dias,40 dias;7 dias;12 dias
-basic,Quantas tribos formavam o povo de Israel?,12,12;10;7
-basic,Quantos mandamentos Moises recebeu no Monte Sinai?,10,10;12;7
-basic,Com quantos homens Gideao derrotou o exercito midianita?,300,300;3.000;30
-basic,Quantas voltas os israelitas deram ao redor de Jericó antes de suas muralhas cairem?,7 voltas no setimo dia,7 voltas no setimo dia;3 voltas;1 volta
-basic,"Quantos anos, aproximadamente, os judeus permaneceram no exilio babilonico?",70 anos,70 anos;40 anos;100 anos
-basic,Quem foi a rainha judia que arriscou a vida para salvar seu povo na Persia?,Ester,Ester;Rute;Debora
-basic,Quem foi a mae de Jesus?,Maria,Maria;Marta;Madalena
-basic,"Quem foi a primeira pessoa a ver Jesus ressuscitado, segundo os evangelhos?",Maria Madalena,"Maria Madalena;Maria, mae de Jesus;Marta"
-basic,Quem foi a moabita que deixou seu povo para seguir sua sogra Noemi?,Rute,Rute;Ester;Raabe
-basic,Quem foi a profetisa e juíza que liderou Israel na batalha contra Sisera?,Debora,Debora;Miriam;Hulda
-basic,Quem foi a mulher que escondeu os espias israelitas em Jerico?,Raabe,Raabe;Rute;Débora
-basic,"Quem foi a mae de Samuel, que orou intensamente por um filho?",Ana,Ana;Sara;Raquel
-basic,"Quem foi a irma de Marta e Lazaro, que ouviu Jesus aos seus pes?",Maria de Betania,Maria de Betania;Maria Madalena;Salome
-basic,"Quem foi transformada em estatua de sal ao olhar para tras, ao fugir de Sodoma?",A esposa de Lo,A esposa de Lo;Sara;Agar
-basic,Quem foi a serva de Sara que teve um filho de Abraao?,Agar,Agar;Rebeca;Lia
-basic,Quem foi a esposa de Potifar que acusou falsamente Jose no Egito?,A esposa de Potifar (nao nomeada),A esposa de Potifar (nao nomeada);Rainha do Egito;Asenate
-basic,"Quem foi a viuva que deu duas pequenas moedas ao templo, elogiada por Jesus?",A viuva pobre,A viuva pobre;Marta;Maria Madalena
-basic,Quem foi a mulher samaritana que conversou com Jesus junto a um poco?,A mulher samaritana no poco de Jaco,A mulher samaritana no poco de Jaco;Maria de Betania;Joana
-basic,"Quem foi a mae de Moises, que o escondeu para salva-lo da morte?",Joquebede,Joquebede;Miriam;Zípora
-basic,"Quem foi a esposa de Moises, filha do sacerdote Jetro?",Zípora,Zípora;Joquebede;Miriam
-basic,Em que cidade Jesus nasceu?,Belem,Belem;Nazare;Jerusalem
-basic,Em que cidade Jesus cresceu?,Nazare,Nazare;Belem;Cafarnaum
-basic,Em que rio Jesus foi batizado?,Jordao,Jordao;Nilo;Eufrates
-basic,Em qual monte Moises recebeu os Dez Mandamentos?,Sinai,Sinai;Carmelo;Siao
-basic,Em qual cidade ficava o templo de Jerusalem?,Jerusalem,Jerusalem;Belem;Nazare
-basic,Em qual mar Jesus caminhou durante uma tempestade?,Mar da Galileia,Mar da Galileia;Mar Morto;Mar Vermelho
-basic,Qual mar o povo de Israel atravessou em seco ao sair do Egito?,Mar Vermelho,Mar Vermelho;Mar Morto;Mar Mediterraneo
-basic,"Em qual cidade Paulo teve sua conversao dramatica, sendo cegado por uma luz?",Damasco,Damasco;Antioquia;Tarso
-basic,Qual e o nome do jardim onde Jesus orou antes de ser preso?,Getsemani,Getsemani;Éden;Gólgota
-basic,Qual e o nome do monte onde Jesus foi crucificado?,Golgota,Golgota;Sinai;Sioes
-basic,Em qual cidade Paulo fundou uma igreja e depois lhe escreveu duas cartas famosas?,Corinto,Corinto;Roma;Filipos
-basic,Qual e o nome do jardim onde Adao e Eva viviam?,Éden,Éden;Getsemani;Genesis
-basic,Em que deserto o povo de Israel peregrinou por 40 anos?,Deserto do Sinai,Deserto do Sinai;Deserto do Saara;Deserto da Judeia
-basic,Qual cidade foi destruida com Gomorra por causa de sua maldade?,Sodoma,Sodoma;Jerico;Nínive
-basic,Para qual grande cidade pagã Jonas foi enviado para pregar arrependimento?,Nínive,Nínive;Babilonia;Tiro
-basic,Qual festa judaica celebra a libertacao do povo da escravidao no Egito?,Pascoa,Pascoa;Pentecostes;Purim
-basic,Em qual festa judaica o Espirito Santo desceu sobre os discipulos em Atos 2?,Pentecostes,Pentecostes;Pascoa;Purim
-basic,"Qual festa celebra a livramento dos judeus de um plano de extermínio na Persia, narrado em Ester?",Purim,Purim;Pascoa;Yom Kippur
-basic,"Qual e o dia mais sagrado do calendario judaico, dedicado a expiacao dos pecados?",Yom Kippur,Yom Kippur;Pascoa;Pentecostes
-basic,Qual festa lembra o tempo em que Israel viveu em tendas no deserto?,Festa dos Tabernaculos (Sucot),Festa dos Tabernaculos (Sucot);Pascoa;Purim
-basic,Em qual celebracao os judeus comem pao sem fermento por sete dias?,Pascoa,Pascoa;Pentecostes;Yom Kippur
-basic,Qual dia da semana e guardado como dia de descanso na tradicao judaica?,Sabado,Sabado;Domingo;Sexta-feira
-basic,Jesus celebrava qual refeicao ritual com seus discipulos na noite antes de sua morte?,A Pascoa,A Pascoa;O Pentecostes;O Purim
-basic,Quem traiu Jesus por 30 moedas de prata?,Judas,Judas;Pedro;Tome
-basic,Qual apostolo negou Jesus tres vezes antes do galo cantar?,Pedro,Pedro;Joao;Tiago
-basic,Qual discipulo duvidou da ressurreicao ate ver as marcas nas maos de Jesus?,Tome,Tome;Andre;Filipe
-basic,Quais dois irmaos pescadores foram os primeiros discipulos chamados por Jesus?,Pedro e Andre,Pedro e Andre;Tiago e Joao;Mateus e Tome
-basic,Qual discipulo era cobrador de impostos antes de seguir Jesus?,Mateus,Mateus;Pedro;Filipe
-basic,"Quem substituiu Judas Iscariotes entre os doze apostolos, apos sua morte?",Matias,Matias;Barnabe;Estevao
-basic,"Qual apostolo era conhecido como o discipulo amado, segundo o evangelho de Joao?",Joao,Joao;Pedro;Tiago
-basic,"Quem foi o primeiro martir cristao, apedrejado apos pregar diante do sinedrio?",Estevao,Estevao;Tiago;Paulo
-basic,Qual apostolo era conhecido por sua atividade missionaria entre os gentios apos sua conversao?,Paulo,Paulo;Pedro;Joao
-basic,Quem foi o discipulo que caminhou sobre as aguas ao encontro de Jesus e comecou a afundar?,Pedro,Pedro;Joao;Andre
-basic,"Qual apostolo era irmao de Tiago, filho de Zebedeu?",Joao,Joao;Andre;Filipe
-basic,Quem foi Barnabe na historia da igreja primitiva?,"Um companheiro missionario de Paulo, conhecido por encorajar outros","Um companheiro missionario de Paulo, conhecido por encorajar outros;Um dos doze apostolos originais;O sumo sacerdote de Jerusalem"
-basic,Qual profeta foi engolido por um grande peixe apos fugir de sua missao?,Jonas,Jonas;Elias;Isaias
-basic,"Qual profeta subiu ao ceu num redemoinho, em uma carruagem de fogo?",Elias,Elias;Eliseu;Isaias
-basic,Qual profeta desafiou os profetas de Baal num confronto no Monte Carmelo?,Elias,Elias;Eliseu;Jonas
-basic,Qual profeta foi lancado na cova dos leoes e sobreviveu ileso?,Daniel,Daniel;Ezequiel;Jeremias
-basic,Qual profeta interpretou o sonho da grande estatua do rei Nabucodonosor?,Daniel,Daniel;Jeremias;Ezequiel
-basic,Qual profeta e chamado de 'profeta chorao' por lamentar a destruicao de Jerusalem?,Jeremias,Jeremias;Isaias;Amos
-basic,Qual profeta viu visoes junto ao rio Quebar durante o exilio babilonico?,Ezequiel,Ezequiel;Isaias;Amos
-basic,Qual profeta anunciou o nascimento do Messias de uma virgem?,Isaias,Isaias;Jeremias;Miqueias
-basic,Qual profeta se casou com uma prostituta como sinal profetico da infidelidade de Israel?,Oseias,Oseias;Amos;Joel
-basic,Qual profeta denunciou com forca a injustica social e a opressao dos pobres?,Amos,Amos;Oseias;Malaquias
-basic,"Qual foi o ultimo livro profetico do Antigo Testamento, anunciando a vinda de Elias antes do Senhor?",Malaquias,Malaquias;Ageu;Zacarias
-basic,Qual profeta anunciou que o Messias nasceria em Belem?,Miqueias,Miqueias;Isaias;Malaquias
-basic,Qual anjo anunciou a Maria que ela conceberia o Messias?,Gabriel,Gabriel;Miguel;Rafael
-basic,Onde Jose e Maria fugiram apos serem avisados por um anjo sobre Herodes?,Egito,Egito;Babilonia;Roma
-basic,"O que aconteceu no batismo de Jesus, segundo os evangelhos?",O Espirito Santo desceu como pomba e uma voz do ceu falou,O Espirito Santo desceu como pomba e uma voz do ceu falou;Um anjo apareceu visivel a todos;As aguas do rio pararam de fluir
-basic,"Em qual monte Jesus foi transfigurado diante de Pedro, Tiago e Joao?",O monte da Transfiguracao (tradicionalmente o Tabor),O monte da Transfiguracao (tradicionalmente o Tabor);Monte Sinai;Monte Sioes
-basic,"Em qual cidade Jesus entrou montado num jumentinho, aclamado pela multidao?",Jerusalem,Jerusalem;Belem;Jerico
-basic,O que aconteceu com o veu do templo no momento da morte de Jesus?,Rasgou-se de alto a baixo,Rasgou-se de alto a baixo;Foi removido pelos sacerdotes;Permaneceu intacto
-basic,"Quantos dias apos a morte de Jesus ele ressuscitou, segundo os evangelhos?",No terceiro dia,No terceiro dia;No setimo dia;No quadragesimo dia
-basic,O que aconteceu quarenta dias apos a ressurreicao de Jesus?,Sua ascensao ao ceu,Sua ascensao ao ceu;Sua segunda crucificacao;O nascimento da igreja
-basic,"O que aconteceu no dia de Pentecostes, dez dias apos a ascensao de Jesus?",O Espirito Santo desceu sobre os discipulos,O Espirito Santo desceu sobre os discipulos;Jesus apareceu novamente aos discipulos;O templo foi destruido
-basic,"Quem foi Anania, o homem que curou Paulo da cegueira apos sua conversao?",Um discipulo em Damasco,Um discipulo em Damasco;Um dos doze apostolos;O sumo sacerdote de Jerusalem
-basic,Onde os seguidores de Jesus foram chamados 'cristaos' pela primeira vez?,Antioquia,Antioquia;Jerusalem;Roma
-basic,Em qual ilha Paulo naufragou a caminho de Roma?,Malta,Malta;Chipre;Creta
-basic,O que significa a palavra 'evangelho'?,Boa noticia,Boa noticia;Lei antiga;Historia sagrada
-basic,Qual e o nome dado aos primeiros cinco livros da Biblia?,Pentateuco,Pentateuco;Evangelhos;Profetas maiores
-basic,"O que e um 'apostolo', no sentido do Novo Testamento?",Alguem enviado com uma missao especifica de Jesus,Alguem enviado com uma missao especifica de Jesus;Um simples seguidor de Jesus;Um sacerdote do templo
-basic,O que significa a palavra 'aleluia'?,Louvai ao Senhor,"Louvai ao Senhor;Paz seja convosco;Amem, assim seja"
-basic,"O que e um 'discipulo', no contexto biblico?",Alguem que aprende e segue os ensinamentos de um mestre,Alguem que aprende e segue os ensinamentos de um mestre;Um sacerdote ordenado;Um profeta reconhecido
-basic,"O que significa 'Emanuel', nome profetico dado a Jesus?",Deus conosco,Deus conosco;Salvador do mundo;Filho do homem
-basic,"O que e a 'Trindade', na doutrina crista basica?","Deus Pai, Filho e Espirito Santo, um so Deus em tres pessoas","Deus Pai, Filho e Espirito Santo, um so Deus em tres pessoas;Tres deuses diferentes;Os tres patriarcas principais"
-basic,O que significa a palavra 'messias'?,Ungido,Ungido;Salvador dos gentios;Rei eterno
-basic,"O que e 'gracia', segundo o ensino cristao basico?",O favor imerecido de Deus para com os pecadores,O favor imerecido de Deus para com os pecadores;Uma recompensa por boas obras;Um ritual do templo
-basic,"O que significa a palavra 'amem', usada ao final de oracoes?",Assim seja / e verdade,Assim seja / e verdade;Paz e bencao;Louvado seja Deus
-basic,Em que a vara de Moises se transformou diante de Farao?,Uma cobra,Uma cobra;Um bastao de fogo;Um cajado de ouro
-basic,O que Moises fez para tirar agua de uma rocha no deserto?,Bateu na rocha com a vara,Bateu na rocha com a vara;Cavou um poco;Orou por sete dias
-basic,Qual foi o alimento que Deus enviou do ceu para o povo no deserto?,Mana,Mana;Codornizes apenas;Mel
-basic,O que aconteceu com o sol durante a batalha de Josue contra os amorreus?,O sol parou no ceu por um dia inteiro,O sol parou no ceu por um dia inteiro;O sol escureceu totalmente;Nao ha relato sobre o sol nessa batalha
-basic,Qual profeta multiplicou o azeite de uma viuva para pagar suas dividas?,Eliseu,Eliseu;Elias;Eliaquim
-basic,Qual comandante sirio foi curado da lepra ao se banhar sete vezes no rio Jordao?,Naama,Naama;Naaman;Balaao
-basic,O que aconteceu com a jumenta de Balaao ao ver o anjo do Senhor no caminho?,Falou com Balaao,Falou com Balaao;Fugiu correndo;Morreu no local
-basic,Qual objeto sagrado guardava as tabuas da lei dentro do tabernaculo?,A arca da alianca,A arca da alianca;O altar de bronze;A mesa dos paes
-basic,O que aconteceu as muralhas de Jerico apos os israelitas darem sete voltas ao redor da cidade?,Cairam completamente,Cairam completamente;Racharam mas nao cairam;Nada aconteceu
-basic,"Qual foi o sinal dado a Gideao para confirmar seu chamado, envolvendo um velo de la?","O orvalho molhou o velo mas nao o chao ao redor, e depois o contrario","O orvalho molhou o velo mas nao o chao ao redor, e depois o contrario;Fogo desceu do ceu sobre o velo;O velo desapareceu"
-basic,O que Eliseu fez para purificar uma fonte de agua ruim em Jerico?,Lancou sal na fonte,Lancou sal na fonte;Orou por sete dias seguidos;Construiu um altar ao lado
-basic,Qual foi o sinal dado ao rei Ezequias para confirmar que sua vida seria prolongada?,A sombra do relogio de sol voltou dez graus,A sombra do relogio de sol voltou dez graus;Uma estrela apareceu no ceu;Uma voz falou do templo
-basic,O que aconteceu aos tres amigos de Daniel lancados numa fornalha ardente?,"Sairam ilesos, sem nem cheiro de fogo","Sairam ilesos, sem nem cheiro de fogo;Morreram instantaneamente;Fugiram antes de serem lancados"
-basic,Qual foi a mensagem misteriosa escrita na parede durante um banquete do rei Belsazar?,"'Pesado, contado, dividido' (mene, mene, tequel, ufarsim)","'Pesado, contado, dividido' (mene, mene, tequel, ufarsim);'Paz e seguranca';'Volta ao Senhor'"
-basic,O que aconteceu a Daniel quando foi lancado na cova dos leoes?,Um anjo fechou a boca dos leoes e ele saiu ileso,Um anjo fechou a boca dos leoes e ele saiu ileso;Foi devorado mas ressuscitado depois;Os leoes fugiram da cova
-basic,Qual e o primeiro dos Dez Mandamentos dados a Moises?,Nao terás outros deuses diante de mim,Nao terás outros deuses diante de mim;Nao matarás;Nao furtarás
-basic,Qual mandamento proibe fazer imagens para adorar?,Nao farás para ti imagem de escultura,Nao farás para ti imagem de escultura;Nao tomarás o nome de Deus em vao;Guardarás o sabado
-basic,Qual mandamento pede que se honre pai e mae?,O quinto mandamento,O quinto mandamento;O primeiro mandamento;O decimo mandamento
-basic,Qual mandamento proibe cobicar os bens do proximo?,O decimo mandamento,O decimo mandamento;O sexto mandamento;O segundo mandamento
-basic,"O que a arca da alianca guardava, alem das tabuas da lei, segundo Hebreus 9?",Um pote de mana e a vara de Arao que floresceu,"Um pote de mana e a vara de Arao que floresceu;Apenas as tabuas, nada mais;As vestes sacerdotais completas"
-basic,O que representava o candelabro (menorah) dentro do tabernaculo?,A luz de Deus no meio do povo,A luz de Deus no meio do povo;A riqueza do povo de Israel;Um simples objeto decorativo
-basic,Qual objeto era usado pelos sacerdotes para queimar incenso diante de Deus?,O altar do incenso,O altar do incenso;O altar de bronze;A mesa dos paes
-basic,O que representavam os doze paes colocados semanalmente na mesa do tabernaculo?,As doze tribos de Israel diante de Deus,"As doze tribos de Israel diante de Deus;As doze horas do dia;Os doze discipulos, ainda no Antigo Testamento"
-basic,"Quem foi o unico sobrevivente, com sua familia, ao grande diluvio?",Noe,Noe;Abraao;Ja
-basic,Quem foi convidado por Deus a sair de Sodoma antes de sua destruicao?,Lo e sua familia,Lo e sua familia;Jose e seus irmaos;Balaao
-basic,"Quem foi o profeta pago contratado para amaldicoar Israel, mas que acabou abencoando o povo?",Balaao,Balaao;Balaque;Eliseu
-basic,"Quem sucedeu Elias como profeta, recebendo uma porcao dobrada de seu espirito?",Eliseu,Eliseu;Eliú;Ezequiel
-basic,"Quem foi Neemias, no contexto do retorno do exilio?",Um lider que reconstruiu os muros de Jerusalem,Um lider que reconstruiu os muros de Jerusalem;Um rei da Persia;Um profeta que confrontou Davi
-basic,"Quem foi Esdras, associado ao retorno do exilio babilonico?",Um sacerdote e escriba que ensinou a lei ao povo,Um sacerdote e escriba que ensinou a lei ao povo;Um rei de Israel;Um general do exercito persa
-basic,Quem foi Jó na Biblia?,Um homem justo que sofreu grandes perdas e permaneceu fiel a Deus,Um homem justo que sofreu grandes perdas e permaneceu fiel a Deus;Um dos doze filhos de Jaco;Um rei de Israel
-basic,"Quem foi Caim, o primeiro filho de Adao e Eva?",Aquele que matou seu irmao Abel por inveja,Aquele que matou seu irmao Abel por inveja;Um dos patriarcas que originou as tribos de Israel;Um profeta que confrontou Faraó
-basic,"Quem foi Abel, filho de Adao e Eva?","O irmao morto por Caim, cuja oferta foi aceita por Deus","O irmao morto por Caim, cuja oferta foi aceita por Deus;Um rei de Israel;Um profeta do exilio"
-basic,"Quem foi Enoque, mencionado em Genesis por sua caminhada com Deus?",Um homem que andou com Deus e foi levado sem experimentar a morte,Um homem que andou com Deus e foi levado sem experimentar a morte;Um dos reis de Israel;Um dos doze apostolos
-basic,Em qual cidade Paulo fundou uma igreja e depois lhe escreveu duas cartas famosas sobre amor e ressurreicao?,Corinto,Corinto;Roma;Filipos
-basic,Qual era a profissao de Pedro e Andre antes de seguirem Jesus?,Pescadores,Pescadores;Agricultores;Comerciantes
-basic,"Qual era a profissao de Paulo, que ele usava para se sustentar durante suas viagens?",Fabricante de tendas,Fabricante de tendas;Pescador;Carpinteiro
-basic,Em qual cidade os discipulos foram chamados de 'cristaos' pela primeira vez?,Antioquia,Antioquia;Jerusalem;Roma
-basic,Qual era a capital do Imperio Romano no tempo de Jesus e Paulo?,Roma,Roma;Atenas;Alexandria
-basic,Em qual monte Jesus proferiu o famoso sermao com as bem-aventurancas?,O monte das bem-aventurancas (tradicionalmente perto do mar da Galileia),O monte das bem-aventurancas (tradicionalmente perto do mar da Galileia);Monte Sinai;Monte Carmelo
-basic,Qual era o oficio de Mateus antes de seguir Jesus?,Cobrador de impostos,Cobrador de impostos;Pescador;Sacerdote
-basic,"Em qual regiao ficava Nazare, cidade onde Jesus cresceu?",Galileia,Galileia;Judeia;Samaria
-basic,Qual anjo anunciou a Zacarias o nascimento de Joao Batista?,Gabriel,Gabriel;Miguel;Rafael
-basic,Qual arcanjo e mencionado lutando contra o dragao em Apocalipse 12?,Miguel,Miguel;Gabriel;Uriel
-basic,O que os anjos anunciaram aos pastores na noite do nascimento de Jesus?,"Boas novas de grande alegria, o nascimento do Salvador","Boas novas de grande alegria, o nascimento do Salvador;Um aviso de perigo iminente;Uma ordem para fugir para o Egito"
-basic,"Quem orou pedindo que, se possivel, o calice do sofrimento passasse dele, no jardim do Getsemani?",Jesus,Jesus;Pedro;Judas
-basic,Qual oracao Jesus ensinou aos discipulos como modelo de oracao?,O Pai Nosso,O Pai Nosso;O Salmo 23;O Cântico dos Cânticos
-basic,Quem orou pedindo perdao para seus perseguidores enquanto era apedrejado?,Estevao,Estevao;Pedro;Tiago
-basic,"Qual foi a ultima oracao de Jesus na cruz, segundo Lucas?","Pai, em tuas maos entrego o meu espirito","Pai, em tuas maos entrego o meu espirito;Elias, Elias, por que me abandonaste;Esta consumado"
-basic,Qual refeicao ritual Jesus celebrou com os discipulos na noite antes de sua morte?,A ultima ceia (Pascoa),A ultima ceia (Pascoa);Um simples jantar comum;Uma festa de casamento
-basic,O que Jesus usou para representar seu corpo na ultima ceia?,O pao,O pao;O peixe;As azeitonas
-basic,"Qual fruto Ada e Eva comeram, desobedecendo a ordem de Deus no jardim do Eden?",O fruto da arvore do conhecimento do bem e do mal,O fruto da arvore do conhecimento do bem e do mal;Uma uva;Um figo
-basic,O que Esau vendeu ao irmao Jaco em troca de um prato de comida?,Seu direito de primogenitura,Seu direito de primogenitura;Sua heranca de terras;Seu rebanho inteiro
-basic,Qual animal Deus proveu para Abraao sacrificar no lugar de Isaque?,Um carneiro,Um carneiro;Um cordeiro;Um boi
-basic,Qual ave Noe enviou da arca para verificar se as aguas haviam baixado?,Uma pomba,Uma pomba;Uma aguia;Um corvo apenas
-basic,"Qual animal falou com Balaao no caminho, impedindo-o de seguir em frente?",Uma jumenta,Uma jumenta;Um cavalo;Um camelo
-basic,Qual e o simbolismo do cordeiro aplicado a Jesus no Novo Testamento?,O Cordeiro de Deus que tira o pecado do mundo,O Cordeiro de Deus que tira o pecado do mundo;Um simbolo de fraqueza sem sentido teologico;Uma referencia exclusiva ao Antigo Testamento sem conexao com Jesus
-basic,"O que Joao Batista vestia, segundo os evangelhos, refletindo um estilo profetico simples?",Roupas de pelo de camelo com um cinto de couro,Roupas de pelo de camelo com um cinto de couro;Vestes reais de linho fino;Roupas sacerdotais completas
-basic,"Qual vestimenta especial Jose recebeu do pai Jaco, motivo de inveja dos irmaos?",Uma tunica de varias cores,Uma tunica de varias cores;Uma coroa de ouro;Uma capa vermelha
-basic,O que os soldados romanos fizeram com as vestes de Jesus apos a crucificacao?,Sortearam entre si quem ficaria com elas,Sortearam entre si quem ficaria com elas;Queimaram-nas imediatamente;Devolveram-nas a familia de Jesus
-basic,Qual foi o sinal dado a Noe de que Deus nunca mais destruiria a terra com um diluvio?,O arco-iris,O arco-iris;Uma estrela nova;Uma coluna de fogo
-basic,"O que aconteceu quando Josue e o povo deram a volta em Jerico pela setima vez, tocando trombetas?",As muralhas da cidade cairam,As muralhas da cidade cairam;A cidade se tornou invisivel;Um terremoto abriu uma fenda no chao
-basic,Qual foi a resposta de Maria ao ser informada por Gabriel de que teria um filho por meio do Espirito Santo?,"Eis aqui a serva do Senhor, cumpra-se em mim conforme a tua palavra","Eis aqui a serva do Senhor, cumpra-se em mim conforme a tua palavra;Ela recusou o anuncio do anjo;Ela pediu para consultar Jose primeiro"
-basic,"Quem foi Simeao, no relato do nascimento de Jesus apresentado no templo?",Um homem justo que esperava a consolacao de Israel e reconheceu Jesus como o Messias,Um homem justo que esperava a consolacao de Israel e reconheceu Jesus como o Messias;Um dos reis magos;Um sacerdote que se opos ao nascimento de Jesus
-basic,O que os reis magos ofereceram ao encontrar o menino Jesus?,"Ouro, incenso e mirra","Ouro, incenso e mirra;Prata, seda e perfumes;Trigo, vinho e azeite"
-basic,"Quem foi Ana, a profetisa que reconheceu Jesus no templo quando ele foi apresentado ainda bebe?",Uma mulher idosa que servia a Deus em jejum e oracoes no templo,Uma mulher idosa que servia a Deus em jejum e oracoes no templo;Uma das parteiras que ajudou no parto de Jesus;Uma sacerdotisa do templo pagao
-basic,"O que Jesus disse aos discipulos pouco antes de subir ao ceu, sobre onde eles seriam suas testemunhas?","Em Jerusalem, Judeia, Samaria e ate os confins da terra","Em Jerusalem, Judeia, Samaria e ate os confins da terra;Apenas dentro dos limites de Israel;Somente em Roma"
-basic,"Quem foi Timoteo, jovem colaborador de Paulo mencionado em varias de suas cartas?","Um discipulo e colaborador fiel de Paulo, filho de mae judia crente e pai grego","Um discipulo e colaborador fiel de Paulo, filho de mae judia crente e pai grego;Um dos doze apostolos originais;O sumo sacerdote de Jerusalem"
-basic,"Quem foi Priscila, mencionada junto com seu marito Aquila como colaboradores de Paulo?","Um casal que ensinou e apoiou o ministerio de Paulo, inclusive instruindo Apolo com mais precisao","Um casal que ensinou e apoiou o ministerio de Paulo, inclusive instruindo Apolo com mais precisao;Uma das mulheres que visitaram o tumulo vazio;Uma profetisa do Antigo Testamento"
-intermediate,A promessa feita a Abraao em Genesis 12 inclui bencao para quem?,Todas as familias da terra,Todas as familias da terra;Somente Israel;Somente os egipcios
-intermediate,Qual alianca e marcada pelo sinal do arco-iris?,Alianca noaquica,Alianca noaquica;Alianca abraamica;Alianca davidica
-intermediate,Qual e o sinal da alianca abraamica dado a Abraao e sua descendencia?,A circuncisao,A circuncisao;O sabado;O arco-iris
-intermediate,O que caracteriza a alianca davidica em 2 Samuel 7?,Promessa de um trono e reino eternos,Promessa de um trono e reino eternos;Promessa de terra somente;Promessa de sacerdocio eterno
-intermediate,Qual e a principal diferenca entre a alianca mosaica e a nova alianca anunciada por Jeremias 31?,"A lei escrita no coracao, nao em tabuas de pedra","A lei escrita no coracao, nao em tabuas de pedra;A ausencia total de mandamentos;A exclusao dos gentios"
-intermediate,Em que sentido o sabado e chamado de 'sinal da alianca' em Exodo 31?,Marca a identidade do povo como pertencente a Deus,Marca a identidade do povo como pertencente a Deus;E apenas um dia de descanso fisico sem outro proposito;Substitui a necessidade de sacrificios
-intermediate,Qual e o proposito da alianca sinaitica (mosaica) dentro da narrativa de Exodo?,"Formar Israel como povo de Deus, com leis para vida em alianca","Formar Israel como povo de Deus, com leis para vida em alianca;Substituir definitivamente a alianca abraamica;Estabelecer um sistema puramente civil sem relacao com Deus"
-intermediate,"O que a repeticao da formula 'eu serei o vosso Deus, vos sereis o meu povo' expressa ao longo da Biblia?",O nucleo relacional que une as diferentes aliancas biblicas,O nucleo relacional que une as diferentes aliancas biblicas;Uma formula juridica sem peso teologico;Uma expressao exclusiva do Novo Testamento
-intermediate,Como a alianca com Noe se diferencia das aliancas posteriores quanto ao seu alcance?,"E uma alianca universal, feita com toda a criacao","E uma alianca universal, feita com toda a criacao;E restrita apenas a familia de Noe;Nao envolve nenhum sinal visivel"
-intermediate,Qual e a funcao teologica do livro de Deuteronomio dentro da estrutura de alianca de Israel?,Renovar a alianca com a nova geracao antes de entrar na terra,Renovar a alianca com a nova geracao antes de entrar na terra;Substituir integralmente a lei do Sinai;Encerrar a narrativa do Pentateuco sem funcao de alianca
-intermediate,O tabernaculo no deserto representava principalmente o que?,A presenca de Deus no meio do povo,A presenca de Deus no meio do povo;Um museu de reliquias;Um centro comercial
-intermediate,O que representa o veu do templo se rasgando na morte de Jesus?,Acesso aberto a presenca de Deus,Acesso aberto a presenca de Deus;Fim do judaismo;Um evento sem significado teologico
-intermediate,Qual e a funcao do sumo sacerdote no Dia da Expiacao (Yom Kippur)?,Fazer expiacao pelos pecados do povo diante de Deus,Fazer expiacao pelos pecados do povo diante de Deus;Coroar o novo rei;Ler a Tora publicamente
-intermediate,Por que a construcao do templo por Salomao e um momento teologico marcante em 1 Reis?,Marca o repouso de Deus com seu povo numa morada fixa e permanente,Marca o repouso de Deus com seu povo numa morada fixa e permanente;E apenas um projeto arquitetonico sem relacao com a alianca;Substitui totalmente o tabernaculo sem continuidade teologica
-intermediate,O que representa a nuvem de gloria (kabod) que enchia o tabernaculo apos sua conclusao?,A presenca visivel de Deus habitando com seu povo,A presenca visivel de Deus habitando com seu povo;Um fenomeno meteorologico comum;Um simbolo puramente decorativo
-intermediate,Como o profeta Ezequiel descreve simbolicamente a saida da gloria de Deus do templo antes da destruicao de Jerusalem?,"A gloria de Deus deixa o templo em etapas, mostrando o julgamento","A gloria de Deus deixa o templo em etapas, mostrando o julgamento;A gloria de Deus nunca deixou o templo;O templo continuou intacto apos essa visao"
-intermediate,Qual e o significado teologico da promessa de um novo templo em Ezequiel 40-48?,Uma visao de restauracao da presenca plena de Deus com seu povo,Uma visao de restauracao da presenca plena de Deus com seu povo;Apenas um plano arquitetonico literal sem sentido simbolico;Uma condenacao definitiva do templo antigo
-intermediate,Qual e o significado teologico do exodo do Egito?,Deus redime e forma um povo para si,Deus redime e forma um povo para si;Apenas uma migracao economica;Uma lenda sem relacao com a alianca
-intermediate,Qual e o sentido teologico da festa da Pascoa para Israel?,Celebrar a libertacao da escravidao no Egito,Celebrar a libertacao da escravidao no Egito;Celebrar a colheita de outono;Comemorar a construcao do templo
-intermediate,Por que a travessia do Mar Vermelho e considerada um momento fundante na identidade de Israel?,Marca a libertacao definitiva da escravidao pela acao direta de Deus,Marca a libertacao definitiva da escravidao pela acao direta de Deus;E apenas um evento natural sem peso teologico;Ocorre depois da entrada na terra prometida
-intermediate,O que caracteriza o padrao de redencao que se repete ao longo da narrativa biblica?,Deus liberta um povo escravizado ou exilado e o restaura para si,Deus liberta um povo escravizado ou exilado e o restaura para si;Um ciclo de guerras sem relacao entre si;Um tema exclusivo do Novo Testamento
-intermediate,Como o sacrificio do cordeiro pascal se relaciona tipologicamente com Cristo no Novo Testamento?,"Cristo e apresentado como o Cordeiro pascal definitivo, que liberta do pecado","Cristo e apresentado como o Cordeiro pascal definitivo, que liberta do pecado;Nao ha relacao tipologica reconhecida entre os dois;O cordeiro pascal era apenas um simbolo agricola"
-intermediate,"Qual profeta ministrou durante o exilio babilonico, com visoes junto ao rio Quebar?",Ezequiel,Ezequiel;Isaias;Amos
-intermediate,Quem foi o profeta que confrontou Davi apos o pecado com Bate-Seba?,Nata,Nata;Gade;Samuel
-intermediate,O que os profetas do Antigo Testamento anunciavam junto ao juizo?,Esperanca de restauracao,Esperanca de restauracao;Apenas destruicao sem esperanca;Somente regras cerimoniais
-intermediate,"O que caracteriza um profeta no Antigo Testamento, em contraste com um adivinho pagao?","Fala a palavra que Deus lhe revela, nao preve o futuro por tecnicas ocultas","Fala a palavra que Deus lhe revela, nao preve o futuro por tecnicas ocultas;Sempre preve eventos distantes sem relacao com a alianca;Nunca confronta reis ou o povo"
-intermediate,"O que Isaias 53 descreve, segundo a leitura crista tradicional?",O sofrimento vicario do Servo do Senhor,O sofrimento vicario do Servo do Senhor;A vitoria militar do Messias;A reconstrucao do templo
-intermediate,O que Amos denuncia com mais forca em sua profecia?,A injustica social e a hipocrisia religiosa,A injustica social e a hipocrisia religiosa;A idolatria exclusivamente;A falta de sacrificios no templo
-intermediate,"Qual e a mensagem central do livro de Oseias, ilustrada pelo proprio casamento do profeta?","O amor fiel de Deus por um povo infiel, como um marido por uma esposa infiel","O amor fiel de Deus por um povo infiel, como um marido por uma esposa infiel;A necessidade de reformas economicas;A importancia dos rituais do templo"
-intermediate,Como o livro de Habacuque estrutura o dialogo entre o profeta e Deus?,"Como uma serie de queixas do profeta seguidas de respostas de Deus, terminando em confianca","Como uma serie de queixas do profeta seguidas de respostas de Deus, terminando em confianca;Como uma lista de leis cerimoniais;Como uma narrativa historica sem dialogo"
-intermediate,O que caracteriza a profecia de Miqueias sobre o local de nascimento do governante prometido?,"Anuncia que viria de Belem, cidade pequena entre os clas de Juda","Anuncia que viria de Belem, cidade pequena entre os clas de Juda;Nao menciona nenhum local especifico;Aponta para Jerusalem como local exclusivo"
-intermediate,"Qual e a funcao literaria das 'lamentacoes' no livro de mesmo nome, atribuido a Jeremias?","Expressar luto e dor diante da destruicao de Jerusalem, mantendo esperanca em Deus","Expressar luto e dor diante da destruicao de Jerusalem, mantendo esperanca em Deus;Celebrar a vitoria de Israel sobre seus inimigos;Descrever leis cerimoniais do templo"
-intermediate,O que caracteriza a profecia de Joel sobre o derramamento do Espirito?,"O Espirito seria derramado sobre toda carne, filhos e filhas profetizariam","O Espirito seria derramado sobre toda carne, filhos e filhas profetizariam;Apenas os sacerdotes receberiam o Espirito;O Espirito seria retirado definitivamente de Israel"
-intermediate,"Como Proverbios descreve a 'sabedoria', em termos teologicos?",O temor do Senhor como seu principio,O temor do Senhor como seu principio;Um conhecimento puramente academico;Um dom exclusivo dos reis
-intermediate,Qual e o tom predominante do livro de Eclesiastes ao refletir sobre a vida 'debaixo do sol'?,Um questionamento honesto sobre o sentido da vida sem Deus no centro,Um questionamento honesto sobre o sentido da vida sem Deus no centro;Uma celebracao ingenua da prosperidade material;Uma lista de leis cerimoniais
-intermediate,O que o livro de Jo discute atraves do sofrimento do protagonista?,A questao do sofrimento do justo e os limites do entendimento humano sobre Deus,A questao do sofrimento do justo e os limites do entendimento humano sobre Deus;Uma simples historia de recompensa por boas obras;A ausencia total de Deus na dor humana
-intermediate,Qual e a funcao dos discursos dos amigos de Jo no livro?,Representam explicacoes teologicas simplistas que o livro acaba desafiando,Representam explicacoes teologicas simplistas que o livro acaba desafiando;Sao a voz definitiva e correta de Deus no livro;Nao tem funcao teologica relevante
-intermediate,O que caracteriza o genero literario de Cantares de Salomao?,Poesia que celebra o amor humano dentro da alianca,Poesia que celebra o amor humano dentro da alianca;Um tratado juridico sobre casamento;Uma alegoria puramente politica
-intermediate,Qual apostolo e conhecido pela enfase na justificacao pela fe?,Paulo,Paulo;Tiago;Joao
-intermediate,O Pentecostes em Atos 2 e associado por muitos estudiosos a qual evento do Antigo Testamento?,A entrega da Lei no Sinai,A entrega da Lei no Sinai;A queda de Jerico;O diluvio
-intermediate,Qual e o papel de Joao Batista na narrativa biblica?,Preparar o caminho para o Messias,Preparar o caminho para o Messias;Fundar a primeira igreja;Escrever profecias messianicas
-intermediate,"O que a expressao 'ja, mas ainda nao' busca descrever na teologia do Novo Testamento?",A tensao entre o Reino inaugurado e sua consumacao futura,A tensao entre o Reino inaugurado e sua consumacao futura;A diferenca entre o Antigo e o Novo Testamento;A distincao entre judeus e gentios
-intermediate,Qual e a importancia teologica do batismo de Jesus por Joao?,Jesus se identifica com o povo pecador que precisa de arrependimento,Jesus se identifica com o povo pecador que precisa de arrependimento;E apenas um ritual sem significado;Marca o fim do ministerio de Joao
-intermediate,"Qual foi o principal debate teologico resolvido no chamado Concilio de Jerusalem, em Atos 15?","Se os gentios convertidos precisavam seguir a lei mosaica, incluindo a circuncisao","Se os gentios convertidos precisavam seguir a lei mosaica, incluindo a circuncisao;A data correta da Pascoa crista;A natureza divina de Cristo"
-intermediate,O que caracteriza a descricao da igreja primitiva em Atos 2:42-47?,"Devocao ao ensino apostolico, comunhao, oracao e partilha de bens","Devocao ao ensino apostolico, comunhao, oracao e partilha de bens;Uma estrutura hierarquica formal e rigida;Isolamento completo da sociedade ao redor"
-intermediate,Qual e a metafora paulina para descrever a diversidade e unidade da igreja em 1 Corintios 12?,"O corpo de Cristo, com muitos membros e uma so cabeca","O corpo de Cristo, com muitos membros e uma so cabeca;Um exercito com hierarquia rigida;Uma familia sem qualquer distincao de funcoes"
-intermediate,"O que caracteriza a crise teologica enfrentada pelos galatas, segundo a carta de Paulo?",A pressao para acrescentar obras da lei a fe em Cristo para a salvacao,A pressao para acrescentar obras da lei a fe em Cristo para a salvacao;Uma disputa sobre a organizacao de cultos;Um conflito puramente pessoal entre lideres
-intermediate,Qual e a enfase teologica central da carta aos Hebreus sobre Cristo?,"Cristo como sumo sacerdote superior, cumprindo e superando o sistema levitico","Cristo como sumo sacerdote superior, cumprindo e superando o sistema levitico;Cristo como apenas um profeta entre outros;A irrelevancia do Antigo Testamento para a fe crista"
-intermediate,O que caracteriza teologicamente a carta de Tiago em relacao a fe e obras?,A fe genuina se manifesta em obras concretas,A fe genuina se manifesta em obras concretas;As obras substituem completamente a necessidade de fe;Fe e obras sao temas desconectados
-intermediate,"Por que Rute, uma moabita, e significativa na genealogia de Davi?",Mostra que a graca de Deus alcanca tambem os estrangeiros,Mostra que a graca de Deus alcanca tambem os estrangeiros;Prova que so israelitas puros geram reis;E apenas uma nota historica sem peso teologico
-intermediate,O que a expressao 'reino de sacerdotes e nacao santa' (Exodo 19) revela sobre a vocacao de Israel?,Israel deveria mediar a presenca de Deus as nacoes,Israel deveria mediar a presenca de Deus as nacoes;Israel deveria isolar-se completamente das nacoes;Israel deveria conquistar todas as nacoes
-intermediate,O que a parabola do bom samaritano redefine sobre a pergunta 'quem e o meu proximo?',"O proximo e qualquer pessoa necessitada, alem de fronteiras etnicas","O proximo e qualquer pessoa necessitada, alem de fronteiras etnicas;O proximo e so quem pertence a mesma nacao;A pergunta nao tem resposta clara"
-intermediate,"Qual e o papel dos juizes no livro de Juizes, dentro da narrativa de Israel?",Lideres temporarios levantados por Deus em tempos de crise,Lideres temporarios levantados por Deus em tempos de crise;Reis hereditarios;Sacerdotes do templo
-intermediate,Por que o livro de Rute termina com uma genealogia que aponta para Davi?,Para mostrar como a providencia de Deus conduz a linhagem real,Para mostrar como a providencia de Deus conduz a linhagem real;Para provar a pureza etnica de Israel;Para encerrar a historia sem proposito teologico
-intermediate,O que caracteriza a etica dos profetas ao unir denuncia social e denuncia religiosa?,Injustica com o proximo e idolatria contra Deus nascem da mesma ruptura de alianca,Injustica com o proximo e idolatria contra Deus nascem da mesma ruptura de alianca;Sao temas completamente desconectados na mensagem profetica;Os profetas so se importavam com rituais do templo
-intermediate,O que a historia de Jose no Egito ilustra sobre a providencia de Deus em meio a injustica humana?,Deus pode usar circunstancias injustas para cumprir seus propositos redentores,"Deus pode usar circunstancias injustas para cumprir seus propositos redentores;A providencia de Deus so opera quando tudo corre bem;A historia de Jose nao tem carater teologico, apenas narrativo"
-intermediate,"Qual e a funcao teologica da genealogia de Jesus em Mateus 1, que inclui mulheres como Rute e Tamar?",Mostrar que a graca de Deus inclui pessoas inesperadas na historia da redencao,Mostrar que a graca de Deus inclui pessoas inesperadas na historia da redencao;Provar a linhagem puramente masculina de Jesus;Nao tem funcao teologica relevante
-intermediate,"O que significa ser 'pobre em espirito', a primeira bem-aventuranca do Sermao do Monte?",Reconhecer a propria dependencia espiritual diante de Deus,Reconhecer a propria dependencia espiritual diante de Deus;Ter pouco dinheiro literalmente;Nao ter nenhuma emocao religiosa
-intermediate,O que Jesus promete aos 'mansos' na segunda bem-aventuranca?,Herdarao a terra,Herdarao a terra;Serao ricos nesta vida;Nunca sofrerao perseguicao
-intermediate,"O que caracteriza os 'puros de coracao', segundo a bem-aventuranca correspondente?","Aqueles que verao a Deus, com integridade interior genuina","Aqueles que verao a Deus, com integridade interior genuina;Apenas quem nunca cometeu nenhum pecado;Um grupo exclusivo de sacerdotes"
-intermediate,O que Jesus promete aos que sao perseguidos por causa da justica?,O Reino dos Ceus lhes pertence,O Reino dos Ceus lhes pertence;Uma vida isenta de sofrimento;Riquezas materiais
-intermediate,O que caracteriza os 'pacificadores' mencionados nas bem-aventurancas?,"Serao chamados filhos de Deus, por promoverem reconciliacao","Serao chamados filhos de Deus, por promoverem reconciliacao;Pessoas que evitam qualquer conflito a qualquer custo;Apenas lideres politicos"
-intermediate,Qual e um dos temas centrais e recorrentes de Proverbios sobre o uso da lingua?,"A lingua tem poder de vida e morte, exigindo cuidado nas palavras","A lingua tem poder de vida e morte, exigindo cuidado nas palavras;A fala nao tem nenhuma relevancia etica;Silencio total e sempre a melhor opcao"
-intermediate,"O que Proverbios ensina, de forma geral, sobre riqueza e pobreza?","Riqueza obtida com justica e trabalho e boa, mas nao deve ser idolatrada; a pobreza tambem exige compaixao","Riqueza obtida com justica e trabalho e boa, mas nao deve ser idolatrada; a pobreza tambem exige compaixao;Riqueza e sempre sinal de bencao divina automatica;Pobreza e sempre resultado de pecado pessoal"
-intermediate,O que caracteriza os ensinos de Proverbios sobre a preguica?,"Alerta contra a preguica como caminho para a ruina, valorizando o trabalho diligente","Alerta contra a preguica como caminho para a ruina, valorizando o trabalho diligente;Nao trata do tema do trabalho em nenhum momento;Recomenda evitar todo tipo de esforco"
-intermediate,Como Proverbios descreve a amizade genuina em contraste com relacoes superficiais?,Um verdadeiro amigo ama em todo tempo e e fiel mesmo em dificuldades,Um verdadeiro amigo ama em todo tempo e e fiel mesmo em dificuldades;Nao ha distincao entre amizade verdadeira e superficial no livro;Amizade nao e tema tratado em Proverbios
-intermediate,Qual e a formula recorrente usada pelos livros de Reis para avaliar cada monarca de Israel e Juda?,Se ele fez o que era reto ou mau aos olhos do Senhor,Se ele fez o que era reto ou mau aos olhos do Senhor;Quantas guerras ele venceu;Quantos filhos ele teve
-intermediate,Por que a maioria dos reis do reino do norte (Israel) recebe avaliacao negativa nos livros de Reis?,Por perpetuarem a idolatria estabelecida por Jeroboao desde a divisao do reino,Por perpetuarem a idolatria estabelecida por Jeroboao desde a divisao do reino;Porque todos foram usurpadores sem legitimidade;Porque o reino do norte nunca teve templo algum
-intermediate,"Por que alguns reis de Juda, como Ezequias e Josias, recebem avaliacao especialmente positiva?",Por promoverem reformas religiosas e centralizarem o culto genuino a Deus,Por promoverem reformas religiosas e centralizarem o culto genuino a Deus;Por conquistarem territorios estrangeiros;Por reduzirem impostos
-intermediate,"O que caracteriza, de forma geral, o periodo entre o Antigo e o Novo Testamento quanto ao dominio politico sobre Israel?","Uma sucessao de impérios estrangeiros, incluindo persas, gregos e por fim romanos","Uma sucessao de impérios estrangeiros, incluindo persas, gregos e por fim romanos;Israel manteve independencia politica total durante todo o periodo;Nao houve nenhuma mudanca politica nesse periodo"
-intermediate,O que caracteriza a revolta dos macabeus no periodo intertestamentario?,Uma resistencia judaica contra a helenizacao forcada imposta por governantes selêucidas,Uma resistencia judaica contra a helenizacao forcada imposta por governantes selêucidas;Uma rebeliao contra o dominio romano diretamente;Um movimento puramente pacifico sem confronto militar
-intermediate,"Como o dominio romano sobre a Judeia, no tempo de Jesus, influenciava as expectativas messianicas judaicas?",Muitos esperavam um libertador politico que restaurasse a independencia de Israel,"Muitos esperavam um libertador politico que restaurasse a independencia de Israel;Nao havia nenhuma expectativa messianica nesse periodo;As expectativas eram exclusivamente espirituais, sem dimensao politica"
-intermediate,Qual e o simbolismo teologico comum associado ao numero sete na Biblia?,Plenitude ou completude,Plenitude ou completude;Julgamento imediato;Fraqueza humana
-intermediate,Qual e o simbolismo teologico comumente associado ao numero doze na Biblia?,"Organizacao completa do povo de Deus, como as doze tribos e os doze apostolos","Organizacao completa do povo de Deus, como as doze tribos e os doze apostolos;Um numero sem nenhum simbolismo reconhecido;Julgamento final"
-intermediate,Qual e o simbolismo teologico comumente associado ao numero quarenta na Biblia?,"Um periodo de teste, provacao ou preparacao","Um periodo de teste, provacao ou preparacao;Uma celebracao de vitoria;Um numero puramente decorativo"
-intermediate,"Como o Espirito de Deus atua predominantemente no Antigo Testamento, em contraste com o Novo Testamento?","Vem sobre pessoas especificas para tarefas especificas, sem a permanencia geral prometida na nova alianca","Vem sobre pessoas especificas para tarefas especificas, sem a permanencia geral prometida na nova alianca;Atua exatamente da mesma forma em ambos os testamentos, sem distincao;Esta ausente completamente do Antigo Testamento"
-intermediate,"O que Joel 2 profetiza sobre o derramamento futuro do Espirito, cumprido em Atos 2?","O Espirito seria derramado sobre toda carne, nao apenas sobre lideres especificos","O Espirito seria derramado sobre toda carne, nao apenas sobre lideres especificos;Apenas os sacerdotes receberiam o Espirito no futuro;A profecia nao tem cumprimento no Novo Testamento"
-intermediate,"O que caracteriza o ano sabatico, prescrito na lei de Israel a cada sete anos?",Descanso da terra e perdao de certas dividas,Descanso da terra e perdao de certas dividas;Um ano de guerra obrigatoria;Um ano de aumento de impostos
-intermediate,"O que caracteriza o ano do jubileu, celebrado a cada cinquenta anos em Israel?",Restituicao de terras as familias originais e libertacao de escravos hebreus,Restituicao de terras as familias originais e libertacao de escravos hebreus;Uma celebracao puramente religiosa sem efeito economico;Um ano de censo populacional apenas
-intermediate,"Qual e o proposito teologico das leis sobre cuidado com estrangeiros, viuvas e orfaos na lei mosaica?","Refletir o carater de Deus, que se importa com os vulneraveis","Refletir o carater de Deus, que se importa com os vulneraveis;Sao leis puramente simbolicas sem aplicacao pratica;Aplicam-se exclusivamente aos sacerdotes"
-intermediate,"O que caracteriza os chamados 'salmos messianicos', como o Salmo 2 e o Salmo 110?","Apontam profeticamente para o rei ungido de Deus, lido pela igreja como referencia a Cristo","Apontam profeticamente para o rei ungido de Deus, lido pela igreja como referencia a Cristo;Sao salmos exclusivamente sobre Davi, sem nenhuma leitura messianica;Nao existem salmos com esse carater"
-intermediate,O que sao os chamados 'salmos de ascensao' (Salmos 120-134)?,Cânticos entoados pelos peregrinos que subiam a Jerusalem para as festas,Cânticos entoados pelos peregrinos que subiam a Jerusalem para as festas;Salmos escritos exclusivamente durante o exilio;Uma categoria sem relacao com peregrinacao
-intermediate,"O que e o 'Shema' de Deuteronomio 6:4, considerado a confissao central de fe de Israel?","A afirmacao de que o Senhor e um so Deus, a quem se deve amar integralmente","A afirmacao de que o Senhor e um so Deus, a quem se deve amar integralmente;Uma lista de leis cerimoniais sobre sacrificios;Um cântico de vitoria militar"
-intermediate,Por que Deuteronomio insiste tanto em 'lembrar' os atos de Deus no Egito e no deserto?,Porque a memoria da graca passada sustenta a obediencia e a fe da nova geracao,Porque a memoria da graca passada sustenta a obediencia e a fe da nova geracao;Porque o esquecimento era fisicamente impossivel para o povo antigo;Porque a lembranca substituia a necessidade de obediencia
-intermediate,O que Deuteronomio 6 instrui os pais a fazerem com os mandamentos de Deus em relacao aos filhos?,"Ensina-los diligentemente, conversando sobre eles em casa e no caminho","Ensina-los diligentemente, conversando sobre eles em casa e no caminho;Reserva-los exclusivamente para os sacerdotes ensinarem;Guarda-los em segredo ate a idade adulta"
-intermediate,"Em Genesis 14, qual titulo divino Melquisedeque usa ao abencoar Abraao?","El Elyon, o Deus Altissimo","El Elyon, o Deus Altissimo;El Shaddai, o Deus Todo-Poderoso;Elohim Tsebaot, o Senhor dos Exercitos"
-intermediate,O que Abraao ofereceu a Melquisedeque apos a batalha narrada em Genesis 14?,O dizimo de tudo que havia recuperado,O dizimo de tudo que havia recuperado;Metade de seu rebanho inteiro;Sua propria filha em casamento
-intermediate,O que caracteriza um 'oraculo de juizo' na estrutura literaria comum dos profetas?,"Anuncia acusacao, seguida de sentenca de castigo pela infidelidade a alianca","Anuncia acusacao, seguida de sentenca de castigo pela infidelidade a alianca;E sempre uma mensagem de consolo imediato;Nao segue nenhuma estrutura reconhecivel"
-intermediate,O que caracteriza um 'oraculo de salvacao' na literatura profetica?,Anuncia esperanca e restauracao futura para o povo de Deus,"Anuncia esperanca e restauracao futura para o povo de Deus;E identico ao oraculo de juizo em conteudo;So aparece nos livros historicos, nunca nos profetas"
-intermediate,Como a multiplicacao dos paes por Jesus pode ser lida em conexao tipologica com o mana no deserto?,"Ambos mostram Deus provendo sustento sobrenaturalmente a seu povo, apontando Jesus como o verdadeiro pao do ceu","Ambos mostram Deus provendo sustento sobrenaturalmente a seu povo, apontando Jesus como o verdadeiro pao do ceu;Nao ha nenhuma conexao reconhecida entre os dois episodios;O mana era apenas uma lenda sem relacao com Jesus"
-intermediate,Como a calmaria da tempestade por Jesus se conecta tematicamente com o poder de Deus sobre o caos nas aguas em Genesis 1?,Mostra a mesma autoridade divina sobre a criacao presente desde o principio,Mostra a mesma autoridade divina sobre a criacao presente desde o principio;Nao ha nenhuma relacao tematica entre os dois textos;E apenas uma coincidencia sem peso teologico
-intermediate,"Como Deus responde a Jo nos capitulos finais do livro, apos os longos discursos dos amigos?","Atraves de perguntas sobre a grandeza da criacao, revelando sua sabedoria soberana sem explicar diretamente o sofrimento de Jo","Atraves de perguntas sobre a grandeza da criacao, revelando sua sabedoria soberana sem explicar diretamente o sofrimento de Jo;Explica detalhadamente cada razao do sofrimento de Jo;Permanece em silencio absoluto ate o final do livro"
-intermediate,Qual e a atitude final de Jo apos o encontro com Deus no fim do livro?,"Humildade e confianca renovada, mesmo sem todas as respostas","Humildade e confianca renovada, mesmo sem todas as respostas;Raiva permanente contra Deus;Rejeicao definitiva da fe"
-intermediate,"O que e um 'go'el' (resgatador ou parente-redentor), papel central desempenhado por Boaz em Rute?",Um parente com responsabilidade de redimir terras e proteger a familia em dificuldade,Um parente com responsabilidade de redimir terras e proteger a familia em dificuldade;Um titulo puramente honorifico sem responsabilidade pratica;Um cargo sacerdotal exclusivo do templo
-intermediate,Qual e o efeito literario da inversao de sorte (peripecia) na estrutura do livro de Ester?,Os planos de destruicao contra os judeus se voltam contra os proprios perseguidores,Os planos de destruicao contra os judeus se voltam contra os proprios perseguidores;A historia termina em tragedia sem nenhuma reviravolta;Nao ha nenhum elemento de reviravolta na narrativa
-intermediate,Quais sao algumas categorias de dons espirituais listadas por Paulo em suas cartas?,"Ensino, servico, exortacao, misericordia, entre outros, distribuidos para o bem comum","Ensino, servico, exortacao, misericordia, entre outros, distribuidos para o bem comum;Apenas o dom de linguas e mencionado no Novo Testamento;Dons espirituais nao sao tema tratado nas cartas paulinas"
-intermediate,Qual e o processo de disciplina eclesiastica ensinado por Jesus em Mateus 18 diante de um pecado nao resolvido entre irmaos?,"Buscar reconciliacao em etapas: a sos, com testemunhas, e por fim diante da igreja","Buscar reconciliacao em etapas: a sos, com testemunhas, e por fim diante da igreja;Excluir imediatamente sem nenhuma conversa previa;Ignorar completamente qualquer conflito interno"
-intermediate,Quais sao as qualificacoes basicas para presbiteros/bispos listadas nas cartas pastorais de Paulo?,"Carater irrepreensivel, capacidade de ensinar e boa gestao da propria familia","Carater irrepreensivel, capacidade de ensinar e boa gestao da propria familia;Apenas riqueza material e influencia social;Nenhuma qualificacao especifica e mencionada"
-intermediate,Como Efesios 5 descreve a relacao entre Cristo e a igreja em conexao com o casamento?,Como um modelo de amor sacrificial e submissao mutua que ilustra a relacao entre Cristo e sua igreja,Como um modelo de amor sacrificial e submissao mutua que ilustra a relacao entre Cristo e sua igreja;Sem nenhuma conexao teologica entre os dois temas;Como um contrato puramente civil sem simbolismo espiritual
-intermediate,Qual e o principio estabelecido em Genesis 2 sobre a origem da instituicao do casamento?,"Um homem e uma mulher se tornam uma so carne, unidos por Deus desde a criacao","Um homem e uma mulher se tornam uma so carne, unidos por Deus desde a criacao;O casamento e uma instituicao puramente cultural posterior;Genesis 2 nao trata do tema do casamento"
-intermediate,O que a parabola do fermento em Mateus 13 ilustra sobre o Reino de Deus?,"Um crescimento silencioso mas transformador, que permeia tudo ao redor","Um crescimento silencioso mas transformador, que permeia tudo ao redor;Um evento subito e visivel imediatamente;A destruicao completa do que existia antes"
-intermediate,O que a parabola do tesouro escondido e da perola de grande valor ensinam sobre o Reino de Deus?,"Vale a pena abrir mao de tudo para obter o Reino, de tanto valor que ele tem","Vale a pena abrir mao de tudo para obter o Reino, de tanto valor que ele tem;O Reino pode ser obtido sem nenhum custo pessoal;Sao parabolas sem relacao com o valor do Reino"
-intermediate,O que a parabola da rede de pesca acrescenta a imagem do joio e do trigo sobre o julgamento final?,Reforca a ideia de separacao final entre justos e injustos ao fim dos tempos,Reforca a ideia de separacao final entre justos e injustos ao fim dos tempos;Descreve apenas uma tecnica de pesca sem sentido teologico;Nega qualquer julgamento futuro
-intermediate,Como as dez pragas do Egito podem ser lidas como um confronto entre o Senhor e as divindades egipcias?,"Cada praga desafia simbolicamente um aspecto da religiao ou do poder egipcio, mostrando a supremacia do Senhor","Cada praga desafia simbolicamente um aspecto da religiao ou do poder egipcio, mostrando a supremacia do Senhor;Sao apenas desastres naturais sem nenhuma dimensao teologica;Nao ha nenhuma relacao entre as pragas e a religiao egipcia"
-intermediate,Por que o Exodo pode ser lido como um paralelo intencional com a narrativa da criacao em Genesis?,"Porque Deus forma um povo, ordena o caos da escravidao e estabelece um novo inicio, ecoando padroes de criacao","Porque Deus forma um povo, ordena o caos da escravidao e estabelece um novo inicio, ecoando padroes de criacao;Nao existe nenhuma conexao literaria entre os dois relatos;O Exodo rejeita completamente qualquer tema de criacao"
-intermediate,Qual e uma diferenca notavel entre as genealogias de Jesus em Mateus 1 e Lucas 3?,"Mateus vai de Abraao a Jesus enfatizando a linhagem real; Lucas vai de Jesus ate Ada, enfatizando a humanidade universal","Mateus vai de Abraao a Jesus enfatizando a linhagem real; Lucas vai de Jesus ate Ada, enfatizando a humanidade universal;Sao identicas em todos os nomes e estrutura;Nenhum dos evangelhos apresenta genealogia de Jesus"
-intermediate,Por que os evangelistas incluem genealogias no inicio de seus relatos sobre Jesus?,Para ancorar Jesus na historia real de Israel e nas promessas feitas as geracoes anteriores,Para ancorar Jesus na historia real de Israel e nas promessas feitas as geracoes anteriores;Apenas por convencao literaria sem nenhum peso teologico;Para provar que Jesus nao pertencia realmente a familia de Davi
-intermediate,"Segundo a carta aos Hebreus, por que o sacerdocio de Cristo e superior ao sacerdocio levitico?","Porque e eterno, baseado na ordem de Melquisedeque, e seu sacrificio foi unico e definitivo","Porque e eterno, baseado na ordem de Melquisedeque, e seu sacrificio foi unico e definitivo;Porque Cristo pertencia literalmente a tribo sacerdotal de Levi;Nao ha comparacao entre os dois sacerdocios no livro"
-intermediate,O que significa a afirmacao de Hebreus de que Cristo intercede continuamente por seu povo?,Ele vive para sempre exercendo um ministerio sacerdotal permanente em favor dos crentes,Ele vive para sempre exercendo um ministerio sacerdotal permanente em favor dos crentes;Sua obra sacerdotal terminou completamente na cruz sem continuidade;E uma metafora sem nenhum sentido pratico
-intermediate,Qual profecia do Antigo Testamento e associada ao local de nascimento do Messias em Belem?,Miqueias 5,Miqueias 5;Isaias 40;Jeremias 31
-intermediate,Qual profecia de Isaias e associada tradicionalmente ao nascimento virginal do Messias?,Isaias 7:14,Isaias 7:14;Isaias 53;Isaias 6
-intermediate,Qual salmo e frequentemente citado no Novo Testamento em relacao ao sofrimento de Cristo na cruz?,Salmo 22,Salmo 22;Salmo 23;Salmo 1
-intermediate,"Como a doutrina da graca comum ajuda a entender a existencia de arte, ciencia e talento fora da comunidade de fe?","Reconhece dons e capacidades distribuidos por Deus a toda a humanidade, independente de fe salvadora","Reconhece dons e capacidades distribuidos por Deus a toda a humanidade, independente de fe salvadora;Nega qualquer valor a realizacoes humanas fora da igreja;Confunde graca comum com graca salvadora, tornando-as identicas"
-intermediate,Qual e o tema teologico central do livro de Levitico?,A santidade de Deus e como o povo deve se aproximar dele,A santidade de Deus e como o povo deve se aproximar dele;A conquista da terra prometida;A construcao do templo de Salomao
-intermediate,"O que caracteriza teologicamente o livro de Numeros, alem do censo do povo?",As consequencias da murmuracao e da falta de fe do povo no deserto,As consequencias da murmuracao e da falta de fe do povo no deserto;Um relato exclusivamente juridico sem narrativa;A biografia completa de Josue
-intermediate,Qual e a funcao da serpente de bronze levantada por Moises em Numeros 21?,"Um meio de cura para quem olhasse para ela com fe, apos as mordidas de serpentes","Um meio de cura para quem olhasse para ela com fe, apos as mordidas de serpentes;Um simbolo de idolatria condenado por Deus;Um objeto puramente decorativo do tabernaculo"
-intermediate,Como o livro de Deuteronomio estrutura seu apelo a fidelidade a alianca?,Como discursos de Moises relembrando a lei e chamando a nova geracao a obediencia,Como discursos de Moises relembrando a lei e chamando a nova geracao a obediencia;Como uma lista de genealogias sem discurso;Como uma biografia de Josue
-intermediate,"Qual e a funcao teologica do Shema ('Ouve, Israel') em Deuteronomio 6?",Afirmar a unicidade de Deus e o chamado a amá-lo integralmente,Afirmar a unicidade de Deus e o chamado a amá-lo integralmente;Uma formula juridica sobre heranca de terra;Um ritual exclusivo dos sacerdotes
-intermediate,O que caracteriza o sistema de leis de pureza em Levitico quanto ao seu proposito teologico?,"Marcar a distincao entre Israel e as nacoes, refletindo a santidade de Deus","Marcar a distincao entre Israel e as nacoes, refletindo a santidade de Deus;Regras puramente higienicas sem sentido teologico;Um sistema abolido logo apos ser dado"
-intermediate,Por que o livro de Numeros e frequentemente lido como uma narrativa de julgamento e graca ao mesmo tempo?,Porque mostra tanto o juizo sobre a incredulidade quanto a fidelidade continua de Deus em guiar o povo,Porque mostra tanto o juizo sobre a incredulidade quanto a fidelidade continua de Deus em guiar o povo;Porque narra apenas vitorias militares sem julgamento;Porque nao ha nenhuma referencia a fé no livro
-intermediate,Qual e a funcao teologica das bencaos e maldicoes listadas em Deuteronomio 28?,Mostrar as consequencias da fidelidade ou infidelidade a alianca,Mostrar as consequencias da fidelidade ou infidelidade a alianca;Uma simples lista de rituais agricolas;Uma profecia sem relacao com a obediencia do povo
-intermediate,"Qual e o tema central do livro de Ageu, escrito apos o retorno do exilio?",O chamado a reconstruir o templo como prioridade espiritual,O chamado a reconstruir o templo como prioridade espiritual;A denuncia da injustica social em Israel;A profecia sobre a queda de Nínive
-intermediate,O que caracteriza a mensagem do profeta Sofonias?,"O anuncio do Dia do Senhor como juizo e, ao final, restauracao","O anuncio do Dia do Senhor como juizo e, ao final, restauracao;Uma mensagem exclusivamente de consolo sem juizo;Uma narrativa historica sem conteudo profetico"
-intermediate,Qual e o tema central do livro de Zacarias sobre o futuro de Jerusalem?,Visoes de restauracao e esperanca messianica para o povo,Visoes de restauracao e esperanca messianica para o povo;Uma denuncia exclusiva contra o Egito;Um relato apenas sobre a construcao do templo salomonico
-intermediate,O que caracteriza a mensagem do profeta Naum sobre a cidade de Nínive?,"Anuncia o juizo definitivo de Deus sobre a cidade, apos o arrependimento visto em Jonas","Anuncia o juizo definitivo de Deus sobre a cidade, apos o arrependimento visto em Jonas;Anuncia a salvacao definitiva de Nínive;Nao menciona Nínive em nenhum momento"
-intermediate,"Qual e o tema do livro de Obadias, o menor livro do Antigo Testamento?",O julgamento de Deus sobre Edom por sua atitude contra Israel,O julgamento de Deus sobre Edom por sua atitude contra Israel;A reconstrucao do templo;A vocacao de um novo rei para Israel
-intermediate,Qual e a estrutura do dialogo de Habacuque com Deus sobre a justica divina?,"O profeta questiona por que Deus usa uma nacao mais injusta para julgar Israel, e recebe resposta de fe","O profeta questiona por que Deus usa uma nacao mais injusta para julgar Israel, e recebe resposta de fe;Uma simples lista de leis cerimoniais;Uma narrativa sobre a construcao do tabernaculo"
-intermediate,O que caracteriza a mensagem final do livro de Malaquias?,Uma denuncia da negligencia espiritual do povo e a promessa da vinda de Elias antes do Senhor,Uma denuncia da negligencia espiritual do povo e a promessa da vinda de Elias antes do Senhor;Uma celebracao da fidelidade exemplar do povo;Um relato historico sobre a construcao do templo
-intermediate,"Por que Mateus, Marcos e Lucas sao chamados de evangelhos sinoticos?","Porque compartilham estrutura e conteudo semelhantes, podendo ser 'vistos juntos'","Porque compartilham estrutura e conteudo semelhantes, podendo ser 'vistos juntos';Porque foram escritos na mesma decada exata;Porque contradizem o evangelho de Joao em quase tudo"
-intermediate,O que caracteriza o evangelho de Marcos quanto ao seu estilo narrativo?,"E direto e rapido, com enfase na acao e no sofrimento de Jesus","E direto e rapido, com enfase na acao e no sofrimento de Jesus;E o mais longo e detalhado dos quatro evangelhos;Foi escrito exclusivamente para um publico judeu"
-intermediate,"Para qual publico o evangelho de Mateus e tradicionalmente associado, dado seu uso de citacoes do Antigo Testamento?","Um publico judeu, mostrando Jesus como cumprimento das Escrituras","Um publico judeu, mostrando Jesus como cumprimento das Escrituras;Um publico exclusivamente romano;Um publico grego sem conhecimento biblico"
-intermediate,O que caracteriza o evangelho de Lucas em relacao aos marginalizados e aos gentios?,"Da atencao especial a pobres, mulheres, samaritanos e gentios","Da atencao especial a pobres, mulheres, samaritanos e gentios;Ignora completamente esses grupos;Foca exclusivamente na lideranca religiosa judaica"
-intermediate,Como o evangelho de Joao se diferencia estruturalmente dos sinoticos?,"Organiza-se em torno de sinais e longos discursos teologicos, nao em parabolas curtas","Organiza-se em torno de sinais e longos discursos teologicos, nao em parabolas curtas;E identico aos sinoticos em estrutura e conteudo;Nao menciona a morte de Jesus"
-intermediate,O que sao os chamados 'sete sinais' no evangelho de Joao?,Milagres selecionados que revelam a identidade messianica de Jesus,Milagres selecionados que revelam a identidade messianica de Jesus;As sete cartas as igrejas do Apocalipse;Os sete selos mencionados em Apocalipse
-intermediate,Qual e o tema central da carta aos Romanos?,"A justica de Deus revelada no evangelho, para judeus e gentios","A justica de Deus revelada no evangelho, para judeus e gentios;Regras sobre organizacao de cultos;Uma defesa contra falsos apostolos"
-intermediate,"Qual e o principal problema enfrentado pela igreja de Corinto, tratado nas cartas de Paulo?","Divisoes internas, imoralidade e abuso da liberdade crista","Divisoes internas, imoralidade e abuso da liberdade crista;A ausencia total de fe entre os membros;Um conflito exclusivamente sobre financas"
-intermediate,Qual e o tema central da carta aos Galatas?,A defesa da justificacao pela fe contra a exigencia de guardar a lei mosaica,A defesa da justificacao pela fe contra a exigencia de guardar a lei mosaica;A organizacao de diaconos na igreja;A celebracao da unidade sem nenhum conflito teologico
-intermediate,Qual e o tema central da carta aos Efesios sobre a igreja?,"A unidade da igreja como corpo de Cristo, unindo judeus e gentios","A unidade da igreja como corpo de Cristo, unindo judeus e gentios;Regras exclusivamente sobre casamento;Uma defesa contra o gnosticismo apenas"
-intermediate,"Qual e o tom predominante da carta aos Filipenses, apesar de Paulo estar preso?","Alegria e gratidao, mesmo em meio ao sofrimento","Alegria e gratidao, mesmo em meio ao sofrimento;Tristeza profunda sem esperanca;Uma repreensao dura e constante"
-intermediate,Qual e o tema central da carta aos Colossenses sobre a pessoa de Cristo?,A supremacia e suficiencia de Cristo sobre todas as coisas,A supremacia e suficiencia de Cristo sobre todas as coisas;Uma discussao sobre a organizacao do templo;Uma defesa da lei mosaica
-intermediate,Qual e o tema principal das cartas aos Tessalonicenses?,Encorajamento diante da perseguicao e ensino sobre a volta de Cristo,Encorajamento diante da perseguicao e ensino sobre a volta de Cristo;Uma disputa sobre lideranca eclesiastica;Regras sobre jejum e sacrificios
-intermediate,O que caracteriza as chamadas 'cartas pastorais' de Paulo (1-2 Timoteo e Tito)?,Instrucoes praticas sobre lideranca e organizacao da igreja,Instrucoes praticas sobre lideranca e organizacao da igreja;Discussoes exclusivamente sobre escatologia;Uma defesa contra o arianismo
-intermediate,Qual e o tema da pequena carta de Paulo a Filemom?,"Um apelo pelo perdao e reconciliacao com um escravo fugitivo, Onesimo","Um apelo pelo perdao e reconciliacao com um escravo fugitivo, Onesimo;Uma defesa doutrinaria contra falsos mestres;Uma discussao sobre a segunda vinda de Cristo"
-intermediate,Qual e o tema central da carta de Tiago sobre fe e obras?,A fe genuina se demonstra em acoes concretas,A fe genuina se demonstra em acoes concretas;As obras substituem totalmente a necessidade de fe;Fe e obras sao temas nao relacionados na carta
-intermediate,Qual e o tema principal da primeira carta de Pedro?,Encorajamento a perseverar em meio ao sofrimento e a perseguicao,Encorajamento a perseverar em meio ao sofrimento e a perseguicao;Uma defesa juridica contra o Imperio Romano;Uma lista de leis cerimoniais
-intermediate,Qual e a principal preocupacao da segunda carta de Pedro?,Alertar contra falsos mestres e lembrar a certeza da volta de Cristo,Alertar contra falsos mestres e lembrar a certeza da volta de Cristo;Uma discussao sobre a organizacao do templo;Um relato biografico de Pedro
-intermediate,Qual e o tema central da primeira carta de Joao?,A certeza da vida eterna e o chamado ao amor genuino entre os irmaos,A certeza da vida eterna e o chamado ao amor genuino entre os irmaos;Uma defesa contra o Imperio Romano;Regras sobre jejum
-intermediate,O que caracteriza a carta de Judas quanto ao seu proposito?,Alertar contra falsos mestres que distorciam a graca de Deus,Alertar contra falsos mestres que distorciam a graca de Deus;Uma celebracao sem nenhuma advertencia;Uma lista de genealogias
-intermediate,Qual e a estrutura basica do livro de Apocalipse quanto as sete igrejas?,"Cartas com elogios, correcoes e promessas para sete igrejas da Asia Menor","Cartas com elogios, correcoes e promessas para sete igrejas da Asia Menor;Um relato historico sem carater profetico;Uma lista de reis do Antigo Testamento"
-intermediate,O que representam simbolicamente os quatro cavaleiros do Apocalipse?,"Julgamentos como conquista, guerra, fome e morte","Julgamentos como conquista, guerra, fome e morte;Quatro reis literais da historia romana;Os quatro evangelistas"
-intermediate,"O que caracteriza a visao final do livro de Apocalipse, nos capitulos 21-22?","A nova Jerusalem descendo do ceu, unindo Deus e seu povo definitivamente","A nova Jerusalem descendo do ceu, unindo Deus e seu povo definitivamente;O fim definitivo de toda esperanca;Uma nova versao do templo de Salomao apenas"
-intermediate,O que significa 'justificacao' na doutrina crista basica?,Ser declarado justo diante de Deus pela fe em Cristo,Ser declarado justo diante de Deus pela fe em Cristo;Um processo gradual de melhora moral;Um ritual realizado apenas no batismo
-intermediate,O que significa 'santificacao' em contraste com 'justificacao'?,O processo continuo de crescimento em santidade apos a conversao,O processo continuo de crescimento em santidade apos a conversao;O momento unico da conversao inicial;Um conceito exclusivo do Antigo Testamento
-intermediate,O que a doutrina da Trindade afirma sobre Deus?,"Um so Deus em tres pessoas: Pai, Filho e Espirito Santo","Um so Deus em tres pessoas: Pai, Filho e Espirito Santo;Tres deuses diferentes que atuam em conjunto;Um Deus que muda de forma em diferentes momentos"
-intermediate,"O que significa a doutrina do pecado original, de forma resumida?",Toda a humanidade herda uma natureza inclinada ao pecado desde a queda de Adao,Toda a humanidade herda uma natureza inclinada ao pecado desde a queda de Adao;Cada pessoa nasce moralmente neutra;O pecado e apenas um conceito cultural sem base biblica
-intermediate,Qual e a diferenca basica entre batismo e ceia do Senhor como sinais da fe crista?,O batismo marca a entrada na fe; a ceia celebra e renova a comunhao com Cristo continuamente,O batismo marca a entrada na fe; a ceia celebra e renova a comunhao com Cristo continuamente;Sao rituais identicos com nomes diferentes;Nenhum dos dois tem base no Novo Testamento
-intermediate,O que caracteriza os dons espirituais descritos em 1 Corintios 12?,Capacidades dadas pelo Espirito para o bem comum da igreja,Capacidades dadas pelo Espirito para o bem comum da igreja;Privilegios exclusivos de alguns lideres;Um conceito ausente do Novo Testamento
-intermediate,O que significa a expressao 'corpo de Cristo' aplicada a igreja?,"A unidade organica dos crentes, com Cristo como cabeca","A unidade organica dos crentes, com Cristo como cabeca;Uma metafora sem nenhuma implicacao pratica;Uma referencia exclusiva ao pao da ceia"
-intermediate,"O que caracteriza a doutrina da graca comum, em contraste com a graca salvadora?","Os beneficios gerais de Deus a toda a humanidade, crentes ou nao","Os beneficios gerais de Deus a toda a humanidade, crentes ou nao;A graca dada apenas aos que ja creem;Um conceito exclusivo do catolicismo romano"
-intermediate,Qual e a funcao teologica dos livros de Cronicas em relacao aos livros de Reis?,"Reinterpretam a historia de Israel com foco no templo, no culto e na linhagem davidica","Reinterpretam a historia de Israel com foco no templo, no culto e na linhagem davidica;Sao copias identicas dos livros de Reis;Nao tem relacao tematica com Reis"
-intermediate,"O que caracteriza a reforma religiosa promovida pelo rei Josias, narrada em 2 Reis?",A remocao de idolos e a renovacao da alianca apos o achado do livro da lei,A remocao de idolos e a renovacao da alianca apos o achado do livro da lei;Uma reforma puramente administrativa sem carater religioso;A construcao de um novo templo do zero
-intermediate,"Por que o reino do norte (Israel) caiu para a Assiria, segundo a interpretacao teologica de 2 Reis?",Por causa da idolatria persistente e da infidelidade a alianca,Por causa da idolatria persistente e da infidelidade a alianca;Por falta de recursos militares apenas;Por uma decisao aleatoria sem causa teologica
-intermediate,O que caracteriza a narrativa de Ester quanto a ausencia explicita do nome de Deus no livro?,"A providencia divina atua nos bastidores da historia, mesmo sem mencao direta","A providencia divina atua nos bastidores da historia, mesmo sem mencao direta;O livro nao tem nenhuma dimensao teologica;Foi escrito para negar a existencia de Deus"
-intermediate,Qual e a licao teologica central do livro de Neemias sobre lideranca?,"Lideranca fiel une oracao, planejamento pratico e perseveranca diante da oposicao","Lideranca fiel une oracao, planejamento pratico e perseveranca diante da oposicao;Lideranca depende exclusivamente de poder politico;O livro nao trata de lideranca"
-intermediate,"O que Isaias viu em sua visao de chamado no templo, narrada em Isaias 6?","A gloria do Senhor e serafins clamando 'santo, santo, santo'","A gloria do Senhor e serafins clamando 'santo, santo, santo';Uma batalha militar entre Israel e a Assiria;Uma visao exclusivamente sobre o futuro politico de Juda"
-intermediate,O que a visao do vale de ossos secos em Ezequiel 37 representa?,"A restauracao futura de Israel, trazida a vida pelo Espirito de Deus","A restauracao futura de Israel, trazida a vida pelo Espirito de Deus;Uma simples descricao de um cemiterio antigo;Uma profecia sobre a destruicao final e definitiva de Israel"
-intermediate,O que Isaias responde ao ver a santidade de Deus em sua visao de chamado?,Reconhece sua propria impureza e recebe purificacao antes de ser enviado,Reconhece sua propria impureza e recebe purificacao antes de ser enviado;Recusa imediatamente o chamado profetico;Nao demonstra nenhuma reacao emocional
-intermediate,"O que significa a expressao 'temor do Senhor', tao central em Proverbios?",Reverencia e submissao humilde diante da grandeza e santidade de Deus,Reverencia e submissao humilde diante da grandeza e santidade de Deus;Medo literal e paralisante de Deus;Um conceito ausente da literatura sapiencial
-intermediate,"Como o temor do Senhor se relaciona com o conhecimento verdadeiro, segundo Proverbios 1:7?","E o principio, o ponto de partida essencial para o verdadeiro conhecimento","E o principio, o ponto de partida essencial para o verdadeiro conhecimento;E irrelevante para a busca de conhecimento;Substitui completamente a necessidade de aprendizado"
-intermediate,O que a ordem e estrutura do relato de Genesis 1 comunicam teologicamente sobre a criacao?,"Um Deus soberano que cria com proposito, ordem e bondade, culminando na criacao humana","Um Deus soberano que cria com proposito, ordem e bondade, culminando na criacao humana;Um relato caotico sem nenhuma estrutura literaria;Uma narrativa identica a outros mitos antigos sem nenhuma distincao teologica"
-intermediate,Qual e a consequencia teologica imediata da queda em Genesis 3 para a relacao entre Deus e a humanidade?,"Ruptura da comunhao, vergonha e expulsao do jardim, mas com a promessa de uma futura vitoria sobre o mal","Ruptura da comunhao, vergonha e expulsao do jardim, mas com a promessa de uma futura vitoria sobre o mal;Nenhuma consequencia relevante e mencionada no texto;A destruicao imediata e total da humanidade"
-intermediate,O que a chamada 'protoevangelho' de Genesis 3:15 anuncia sobre o futuro conflito entre a serpente e a descendencia da mulher?,"A promessa de que a descendencia da mulher esmagaria a cabeca da serpente, apontando para a vitoria final sobre o mal","A promessa de que a descendencia da mulher esmagaria a cabeca da serpente, apontando para a vitoria final sobre o mal;Uma simples explicacao sobre por que as serpentes nao tem pernas;Uma maldicao sem nenhuma promessa de esperanca"
-intermediate,Qual e a enfase teologica de Tiago sobre provas e tentacoes na vida crista?,Provas podem produzir perseveranca e maturidade quando recebidas com fe,Provas podem produzir perseveranca e maturidade quando recebidas com fe;Provas sao sempre sinal de pecado pessoal grave;O tema nao e tratado na carta de Tiago
-intermediate,Como a primeira carta de Pedro descreve teologicamente o sofrimento dos cristaos perseguidos?,"Como participacao nos sofrimentos de Cristo, com esperanca na gloria futura","Como participacao nos sofrimentos de Cristo, com esperanca na gloria futura;Como um sinal de que Deus os abandonou;Como algo que deve ser evitado a todo custo, mesmo negando a fe"
-intermediate,Qual e a exortacao central de 2 Pedro quanto ao crescimento na fe crista?,"Acrescentar virtudes a fe, crescendo continuamente no conhecimento de Cristo","Acrescentar virtudes a fe, crescendo continuamente no conhecimento de Cristo;Permanecer estagnado apos a conversao inicial;Rejeitar qualquer forma de crescimento pessoal"
-intermediate,"Qual apostolo e tradicionalmente associado a evangelizacao da India, segundo a tradicao da igreja antiga?",Tome,Tome;Andre;Bartolomeu
-intermediate,Qual apostolo era irmao de Pedro e foi tambem um dos primeiros chamados por Jesus?,Andre,Andre;Tiago;Filipe
-intermediate,Qual apostolo trouxe Natanael (Bartolomeu) para conhecer Jesus?,Filipe,Filipe;Andre;Tome
-intermediate,"Qual apostolo e associado tradicionalmente ao ceticismo inicial sobre Natanael, perguntando 'pode vir algo bom de Nazare?'","Natanael, tambem chamado Bartolomeu","Natanael, tambem chamado Bartolomeu;Tome;Mateus"
-intermediate,"Qual apostolo, junto com seu irmao Tiago, foi apelidado por Jesus de 'filho do trovao'?",Joao,Joao;Andre;Filipe
-intermediate,"Qual apostolo, chamado de Zelote, pertencia a um grupo politico judaico radical antes de seguir Jesus?","Simao, o Zelote","Simao, o Zelote;Judas Tadeu;Tiago, filho de Alfeu"
-intermediate,"Qual foi o destino tradicional atribuido a maioria dos apostolos, segundo a tradicao da igreja antiga?",O martirio por causa da fe,O martirio por causa da fe;Uma vida tranquila sem perseguicao;O retorno a vida de pescadores
-intermediate,Qual e o proposito teologico do holocausto (oferta queimada) no sistema sacrificial de Levitico?,Expressar consagracao total e expiacao diante de Deus,Expressar consagracao total e expiacao diante de Deus;Apenas alimentar os sacerdotes;Um ritual puramente social sem sentido religioso
-intermediate,Qual e a funcao da oferta pelo pecado no sistema levitico?,Prover expiacao especifica por pecados cometidos,Prover expiacao especifica por pecados cometidos;Celebrar a colheita anual;Substituir a necessidade de arrependimento
-intermediate,O que caracteriza a oferta pacifica (ou de comunhao) em Levitico?,"Expressar gratidao e comunhao com Deus, sendo parcialmente compartilhada em refeicao","Expressar gratidao e comunhao com Deus, sendo parcialmente compartilhada em refeicao;E identica a oferta pelo pecado;Era proibida fora do templo"
-intermediate,Qual e o significado teologico do Dia da Expiacao (Yom Kippur) dentro do calendario de Israel?,Um dia anual de expiacao completa pelos pecados de todo o povo,Um dia anual de expiacao completa pelos pecados de todo o povo;Uma celebracao da colheita de graos;Uma festa comemorativa sem carater expiatorio
-intermediate,O que caracteriza teologicamente a festa dos Tabernaculos (Sucot) quanto a memoria historica de Israel?,"Lembra o tempo em que o povo viveu em tendas no deserto, dependendo de Deus","Lembra o tempo em que o povo viveu em tendas no deserto, dependendo de Deus;Celebra a construcao do primeiro templo;Comemora a travessia do Mar Vermelho"
-intermediate,O que caracteriza a expansao missionaria narrada no livro de Atos apos a perseguicao em Jerusalem?,Os crentes dispersos levaram o evangelho para novas regioes,Os crentes dispersos levaram o evangelho para novas regioes;A igreja parou de crescer apos a perseguicao;A perseguicao ocorreu apenas depois da morte de Paulo
-intermediate,"Quem foi Estevao, e por que sua morte e significativa na narrativa de Atos?","O primeiro martir cristao, cuja morte antecede a dispersao e expansao da igreja","O primeiro martir cristao, cuja morte antecede a dispersao e expansao da igreja;Um dos doze apostolos originais;O fundador da igreja em Roma"
-intermediate,O que caracteriza a conversao de Cornelio em Atos 10 para a compreensao da missao da igreja?,"Confirma que o evangelho e tambem para os gentios, sem exigencia da lei mosaica","Confirma que o evangelho e tambem para os gentios, sem exigencia da lei mosaica;Mostra que apenas judeus poderiam ser batizados;Nao tem relacao com a expansao da missao aos gentios"
-intermediate,"Qual foi o papel de Barnabe ao apresentar Paulo aos apostolos em Jerusalem, apos sua conversao?","Vencer a desconfianca inicial dos apostolos, servindo como ponte de confianca","Vencer a desconfianca inicial dos apostolos, servindo como ponte de confianca;Rejeitar publicamente a conversao de Paulo;Substituir Paulo em suas viagens missionarias"
-intermediate,O que caracteriza as viagens missionarias de Paulo narradas em Atos?,"A fundacao de igrejas em diversas cidades do Imperio Romano, com pregacao em sinagogas e pracas publicas","A fundacao de igrejas em diversas cidades do Imperio Romano, com pregacao em sinagogas e pracas publicas;Viagens exclusivamente para visitar amigos pessoais;Um unico trajeto sem paradas significativas"
-intermediate,"O que caracteriza as parabolas escatologicas de Jesus, como a das dez virgens e dos talentos?",Chamam a vigilancia e fidelidade enquanto se aguarda o retorno do Senhor,Chamam a vigilancia e fidelidade enquanto se aguarda o retorno do Senhor;Sao apenas historias morais sem relacao com o futuro;Descrevem exclusivamente eventos ja ocorridos
-intermediate,O que Jesus ensina no chamado 'discurso do monte das Oliveiras' (Mateus 24) sobre os sinais dos tempos?,"Have sinais como guerras, falsos profetas e perseguicao antes do fim, mas o dia exato e desconhecido","Have sinais como guerras, falsos profetas e perseguicao antes do fim, mas o dia exato e desconhecido;Da uma data exata para o fim do mundo;Nega que havera qualquer sinal antes do fim"
-intermediate,O que caracteriza a esperanca do 'juizo final' na teologia biblica basica?,"Todos prestarao contas diante de Deus, com justica plena finalmente estabelecida","Todos prestarao contas diante de Deus, com justica plena finalmente estabelecida;Um conceito ausente do Novo Testamento;Aplica-se apenas aos incredulos, nunca aos cristaos"
-intermediate,O que representa a expressao 'novos ceus e nova terra' em 2 Pedro 3 e Apocalipse 21?,"A renovacao definitiva da criacao, nao sua destruicao total e abandono","A renovacao definitiva da criacao, nao sua destruicao total e abandono;Uma metafora sem relacao com a criacao material;Refere-se apenas a experiencia individual da alma apos a morte"
-intermediate,Quem eram os fariseus no contexto do Novo Testamento?,Um grupo religioso que enfatizava rigorosa observancia da lei e das tradicoes orais,Um grupo religioso que enfatizava rigorosa observancia da lei e das tradicoes orais;Um partido politico exclusivamente romano;Sacerdotes exclusivos do templo
-intermediate,Quem eram os saduceus no judaismo do primeiro seculo?,"Um grupo religioso ligado a aristocracia sacerdotal, que nao cria em ressurreicao","Um grupo religioso ligado a aristocracia sacerdotal, que nao cria em ressurreicao;Um grupo de pescadores da Galileia;Seguidores exclusivos de Joao Batista"
-intermediate,Por que a relacao entre judeus e samaritanos era marcada por tensao no tempo de Jesus?,"Por diferencas religiosas, etnicas e historicas antigas entre os dois grupos","Por diferencas religiosas, etnicas e historicas antigas entre os dois grupos;Porque os samaritanos eram romanos disfarcados;Nao havia nenhuma tensao entre os dois grupos"
-intermediate,Qual era a funcao social e religiosa da sinagoga no judaismo do primeiro seculo?,"Local local de leitura da lei, oracao e ensino, distinto do templo em Jerusalem","Local local de leitura da lei, oracao e ensino, distinto do templo em Jerusalem;Um tribunal exclusivamente civil sem funcao religiosa;Um mercado publico sem relacao com a religiao"
-intermediate,"O que caracteriza o cargo de 'publicano', mencionado varias vezes nos evangelhos?","Cobrador de impostos para Roma, geralmente visto com desprezo pelos judeus","Cobrador de impostos para Roma, geralmente visto com desprezo pelos judeus;Um lider religioso do templo;Um soldado romano de alta patente"
-intermediate,Como Proverbios personifica a sabedoria em seus primeiros capitulos?,Como uma figura feminina que convida as pessoas a segui-la em vez da insensatez,Como uma figura feminina que convida as pessoas a segui-la em vez da insensatez;Como uma lei escrita sem qualquer personificacao;Como um anjo mensageiro
-intermediate,"Qual e a estrutura tematica basica dos Salmos quanto aos tipos de composicao (louvor, lamento, sabedoria etc.)?","Reunem generos variados, incluindo louvor, lamento, acao de gracas e reflexao sapiencial","Reunem generos variados, incluindo louvor, lamento, acao de gracas e reflexao sapiencial;Sao todos do mesmo genero de louvor exclusivamente;Nao apresentam nenhuma variedade tematica"
-intermediate,Por que os chamados 'salmos imprecatorios' (que pedem juizo sobre inimigos) sao teologicamente desafiadores?,"Expressam clamor honesto por justica divina, exigindo leitura cuidadosa a luz de todo o cânone","Expressam clamor honesto por justica divina, exigindo leitura cuidadosa a luz de todo o cânone;Devem ser simplesmente ignorados por serem inadequados;Nao existem salmos desse tipo na Biblia"
-intermediate,O que caracteriza teologicamente o batismo de Jesus quanto a manifestacao trinitaria simultanea?,"O Pai fala do ceu, o Filho e batizado, e o Espirito desce como pomba, revelando as tres pessoas juntas","O Pai fala do ceu, o Filho e batizado, e o Espirito desce como pomba, revelando as tres pessoas juntas;Nao ha nenhuma referencia trinitaria nesse episodio;E um evento exclusivamente sobre o ministerio de Joao Batista"
-intermediate,Como a chamada de Abraao em Genesis 12 estabelece o padrao missionario que atravessa toda a Biblia?,Deus abencoa Abraao com o proposito explicito de que essa bencao alcance todas as familias da terra,Deus abencoa Abraao com o proposito explicito de que essa bencao alcance todas as familias da terra;A chamada de Abraao nao tem nenhuma dimensao missionaria;E um chamado exclusivo e fechado sem relacao com outras nacoes
-intermediate,O que caracteriza a tensao entre juizo e misericordia na mensagem do profeta Oseias?,"Deus e descrito como esposo ferido pela infidelidade, mas que ainda busca restaurar a relacao com seu povo","Deus e descrito como esposo ferido pela infidelidade, mas que ainda busca restaurar a relacao com seu povo;A mensagem de Oseias e exclusivamente de juizo sem nenhuma misericordia;Oseias nao trata do tema da alianca"
-intermediate,"O que caracteriza a chamada de Jeremias como profeta, narrada no capitulo 1 do livro?",Deus afirma tê-lo conhecido e separado para essa missao antes mesmo de seu nascimento,Deus afirma tê-lo conhecido e separado para essa missao antes mesmo de seu nascimento;Jeremias se ofereceu voluntariamente sem nenhuma hesitacao;O chamado ocorre apenas na velhice do profeta
-intermediate,Como a resposta inicial de Jeremias ao seu chamado revela sua humanidade diante da tarefa profetica?,"Ele alega ser jovem demais e sem habilidade de falar, mas Deus o encoraja e capacita","Ele alega ser jovem demais e sem habilidade de falar, mas Deus o encoraja e capacita;Ele aceita imediatamente sem nenhuma duvida ou hesitacao;Ele rejeita completamente o chamado de Deus"
-intermediate,"O que caracteriza teologicamente a chamada 'nova alianca' anunciada por Jeremias 31, em contraste com a alianca do Sinai?","Sera escrita no coracao do povo, com conhecimento intimo e pessoal de Deus, nao apenas externo","Sera escrita no coracao do povo, com conhecimento intimo e pessoal de Deus, nao apenas externo;E identica em todos os aspectos a alianca mosaica anterior;Nao envolve nenhuma continuidade com a alianca anterior"
-intermediate,Como a expressao 'reino sacerdotal' aplicada a Israel em Exodo 19 antecipa a vocacao da igreja em 1 Pedro 2?,Ambas as comunidades sao chamadas a mediar a presenca e o carater de Deus diante das nacoes,Ambas as comunidades sao chamadas a mediar a presenca e o carater de Deus diante das nacoes;Nao ha nenhuma conexao teologica entre os dois textos;Aplica-se exclusivamente a linhagem sacerdotal levitica
-intermediate,O que caracteriza a chamada 'grande comissao' dada por Jesus em Mateus 28?,"O envio dos discipulos para fazer discipulos de todas as nacoes, batizando e ensinando","O envio dos discipulos para fazer discipulos de todas as nacoes, batizando e ensinando;Uma instrucao restrita apenas ao povo judeu;Um mandato que terminou com a morte dos apostolos"
-intermediate,Como a grande comissao se conecta com a promessa feita a Abraao de bencao para todas as familias da terra?,Ambas expressam o mesmo proposito redentor de Deus alcancando todas as nacoes atraves de seu povo,Ambas expressam o mesmo proposito redentor de Deus alcancando todas as nacoes atraves de seu povo;Sao mandatos completamente desconectados um do outro;A grande comissao substitui e cancela a promessa abraamica
-intermediate,"O que caracteriza a descricao da adoracao ao redor do trono em Apocalipse 5, com pessoas de toda tribo, lingua e nacao?","Mostra o cumprimento final da promessa missionaria, reunindo povos de toda a terra diante de Deus","Mostra o cumprimento final da promessa missionaria, reunindo povos de toda a terra diante de Deus;Refere-se exclusivamente ao povo de Israel;Nao tem nenhuma relacao com o tema da missao biblica"
-intermediate,Qual e o significado teologico do dia do sabado como conclusao do relato da criacao em Genesis 2?,"Deus descansa e abencoa o setimo dia, estabelecendo um padrao de ritmo entre trabalho e descanso para a criacao","Deus descansa e abencoa o setimo dia, estabelecendo um padrao de ritmo entre trabalho e descanso para a criacao;O sabado nao tem relacao com o relato da criacao;E mencionado apenas na lei mosaica, sem relacao com Genesis"
-intermediate,Como a expressao 'imagem e semelhanca de Deus' em Genesis 1:26-27 fundamenta a igualdade basica entre homem e mulher?,"Ambos sao criados igualmente a imagem de Deus, compartilhando a mesma dignidade essencial","Ambos sao criados igualmente a imagem de Deus, compartilhando a mesma dignidade essencial;Apenas o homem e criado a imagem de Deus segundo o texto;O texto nao trata da relacao entre homem e mulher"
-intermediate,"O que caracteriza teologicamente a tentacao de Jesus no deserto, em paralelo com a tentacao de Israel no mesmo cenario?","Jesus enfrenta as mesmas tentacoes de Israel no deserto, mas permanece fiel onde Israel falhou","Jesus enfrenta as mesmas tentacoes de Israel no deserto, mas permanece fiel onde Israel falhou;Nao ha nenhuma conexao entre os dois episodios;A tentacao de Jesus ocorre num contexto totalmente diferente sem paralelo biblico"
-intermediate,"Como Jesus responde as tentacoes no deserto, segundo os evangelhos sinoticos?",Citando as Escrituras do livro de Deuteronomio em cada resposta,Citando as Escrituras do livro de Deuteronomio em cada resposta;Ignorando completamente o tentador;Pedindo ajuda imediata dos anjos
-intermediate,O que caracteriza a etica do amor ao inimigo ensinada por Jesus no Sermao do Monte?,"Um chamado radical a amar e orar por quem persegue, refletindo o carater do proprio Deus","Um chamado radical a amar e orar por quem persegue, refletindo o carater do proprio Deus;Uma recomendacao apenas simbolica sem aplicacao pratica esperada;Uma instrucao que se aplica apenas as relacoes familiares"
-intermediate,Como a instrucao de Jesus sobre 'oferecer a outra face' deve ser entendida dentro do contexto etico maior do Sermao do Monte?,"Como recusa a vinganca pessoal, confiando a justica final a Deus, sem necessariamente proibir toda forma de autoproteção legitima","Como recusa a vinganca pessoal, confiando a justica final a Deus, sem necessariamente proibir toda forma de autoproteção legitima;Como uma ordem literal e absoluta em qualquer circunstancia sem excecao;Como um ensino sem nenhuma relacao com o restante do sermao"
-intermediate,O que caracteriza a critica de Jesus aos escribas e fariseus em Mateus 23 quanto a pratica religiosa?,Denuncia a hipocrisia entre aparencia externa de piedade e a ausencia de justica e misericordia genuinas,Denuncia a hipocrisia entre aparencia externa de piedade e a ausencia de justica e misericordia genuinas;E uma critica exclusivamente sobre vestimentas religiosas;Nao envolve nenhuma dimensao etica ou espiritual mais profunda
-intermediate,"O que caracteriza a estrutura da oracao de Salomao na dedicacao do templo, em 1 Reis 8?","Reconhece que nenhum templo pode conter Deus, mas pede que ele ouca as oracoes feitas naquele lugar","Reconhece que nenhum templo pode conter Deus, mas pede que ele ouca as oracoes feitas naquele lugar;E uma oracao exclusivamente de agradecimento sem nenhum pedido;Nao menciona nenhuma relacao entre o templo e a presenca de Deus"
-intermediate,Como a promessa de Deus a Davi em 2 Samuel 7 e retomada e desenvolvida nos Salmos reais?,Os salmos reais celebram e refletem sobre o reinado davidico a luz da promessa de um trono eterno,"Os salmos reais celebram e refletem sobre o reinado davidico a luz da promessa de um trono eterno;Os salmos reais nao tem nenhuma relacao com a alianca davidica;Referem-se exclusivamente ao reinado de Salomao, sem conexao com a promessa original"
-intermediate,"O que caracteriza teologicamente a oferta de Caim e Abel em Genesis 4, segundo a leitura tradicional?","A diferenca estava na disposicao do coracao e na qualidade da oferta, nao apenas no tipo de oferta em si","A diferenca estava na disposicao do coracao e na qualidade da oferta, nao apenas no tipo de oferta em si;Deus rejeitou Caim apenas por ele ser agricultor;O texto nao apresenta nenhuma diferenca entre as duas ofertas"
-intermediate,O que caracteriza a leitura teologica tradicional da historia de Jose como exemplo de providencia divina em meio ao sofrimento?,Deus opera atraves de circunstancias dificeis e injustas para cumprir seus propositos redentores mais amplos,"Deus opera atraves de circunstancias dificeis e injustas para cumprir seus propositos redentores mais amplos;A historia de Jose nao tem nenhuma leitura teologica reconhecida;Jose e apresentado como um exemplo de sorte, sem relacao com a acao de Deus"
-intermediate,Como o livro de Rute ilustra o tema da providencia divina operando atraves de decisoes humanas comuns?,Series de escolhas aparentemente comuns (como Rute escolher o campo de Boaz) sao usadas por Deus para cumprir seu proposito maior,Series de escolhas aparentemente comuns (como Rute escolher o campo de Boaz) sao usadas por Deus para cumprir seu proposito maior;O livro rejeita qualquer nocao de providencia divina;A providencia aparece apenas de forma miraculosa e visivel no livro
-intermediate,O que caracteriza teologicamente a chamada 'lei do amor' resumida por Jesus como cumprimento de toda a lei e os profetas?,Amar a Deus e ao proximo resume e da sentido a toda a exigencia etica da lei mosaica,Amar a Deus e ao proximo resume e da sentido a toda a exigencia etica da lei mosaica;E uma simplificacao que anula toda a lei anterior sem nenhuma continuidade;Refere-se exclusivamente as leis cerimoniais
-intermediate,Como a parabola do fariseu e do publicano desafia expectativas religiosas comuns sobre quem esta 'certo' diante de Deus?,Mostra que humildade e reconhecimento da propria necessidade valem mais que aparencia externa de religiosidade,Mostra que humildade e reconhecimento da propria necessidade valem mais que aparencia externa de religiosidade;Confirma que status religioso externo sempre garante aprovacao divina;Nao envolve nenhuma reversao de expectativas
-intermediate,"O que caracteriza teologicamente a resposta de Jesus aos saduceus sobre a ressurreicao, citando o Deus de Abraao, Isaque e Jaco?","Argumenta que Deus e Deus de vivos, implicando a continuidade da existencia dos patriarcas alem da morte","Argumenta que Deus e Deus de vivos, implicando a continuidade da existencia dos patriarcas alem da morte;Jesus evita completamente o tema da ressurreicao nessa passagem;Jesus concorda com a posicao dos saduceus contra a ressurreicao"
-intermediate,"O que caracteriza a resposta de Marta a Jesus antes da ressurreicao de Lazaro, expressando fe apesar da dor?","Ela reconhece Jesus como o Cristo, o Filho de Deus, mesmo em meio ao luto","Ela reconhece Jesus como o Cristo, o Filho de Deus, mesmo em meio ao luto;Ela demonstra descrenca total na ressurreicao final;Ela pede que Jesus nao se aproxime do tumulo"
-intermediate,"Qual e o significado da afirmacao de Jesus 'eu sou a ressurreicao e a vida', feita a Marta antes de ressuscitar Lazaro?","Identifica a propria pessoa de Jesus como a fonte e garantia da vida eterna, nao apenas um evento futuro distante","Identifica a propria pessoa de Jesus como a fonte e garantia da vida eterna, nao apenas um evento futuro distante;E uma afirmacao sem relacao com o tema da ressurreicao;Refere-se exclusivamente a vida presente sem nenhuma dimensao futura"
-intermediate,"O que caracteriza a resposta de Jesus a pergunta sobre pagar impostos a Cesar, dando origem a expressao 'dai a Cesar o que e de Cesar'?",Reconhece obrigacoes legitimas ao governo civil sem comprometer a lealdade suprema devida a Deus,Reconhece obrigacoes legitimas ao governo civil sem comprometer a lealdade suprema devida a Deus;Ensina a rejeitar completamente qualquer autoridade civil;Ensina que impostos nunca devem ser pagos por cristaos
-intermediate,Como a instrucao de Paulo em Romanos 13 sobre submissao as autoridades se equilibra com o exemplo dos apostolos de obedecer a Deus antes que aos homens em Atos 5?,Mostra que a submissao civil geral tem limite quando a autoridade exige desobediencia direta a Deus,"Mostra que a submissao civil geral tem limite quando a autoridade exige desobediencia direta a Deus;Nao ha nenhuma tensao entre os dois textos, sendo identicos em aplicacao;Romanos 13 anula completamente a possibilidade de qualquer resistencia civil"
-intermediate,"O que caracteriza a etica biblica sobre o cuidado com o estrangeiro, refletida tanto na lei mosaica quanto no Novo Testamento?","O povo de Deus e chamado a acolher o estrangeiro, lembrando que tambem foi estrangeiro no Egito","O povo de Deus e chamado a acolher o estrangeiro, lembrando que tambem foi estrangeiro no Egito;A lei biblica nao trata do tema do estrangeiro em nenhum momento;Aplica-se exclusivamente a israelitas de nascimento"
-intermediate,O que caracteriza a leitura teologica tradicional do livro de Cantares como celebracao do amor dentro do desenho de Deus para o casamento?,"Celebra a intimidade, o desejo e a fidelidade entre os amantes como parte boa da criacao de Deus","Celebra a intimidade, o desejo e a fidelidade entre os amantes como parte boa da criacao de Deus;E lido exclusivamente como alegoria sem nenhuma dimensao literal;Condena qualquer expressao de desejo romantico"
-intermediate,Qual e a funcao teologica do refrao repetido em Cantares sobre nao despertar o amor antes do tempo?,Um chamado a paciencia e ao tempo certo no desenvolvimento do relacionamento amoroso,Um chamado a paciencia e ao tempo certo no desenvolvimento do relacionamento amoroso;Nao tem nenhum significado teologico reconhecido;E uma instrucao ritual sem relacao com o tema do livro
-intermediate,Como a bencao sacerdotal de Numeros 6 ('o Senhor te abencoe e te guarde') resume a preocupacao de Deus com seu povo?,"Expressa protecao, favor e paz concedidos por Deus como dadiva imerecida","Expressa protecao, favor e paz concedidos por Deus como dadiva imerecida;E uma formula puramente ritual sem conteudo teologico;Aplica-se apenas aos sacerdotes, nunca ao povo em geral"
-intermediate,"O que caracteriza a promessa de Deus a Davi de que seu trono seria estabelecido 'para sempre', em face da queda historica da monarquia davidica?","A promessa aponta alem de qualquer rei humano falho para um cumprimento definitivo em um descendente maior, identificado pela igreja como Cristo","A promessa aponta alem de qualquer rei humano falho para um cumprimento definitivo em um descendente maior, identificado pela igreja como Cristo;A promessa foi definitivamente cancelada com a queda de Jerusalem;Refere-se apenas ao reinado imediato de Salomao, sem alcance maior"
-intermediate,"Como o titulo 'Filho de Davi', usado para Jesus nos evangelhos, conecta sua identidade a expectativa messianica veterotestamentaria?","Identifica Jesus como o herdeiro legitimo da promessa feita a Davi, cumprindo a esperanca de um rei eterno","Identifica Jesus como o herdeiro legitimo da promessa feita a Davi, cumprindo a esperanca de um rei eterno;E um titulo sem nenhuma conexao com o Antigo Testamento;Refere-se apenas a uma relacao familiar sem peso teologico"
-intermediate,O que caracteriza teologicamente a resposta do povo em Neemias 8 ao ouvir a leitura publica da lei apos o exilio?,"Uma mistura de choro de arrependimento e depois alegria, ao compreenderem e celebrarem a Palavra de Deus","Uma mistura de choro de arrependimento e depois alegria, ao compreenderem e celebrarem a Palavra de Deus;Uma rejeicao completa da leitura da lei;Indiferenca total diante do texto lido"
-intermediate,Por que a celebracao com alegria apos o choro em Neemias 8 e teologicamente significativa?,Mostra que a resposta correta ao arrependimento genuino inclui tambem a alegria diante da graca e da Palavra de Deus,Mostra que a resposta correta ao arrependimento genuino inclui tambem a alegria diante da graca e da Palavra de Deus;Indica que o arrependimento nao tinha nenhuma seriedade real;Nao ha nenhuma conexao entre choro e alegria no texto
-intermediate,"O que caracteriza a resposta de Habacuque apos o dialogo com Deus, expressa no cântico final do livro?",Uma decisao de confiar e alegrar-se em Deus mesmo que as circunstancias visiveis nao melhorem imediatamente,Uma decisao de confiar e alegrar-se em Deus mesmo que as circunstancias visiveis nao melhorem imediatamente;Uma rejeicao final da fe apos nao receber respostas satisfatorias;Indiferenca total diante da resposta recebida de Deus
-intermediate,Como a estrutura de queixa seguida de confianca no livro de Habacuque serve de modelo para lidar com duvidas legitimas de fe?,"Mostra que e possivel questionar honestamente a Deus e ainda assim chegar a uma confianca renovada, sem reprimir a duvida nem abandonar a fe","Mostra que e possivel questionar honestamente a Deus e ainda assim chegar a uma confianca renovada, sem reprimir a duvida nem abandonar a fe;Ensina que qualquer questionamento a Deus e sempre pecaminoso;Nao oferece nenhum modelo aplicavel para a vida de fe atual"
-intermediate,"O que caracteriza a resposta de Jo ao final do livro, apos o encontro com a grandeza de Deus revelada nos capitulos finais?","Ele se humilha, reconhecendo os limites de seu proprio entendimento diante da sabedoria soberana de Deus","Ele se humilha, reconhecendo os limites de seu proprio entendimento diante da sabedoria soberana de Deus;Ele exige respostas adicionais antes de aceitar qualquer reconciliacao;Ele rejeita definitivamente a fe apos o encontro com Deus"
+intermediate,"Em Gênesis, qual sinal Deus dá a Noé como lembrança da aliança após o dilúvio?",O arco-íris,Um altar de pedras|Uma coluna de fogo|O arco-íris
+intermediate,Qual patriarca recebeu o novo nome Israel depois de lutar durante a noite?,Jacó,Jacó|Abraão|José
+intermediate,"Em Gênesis, qual promessa central Deus faz a Abraão?",Que sua descendência seria numerosa e abençoaria as nações,Que ele reconstruiria Jerusalém|Que ele governaria o Egito|Que sua descendência seria numerosa e abençoaria as nações
+intermediate,Qual cidade foi destruída juntamente com Gomorra por causa de sua corrupção?,Sodoma,Sodoma|Jericó|Nínive
+intermediate,Qual filho de Jacó foi vendido por seus irmãos e levado ao Egito?,José,Benjamim|José|Judá
+intermediate,Qual foi o sinal da aliança dado a Abraão em Gênesis 17?,Circuncisão,Sacrifício diário|Circuncisão|Batismo
+intermediate,"No Êxodo, quem foi chamado por Deus na sarça ardente?",Moisés,Moisés|Arão|Josué
+intermediate,Qual praga do Egito marcou a instituição da Páscoa?,Morte dos primogênitos,Águas transformadas em sangue|Morte dos primogênitos|Escuridão por três dias
+intermediate,O cordeiro pascal em Êxodo deveria ser usado principalmente para quê?,Como sinal de livramento no juízo sobre o Egito,Como símbolo da monarquia de Davi|Como sinal de livramento no juízo sobre o Egito|Como oferta pelo templo em Jerusalém
+intermediate,Qual mar foi atravessado por Israel na saída do Egito?,Mar Vermelho,Mar da Galileia|Mar Vermelho|Mar Morto
+intermediate,"No deserto, qual alimento Deus providenciou de forma diária ao povo?",Maná,Uvas|Maná|Figos
+intermediate,Qual monte está associado à entrega da Lei a Moisés?,Sinai,Sião|Carmelo|Sinai
+intermediate,Qual mandamento proíbe fazer imagens para adorá-las?,Não farás para ti imagem de escultura,Honra teu pai e tua mãe|Não tomar o nome de Deus em vão|Não farás para ti imagem de escultura
+intermediate,O que significa Shemá em Deuteronômio 6:4?,Ouve,Oferece|Ouve|Reina
+intermediate,Qual frase resume o chamado de Deuteronômio 6 conhecido como Shemá?,"Ouve, Israel, o Senhor nosso Deus é o único Senhor","No princípio criou Deus os céus e a terra|Ouve, Israel, o Senhor nosso Deus é o único Senhor|Santo, santo, santo é o Senhor"
+intermediate,"Em Levítico, qual tema aparece de forma central na vida de Israel?",A santidade de Deus e do povo,A santidade de Deus e do povo|A construção do palácio real|A queda da Babilônia
+intermediate,Qual livro do Pentateuco relata longas peregrinações e recenseamentos no deserto?,Números,Números|Neemias|Rute
+intermediate,O que era o tabernáculo no contexto do Êxodo?,Um santuário móvel da presença de Deus,Um santuário móvel da presença de Deus|Um palácio egípcio|Um tribunal romano
+intermediate,Quem foi Arão no relato do Êxodo?,Irmão de Moisés e primeiro sumo sacerdote,Rei de Israel|Irmão de Moisés e primeiro sumo sacerdote|Profeta de Babilônia
+intermediate,Qual tribo foi separada para o serviço sacerdotal e levítico?,Levi,Levi|Benjamim|Dã
+intermediate,"Em Números, quem foram os dois espias que confiaram na promessa de Deus sobre Canaã?",Calebe e Josué,Calebe e Josué|Elias e Eliseu|Saul e Davi
+intermediate,"Por que Moisés não entrou na terra prometida, segundo Números?",Porque desobedeceu a Deus ao ferir a rocha,Porque se tornou rei de Moabe|Porque desobedeceu a Deus ao ferir a rocha|Porque preferiu ficar no Egito
+intermediate,"Qual personagem pagão tentou amaldiçoar Israel, mas acabou pronunciando bênçãos?",Balaão,Balaão|Hamã|Golias
+intermediate,Qual livro termina com Moisés avistando a terra prometida antes de morrer?,Deuteronômio,Juízes|Deuteronômio|Esdras
+intermediate,Qual é a ideia central do ano sabático em Israel?,Descanso da terra e cuidado social,Descanso da terra e cuidado social|Troca obrigatória de rei|Construção anual de um templo
+intermediate,Qual festa judaica lembra a saída do Egito?,Páscoa,Purim|Hanucá|Páscoa
+intermediate,Qual oferta no sistema levítico estava ligada à reparação de culpa?,Oferta pela culpa,Oferta pela culpa|Oferta de coroação|Oferta de incenso real
+intermediate,"No relato de Caim e Abel, qual tema aparece com força?","Pecado, inveja e responsabilidade diante de Deus","Conquista de Jericó|Construção da arca|Pecado, inveja e responsabilidade diante de Deus"
+intermediate,Qual árvore estava no centro da proibição dada a Adão e Eva?,Árvore do conhecimento do bem e do mal,Oliveira do Getsêmani|Cedro do Líbano|Árvore do conhecimento do bem e do mal
+intermediate,Qual serpente de bronze foi levantada por Moisés no deserto para cura do povo?,Um sinal de cura pela confiança na provisão de Deus,Um ídolo cananeu oficial|Uma arma de guerra|Um sinal de cura pela confiança na provisão de Deus
+intermediate,Quem intercedeu por Sodoma em Gênesis 18?,Abraão,Abraão|Isaque|Noé
+intermediate,Qual filho de Abraão nasceu de Sara como cumprimento da promessa?,Isaque,Esaú|Isaque|Ismael
+intermediate,Qual foi o pedido de Deus a Abraão em Gênesis 22 que provou sua fé?,Oferecer Isaque,Oferecer Isaque|Construir uma torre|Voltar ao Egito
+intermediate,Qual nome foi dado ao lugar onde Deus proveu o cordeiro no lugar de Isaque?,O Senhor proverá,O Senhor proverá|Betel|Babel
+intermediate,Quem recebeu o direito de primogenitura de Esaú por meio de uma negociação?,Jacó,José|Rúben|Jacó
+intermediate,Qual sonho de Jacó marcou Betel como lugar de encontro com Deus?,Escada entre céu e terra,Vale de ossos secos|Escada entre céu e terra|Estátua com pés de barro
+intermediate,Qual irmão de José se ofereceu como substituto por Benjamim diante de José?,Judá,Levi|Simeão|Judá
+intermediate,Qual frase de José resume sua visão da providência em Gênesis 50?,"Vocês intentaram o mal, mas Deus o tornou em bem","O Senhor abandonou Israel|Minha casa servirá ao faraó|Vocês intentaram o mal, mas Deus o tornou em bem"
+intermediate,Qual é o primeiro livro da Bíblia hebraica e cristã?,Gênesis,Êxodo|Levítico|Gênesis
+intermediate,Qual personagem é conhecido por construir uma arca por ordem de Deus?,Noé,Melquisedeque|Noé|Abraão
+intermediate,Qual líder conduziu Israel na travessia do Jordão depois da morte de Moisés?,Josué,Josué|Gideão|Samuel
+intermediate,"Qual cidade caiu após Israel rodeá-la por sete dias, segundo Josué?",Jericó,Hebrom|Jericó|Ai
+intermediate,Quem foi Acã no livro de Josué?,Um israelita que tomou coisas condenadas em Jericó,Um sacerdote fiel|Um israelita que tomou coisas condenadas em Jericó|Um rei de Moabe
+intermediate,Qual expressão aparece repetidamente em Juízes para descrever a crise espiritual de Israel?,Cada um fazia o que parecia reto aos seus olhos,O Senhor edificou a casa|Cada um fazia o que parecia reto aos seus olhos|Sede santos porque eu sou santo
+intermediate,Qual juiz derrotou os midianitas com um pequeno exército?,Gideão,Gideão|Eli|Sansão
+intermediate,Qual juíza e profetisa liderou Israel em Juízes 4?,Débora,Débora|Abigail|Noemi
+intermediate,Qual juiz ficou conhecido por sua força extraordinária e conflito com os filisteus?,Sansão,Sansão|Otniel|Jefté
+intermediate,"Quem disse: ""Teu povo será o meu povo, teu Deus será o meu Deus""?",Rute,Ana|Rute|Ester
+intermediate,Qual parente resgatador se casa com Rute?,Boaz,Elimeleque|Obede|Boaz
+intermediate,Quem foi a mãe de Samuel?,Ana,Ana|Miriã|Rebeca
+intermediate,Qual sacerdote criou Samuel no tabernáculo em Siló?,Eli,Zadoque|Eli|Abiatar
+intermediate,Quem foi o primeiro rei de Israel?,Saul,Davi|Saul|Salomão
+intermediate,Qual profeta ungiu Davi como rei?,Samuel,Samuel|Eliseu|Natã
+intermediate,Qual gigante filisteu foi derrotado por Davi?,Golias,Senaqueribe|Golias|Nabucodonosor
+intermediate,Qual cidade Davi conquistou e tornou capital do reino?,Jerusalém,Samaria|Siquém|Jerusalém
+intermediate,Qual profeta confrontou Davi após seu pecado com Bate-Seba?,Natã,Natã|Samuel|Elias
+intermediate,Quem construiu o primeiro templo em Jerusalém?,Salomão,Ezequias|Salomão|Davi
+intermediate,Qual rainha visitou Salomão para ouvir sua sabedoria?,Rainha de Sabá,Rainha de Sabá|Jezabel|Atalia
+intermediate,"Após Salomão, o reino se dividiu em quais dois reinos?",Israel ao norte e Judá ao sul,Israel ao norte e Judá ao sul|Assíria ao norte e Egito ao sul|Moabe ao norte e Edom ao sul
+intermediate,Quem foi o primeiro rei do reino do norte após a divisão?,Jeroboão,Jeroboão|Roboão|Acabe
+intermediate,Qual rei de Judá realizou reformas e encontrou o livro da Lei no templo?,Josias,Josias|Acaz|Manassés
+intermediate,Qual rei de Judá recebeu a visita do profeta Isaías durante a ameaça assíria?,Ezequias,Onri|Saul|Ezequias
+intermediate,Qual reino conquistou Samaria e levou Israel ao exílio em 722 a.C.?,Assíria,Assíria|Babilônia|Pérsia
+intermediate,Qual império destruiu Jerusalém e levou Judá ao exílio em 586 a.C.?,Babilônia,Grécia|Babilônia|Roma
+intermediate,Qual rei babilônico está ligado à destruição de Jerusalém?,Nabucodonosor,Ciro|Nabucodonosor|Alexandre
+intermediate,Qual rei persa autorizou o retorno dos judeus do exílio?,Ciro,Ciro|Herodes|Faraó Neco
+intermediate,Quem liderou a reconstrução dos muros de Jerusalém?,Neemias,Esdras|Daniel|Neemias
+intermediate,"Quem era escriba e sacerdote, ligado à leitura e ensino da Lei após o exílio?",Esdras,Zorobabel|Esdras|Mardoqueu
+intermediate,Qual mulher se tornou rainha e intercedeu pelo povo judeu na Pérsia?,Ester,Ester|Raquel|Abisague
+intermediate,Quem criou Ester como filha?,Mardoqueu,Assuero|Hamã|Mardoqueu
+intermediate,Qual inimigo planejou destruir os judeus no livro de Ester?,Hamã,Hamã|Sambalate|Tobias
+intermediate,Qual festa judaica é ligada ao livramento narrado em Ester?,Purim,Tabernáculos|Pentecostes|Purim
+intermediate,Quem foi o profeta que enfrentou os profetas de Baal no monte Carmelo?,Elias,Eliseu|Jonas|Elias
+intermediate,Quem sucedeu Elias como profeta em Israel?,Eliseu,Amós|Isaías|Eliseu
+intermediate,Qual rei de Israel é frequentemente associado à influência de Jezabel e ao culto a Baal?,Acabe,Josafá|Joás|Acabe
+intermediate,Qual comandante sírio foi curado de lepra após procurar Eliseu?,Naamã,Sísera|Naamã|Gesém
+intermediate,"Qual casal mentiu sobre o preço de uma propriedade em Atos, mas a pergunta remete ao padrão de juízo comunitário semelhante ao de Acã?",Ananias e Safira,Ananias e Safira|Zacarias e Isabel|Priscila e Áquila
+intermediate,Qual líder pediu sabedoria a Deus para governar o povo?,Salomão,Salomão|Saul|Absalão
+intermediate,Qual filho de Davi se rebelou contra ele?,Absalão,Absalão|Adonias|Amnom
+intermediate,Qual personagem permaneceu fiel a Davi durante a fuga e aparece como símbolo de lealdade em 2 Samuel?,"Itai, o geteu","Geazi|Doegue|Itai, o geteu"
+intermediate,Qual é o gênero literário predominante de Cantares de Salomão?,Poesia amorosa,Poesia amorosa|Poesia apocalíptica|Crônica militar
+intermediate,Qual livro bíblico trabalha intensamente o problema do sofrimento do justo?,Jó,Jó|Provérbios|Rute
+intermediate,Quem são os principais interlocutores humanos de Jó ao longo do livro?,Seus amigos,Seus amigos|Os apóstolos|Os reis de Judá
+intermediate,Qual frase resume o início da sabedoria em Provérbios?,O temor do Senhor é o princípio da sabedoria,O rei sempre tem razão|O amor ao dinheiro é sinal da bênção|O temor do Senhor é o princípio da sabedoria
+intermediate,Qual livro apresenta muitos cânticos usados na adoração de Israel?,Salmos,Crônicas|Salmos|Jonas
+intermediate,"Qual salmo começa com ""O Senhor é o meu pastor""?",Salmo 23,Salmo 119|Salmo 23|Salmo 1
+intermediate,Qual salmo contrasta o justo como árvore junto a águas com o ímpio como palha?,Salmo 1,Salmo 90|Salmo 1|Salmo 51
+intermediate,Qual salmo é conhecido pela confissão de Davi após seu pecado?,Salmo 51,Salmo 2|Salmo 150|Salmo 51
+intermediate,Qual salmo é o mais longo da Bíblia e exalta a Palavra de Deus?,Salmo 119,Salmo 8|Salmo 119|Salmo 23
+intermediate,O livro de Eclesiastes é associado a qual reflexão central?,A busca de sentido diante da transitoriedade da vida,A genealogia de Jesus|A busca de sentido diante da transitoriedade da vida|A reconstrução dos muros de Jerusalém
+intermediate,Qual expressão aparece repetidamente em Eclesiastes para indicar a fragilidade da vida?,Vaidade ou vapor,Vaidade ou vapor|Terra prometida|Filho do Homem
+intermediate,Qual livro poético descreve a excelência da mulher virtuosa no capítulo 31?,Provérbios,Jó|Lamentações|Provérbios
+intermediate,"Em Provérbios, qual figura personifica a sabedoria chamando nas ruas?",A mulher Sabedoria,A mulher Sabedoria|A filha de Faraó|A rainha de Sabá
+intermediate,Qual livro contém lamentos poéticos sobre a destruição de Jerusalém?,Lamentações,Ageu|Cantares|Lamentações
+intermediate,Qual estrutura literária aparece em Lamentações com uso do alfabeto hebraico?,Acróstico,Epístola|Acróstico|Parábola
+intermediate,"Qual livro declara que ""as misericórdias do Senhor são a causa de não sermos consumidos""?",Lamentações,Lamentações|Marcos|Levítico
+intermediate,Qual tema aparece em Cantares de Salomão de forma mais evidente?,"Amor, desejo e aliança humana","A perseguição romana|A queda de Samaria|Amor, desejo e aliança humana"
+intermediate,O que caracteriza os salmos imprecatórios?,Pedidos de justiça contra inimigos,Listas genealógicas|Pedidos de justiça contra inimigos|Oração por colheita anual
+intermediate,Qual tipo de salmo celebra Deus como rei e criador?,Salmo de louvor ou entronização,Salmo sapiencial apenas|Salmo de louvor ou entronização|Salmo de maldição apenas
+intermediate,"Qual tipo de salmo expressa dor, queixa e confiança em Deus?",Lamento,Genealogia|Lamento|Decreto real
+intermediate,Qual livro sapiencial termina lembrando que temer a Deus e guardar seus mandamentos é o dever humano?,Eclesiastes,Eclesiastes|Jó|Cantares
+intermediate,"Em Jó, quem finalmente responde a Jó do meio de um redemoinho?",Deus,Satanás|Deus|Eliú
+intermediate,Qual personagem em Jó acusa o justo de servir a Deus apenas por interesse?,Satanás,Elifaz|Eliú|Satanás
+intermediate,Qual tema de Provérbios se repete em conselhos sobre fala?,O poder da língua e das palavras,O calendário romano|A arquitetura do templo|O poder da língua e das palavras
+intermediate,Qual ideia aparece em Provérbios sobre disciplina?,É parte da formação sábia,É proibida pela Lei|É parte da formação sábia|É sempre sinal de rejeição
+intermediate,"Qual salmo pergunta ""Que é o homem, para que dele te lembres""?",Salmo 8,Salmo 137|Salmo 2|Salmo 8
+intermediate,Qual salmo messiânico fala do rei ungido e das nações?,Salmo 2,Salmo 73|Salmo 42|Salmo 2
+intermediate,"Qual salmo registra o lamento ""Deus meu, Deus meu, por que me desamparaste""?",Salmo 22,Salmo 127|Salmo 24|Salmo 22
+intermediate,Qual livro afirma que há tempo para todo propósito debaixo do céu?,Eclesiastes,Esdras|Eclesiastes|Naum
+intermediate,Qual é a diferença básica entre Provérbios e Jó na sabedoria bíblica?,Provérbios mostra padrões de sabedoria – Jó mostra que a vida nem sempre parece simples,Provérbios é apocalíptico – Jó é evangelho|Provérbios nega a justiça – Jó nega Deus|Provérbios mostra padrões de sabedoria – Jó mostra que a vida nem sempre parece simples
+intermediate,Qual livro poético apresenta a criação como sinal da grandeza de Deus em discursos finais?,Jó,Cantares|Rute|Jó
+intermediate,Qual salmo é conhecido por celebrar a entrada do Rei da glória?,Salmo 24,Salmo 14|Salmo 24|Salmo 88
+intermediate,"Qual salmo inicia e termina com ""Ó Senhor, Senhor nosso, quão magnífico em toda a terra é o teu nome""?",Salmo 8,Salmo 46|Salmo 8|Salmo 91
+intermediate,Qual expressão de Eclesiastes aponta para a limitação da vida humana diante de Deus?,Debaixo do sol,No terceiro céu|Debaixo do sol|No caminho de Damasco
+intermediate,Qual livro bíblico é tradicionalmente associado a máximas curtas de sabedoria prática?,Provérbios,Atos|Jeremias|Provérbios
+intermediate,"Qual profeta teve uma visão do Senhor no templo e disse ""Eis-me aqui, envia-me a mim""?",Isaías,Isaías|Jeremias|Oséias
+intermediate,Qual profeta é conhecido como o profeta chorão por seus lamentos sobre Judá?,Jeremias,Amós|Jeremias|Jonas
+intermediate,Qual profeta teve visões junto ao rio Quebar no exílio babilônico?,Ezequiel,Daniel|Ezequiel|Ageu
+intermediate,Qual profeta interpretou sonhos na corte da Babilônia?,Daniel,Daniel|Obadias|Miquéias
+intermediate,Qual profeta foi enviado a Nínive?,Jonas,Jonas|Sofonias|Naum
+intermediate,Qual profeta anunciou que o justo viverá pela fé?,Habacuque,Habacuque|Zacarias|Ageu
+intermediate,Qual profeta denuncia de modo forte a injustiça social no reino do norte?,Amós,Joel|Amós|Obadias
+intermediate,Qual profeta se casa com Gômer como sinal da infidelidade de Israel?,Oséias,Malaquias|Naum|Oséias
+intermediate,Qual profeta anuncia que de Belém sairia o governante de Israel?,Miquéias,Jonas|Isaías|Miquéias
+intermediate,Qual profeta fala do derramamento do Espírito sobre toda carne?,Joel,Obadias|Amós|Joel
+intermediate,Qual profeta apresenta a visão do vale de ossos secos?,Ezequiel,Daniel|Isaías|Ezequiel
+intermediate,"Qual profeta viu serafins proclamando ""Santo, santo, santo""?",Isaías,Elias|Jonas|Isaías
+intermediate,Qual profeta comprou um campo durante o cerco de Jerusalém como sinal de esperança futura?,Jeremias,Naum|Ezequiel|Jeremias
+intermediate,Qual profeta falou de uma nova aliança escrita no coração?,Jeremias,Ageu|Obadias|Jeremias
+intermediate,Qual profeta confrontou Davi com a parábola da cordeirinha?,Natã,Gade|Isaías|Natã
+intermediate,Qual profeta confrontou Acabe após a vinha de Nabote?,Elias,Malaquias|Eliseu|Elias
+intermediate,Qual profeta menor termina o Antigo Testamento cristão falando sobre o envio de Elias?,Malaquias,Sofonias|Malaquias|Zacarias
+intermediate,Qual profeta encorajou a reconstrução do templo após o exílio?,Ageu,Ageu|Amós|Jonas
+intermediate,Qual profeta pós-exílico teve visões simbólicas e falou do Renovo?,Zacarias,Naum|Zacarias|Oséias
+intermediate,Qual profeta denuncia Edom especialmente por sua violência contra Judá?,Obadias,Obadias|Habacuque|Miquéias
+intermediate,Qual profeta anuncia juízo contra Nínive depois de Jonas?,Naum,Ageu|Sofonias|Naum
+intermediate,"Qual profeta apresenta o tema ""o dia do Senhor"" de modo marcante e universal?",Sofonias,Malaquias|Jonas|Sofonias
+intermediate,Qual profeta perguntou por que Deus parecia tolerar o mal e recebeu resposta sobre fé e juízo?,Habacuque,Amós|Isaías|Habacuque
+intermediate,Qual império aparece no pano de fundo de Daniel 1 como conquistador de Judá?,Babilônia,Roma|Assíria|Babilônia
+intermediate,"Qual profeta é chamado desde o ventre, segundo o relato de sua vocação?",Jeremias,Ageu|Zacarias|Jeremias
+intermediate,Qual objeto simbólico em Jeremias representa a submissão ao jugo da Babilônia?,Jugo,Cajado de ouro|Jugo|Escada
+intermediate,Qual livro profético contém cânticos do Servo do Senhor?,Isaías,Jonas|Naum|Isaías
+intermediate,Qual capítulo de Isaías é frequentemente lido como profecia do Servo Sofredor?,Isaías 53,Isaías 6|Isaías 40|Isaías 53
+intermediate,Qual profeta vê a glória de Deus deixando o templo por causa da idolatria?,Ezequiel,Oséias|Amós|Ezequiel
+intermediate,Qual personagem em Daniel foi lançado na cova dos leões?,Daniel,Sadraque|Dario|Daniel
+intermediate,Quais três jovens foram lançados na fornalha ardente em Daniel?,"Sadraque, Mesaque e Abede-Nego","Caim, Abel e Sete|Sadraque, Mesaque e Abede-Nego|Elias, Eliseu e Jeú"
+intermediate,Qual profeta menor usa uma praga de gafanhotos como imagem de juízo e chamado ao arrependimento?,Joel,Joel|Malaquias|Obadias
+intermediate,Qual profeta acusa sacerdotes de oferecerem sacrifícios defeituosos?,Malaquias,Jonas|Ageu|Malaquias
+intermediate,"Qual profeta diz: ""Corra o juízo como as águas, e a justiça como ribeiro perene""?",Amós,Naum|Amós|Ageu
+intermediate,Qual profeta fala de espadas transformadas em arados em visão de paz?,Isaías,Isaías|Oséias|Malaquias
+intermediate,"Qual profeta menor é conhecido pela pergunta: ""Com que me apresentarei ao Senhor?""",Miquéias,Sofonias|Joel|Miquéias
+intermediate,Qual profeta é engolido por um grande peixe?,Jonas,Obadias|Jonas|Naum
+intermediate,Qual profeta teve uma visão de quatro animais simbolizando reinos?,Daniel,Ageu|Ezequiel|Daniel
+intermediate,Qual profeta falou contra os pastores infiéis de Israel e prometeu que Deus pastorearia seu povo?,Ezequiel,Ezequiel|Amós|Jonas
+intermediate,Qual profeta anunciou que Deus tiraria o coração de pedra e daria coração de carne?,Ezequiel,Isaías|Ezequiel|Oséias
+intermediate,"Qual profeta denunciou a religião vazia com a frase ""misericórdia quero, e não sacrifício""?",Oséias,Naum|Joel|Oséias
+intermediate,"Qual livro profético começa com ""Consolai, consolai o meu povo"" em sua grande seção de esperança?",Isaías,Lamentações|Jeremias|Isaías
+intermediate,Qual profeta usa a imagem de uma vara de amendoeira na sua chamada?,Jeremias,Amós|Zacarias|Jeremias
+intermediate,Qual profeta teve uma visão de um rolo voante entre seus símbolos?,Zacarias,Ezequiel|Daniel|Zacarias
+intermediate,Qual profeta fala do mensageiro que prepararia o caminho do Senhor?,Malaquias,Malaquias|Obadias|Jonas
+intermediate,"Por que Mateus, Marcos e Lucas são chamados de evangelhos sinóticos?",Porque podem ser vistos em conjunto por semelhanças de estrutura e conteúdo,Porque podem ser vistos em conjunto por semelhanças de estrutura e conteúdo|Porque foram escritos pelo mesmo autor|Porque não falam de Jesus
+intermediate,Qual evangelho começa com a genealogia de Jesus ligada a Abraão e Davi?,Mateus,Mateus|Marcos|João
+intermediate,Qual evangelho começa apresentando Jesus como o Verbo?,João,Marcos|Lucas|João
+intermediate,Qual evangelho é tradicionalmente associado a uma ênfase na ação rápida de Jesus?,Marcos,João|Marcos|Mateus
+intermediate,"Qual evangelho também escreveu Atos, segundo a tradição cristã?",Lucas,Mateus|Marcos|Lucas
+intermediate,Quem batizou Jesus no rio Jordão?,João Batista,João Batista|Pedro|Tiago
+intermediate,Qual tentação de Jesus envolve transformar pedras em pães?,Tentação no deserto,Transfiguração|Entrada triunfal|Tentação no deserto
+intermediate,Em qual monte Jesus foi transfigurado diante de alguns discípulos?,Monte da transfiguração,Monte Sinai|Monte da transfiguração|Monte Carmelo
+intermediate,"Quais discípulos estavam com Jesus na transfiguração, segundo os sinóticos?","Pedro, Tiago e João","Pedro, Tiago e João|André, Mateus e Judas|Tomé, Filipe e Bartolomeu"
+intermediate,Qual parábola apresenta um samaritano como exemplo de amor ao próximo?,Bom Samaritano,Semeador|Filho Pródigo|Bom Samaritano
+intermediate,"Qual parábola fala de um filho que sai de casa, desperdiça seus bens e retorna ao pai?",Filho Pródigo,Dez Virgens|Filho Pródigo|Talentos
+intermediate,Qual parábola compara diferentes respostas à Palavra a tipos de solo?,Semeador,Fariseu e Publicano|Dracma Perdida|Semeador
+intermediate,"Em João 3, quem conversa com Jesus à noite sobre nascer de novo?",Nicodemos,Nicodemos|José de Arimateia|Zaqueu
+intermediate,"Em João 4, Jesus conversa com uma mulher de qual povo?",Samaritano,Romano|Samaritano|Filisteu
+intermediate,Por que a relação entre judeus e samaritanos era marcada por tensão no tempo de Jesus?,"Por conflitos históricos, religiosos e étnicos entre os grupos","Porque os samaritanos governavam Roma|Por conflitos históricos, religiosos e étnicos entre os grupos|Porque falavam línguas totalmente diferentes"
+intermediate,Qual publicano subiu em uma árvore para ver Jesus?,Zaqueu,Zaqueu|Simão|Mateus
+intermediate,O que caracteriza o cargo de publicano nos evangelhos?,"Cobrador de impostos, muitas vezes visto como colaborador de Roma","Cobrador de impostos, muitas vezes visto como colaborador de Roma|Escriba responsável pelo cânon|Soldado do templo"
+intermediate,Qual discípulo era cobrador de impostos antes de seguir Jesus?,Mateus,Mateus|Tiago|André
+intermediate,"Qual apóstolo, chamado Zelote, pertencia a um grupo político judaico radical antes de seguir Jesus?",Simão,João|Filipe|Simão
+intermediate,Qual discípulo negou Jesus três vezes antes do galo cantar?,Pedro,Tomé|Pedro|Judas
+intermediate,Qual discípulo é conhecido por duvidar até ver as marcas de Jesus ressuscitado?,Tomé,Tomé|Tiago|Natanael
+intermediate,Quem traiu Jesus por trinta moedas de prata?,Judas Iscariotes,Mateus|Simão Pedro|Judas Iscariotes
+intermediate,Qual autoridade romana condenou Jesus à crucificação?,Pôncio Pilatos,Herodes Agripa|Pôncio Pilatos|Gamaliél
+intermediate,"Qual grupo judaico negava a ressurreição, segundo o Novo Testamento?",Saduceus,Saduceus|Fariseus|Zelotes
+intermediate,Quem eram os saduceus no judaísmo do primeiro século?,"Grupo ligado à elite sacerdotal, ao templo e que negava a ressurreição","Grupo ligado à elite sacerdotal, ao templo e que negava a ressurreição|Comunidade de pescadores da Galileia|Movimento monástico do deserto"
+intermediate,Quem eram os fariseus no contexto do Novo Testamento?,"Grupo judaico dedicado à Lei, tradições e pureza religiosa","Grupo judaico dedicado à Lei, tradições e pureza religiosa|Sacerdotes romanos do imperador|Soldados galileus"
+intermediate,Qual grupo religioso era conhecido por copiar e ensinar a Lei?,Escribas,Escribas|Publicanos|Herodianos
+intermediate,Qual sermão de Jesus começa com as bem-aventuranças?,Sermão do Monte,Sermão de Pentecostes|Sermão do Monte|Discurso do Cenáculo
+intermediate,Qual frase de Jesus em Mateus 5 descreve os discípulos como testemunhas visíveis?,Vós sois a luz do mundo,"Vós sois a luz do mundo|Eu sou a videira verdadeira|Pai, perdoa-lhes"
+intermediate,Qual oração foi ensinada por Jesus aos discípulos?,Pai nosso,Pai nosso|Cântico de Moisés|Oração de Jabez
+intermediate,Qual milagre de Jesus envolve a multiplicação de pães e peixes?,Alimentação da multidão,Transformação da água em sangue|Alimentação da multidão|Cura do paralítico descido pelo telhado
+intermediate,Qual foi o primeiro sinal de Jesus em João?,Transformar água em vinho em Caná,Ressuscitar Lázaro|Transformar água em vinho em Caná|Andar sobre o mar
+intermediate,Qual amigo de Jesus foi ressuscitado em João 11?,Lázaro,Jairo|Estevão|Lázaro
+intermediate,Qual mulher ungiu os pés de Jesus e os enxugou com seus cabelos em Lucas 7?,Uma mulher pecadora anônima,"Maria, mãe de Jesus|Uma mulher pecadora anônima|Dorcas"
+intermediate,Qual discípula foi a primeira testemunha do Cristo ressuscitado em João?,Maria Madalena,Marta|Maria Madalena|Safira
+intermediate,Qual cidade foi o local da crucificação de Jesus?,Jerusalém,Nazaré|Jerusalém|Cafarnaum
+intermediate,"Qual expressão Jesus usa em João para se revelar em declarações como ""Eu sou o pão da vida""?",Eu sou,Assim diz o Senhor|Eu sou|Filho de Davi somente
+intermediate,"Qual título de Jesus em Marcos destaca sofrimento, autoridade e missão?",Filho do Homem,Anjo do templo|Filho do Homem|Sumo escriba
+intermediate,Qual evangelho enfatiza fortemente Jesus como cumprimento das Escrituras judaicas?,Mateus,Mateus|Lucas|Marcos
+intermediate,Qual evangelho contém parábolas como o Bom Samaritano e o Filho Pródigo?,Lucas,Marcos|João|Lucas
+intermediate,Qual evangelho organiza sinais de Jesus para conduzir à fé?,João,Marcos|João|Mateus
+intermediate,"Qual rei tentou matar Jesus ainda criança, segundo Mateus?","Herodes, o Grande","Herodes, o Grande|Herodes Antipas|César Augusto"
+intermediate,Qual casal recebeu a promessa do nascimento de João Batista?,Zacarias e Isabel,Zacarias e Isabel|Áquila e Priscila|José e Maria
+intermediate,Qual anjo anunciou a Maria o nascimento de Jesus?,Gabriel,Gabriel|Miguel|Rafael
+intermediate,Qual cidade é associada ao nascimento de Jesus?,Belém,Belém|Nazaré|Cafarnaum
+intermediate,Qual cidade é associada à criação de Jesus?,Nazaré,Nazaré|Belém|Jericó
+intermediate,"Em Lucas 24, para onde caminhavam dois discípulos quando encontraram o Cristo ressuscitado?",Emaús,Betânia|Samaria|Emaús
+intermediate,Qual gesto fez os discípulos de Emaús reconhecerem Jesus?,O partir do pão,A pesca milagrosa|A leitura do decreto romano|O partir do pão
+intermediate,Qual evangelho registra o lava-pés de Jesus no cenáculo?,João,Marcos|João|Mateus
+intermediate,Qual discípulo cortou a orelha do servo do sumo sacerdote?,Pedro,João|Tiago|Pedro
+intermediate,Qual prisioneiro foi solto no lugar de Jesus?,Barrabás,Estêvão|Barrabás|Silas
+intermediate,Qual inscrição foi colocada sobre Jesus na cruz?,Rei dos Judeus,Sacerdote de Roma|Rei dos Judeus|Profeta da Galileia
+intermediate,Qual membro do Sinédrio pediu o corpo de Jesus para sepultá-lo?,José de Arimateia,Caifás|Anás|José de Arimateia
+intermediate,Qual jardim é associado à oração de Jesus antes da prisão?,Getsêmani,Éden|Getsêmani|Oliveiras de Moabe
+intermediate,Qual evento marca a entrada de Jesus em Jerusalém montado em um jumentinho?,Entrada triunfal,Transfiguração|Entrada triunfal|Ascensão
+intermediate,O Pentecostes em Atos 2 é associado por muitos estudiosos a qual evento do Antigo Testamento?,Sinai e a entrega da Lei,Sinai e a entrega da Lei|A criação de Adão|A queda de Jericó
+intermediate,"Em Atos 2, qual sinal acompanha a vinda do Espírito Santo sobre os discípulos?",Línguas como de fogo,Arco-íris|Línguas como de fogo|Maná no chão
+intermediate,Quem pregou no dia de Pentecostes em Atos 2?,Pedro,Pedro|Paulo|Estevão
+intermediate,Qual profeta Pedro cita em Pentecostes sobre o derramamento do Espírito?,Joel,Joel|Amós|Isaías
+intermediate,Quem foi escolhido para substituir Judas entre os doze?,Matias,Matias|Barnabé|Tito
+intermediate,Qual casal mentiu sobre a venda de uma propriedade em Atos 5?,Ananias e Safira,Áquila e Priscila|Ananias e Safira|Filemom e Áfia
+intermediate,Quem foi o primeiro mártir cristão registrado em Atos?,Estêvão,"Tiago, filho de Zebedeu|Estêvão|Filipe"
+intermediate,Quem era o jovem perseguidor presente na morte de Estêvão?,Saulo,Barnabé|Marcos|Saulo
+intermediate,Em qual caminho Saulo teve seu encontro com Cristo?,Caminho de Damasco,Caminho de Jericó|Caminho de Damasco|Caminho de Emaús
+intermediate,Qual discípulo foi enviado para orar por Saulo em Damasco?,Ananias,Ananias|Barnabé|Ágabo
+intermediate,Qual apóstolo recebeu uma visão de animais puros e impuros antes de ir à casa de Cornélio?,Pedro,Pedro|Tiago|João
+intermediate,Quem era Cornélio em Atos 10?,Centurião gentio temente a Deus,Fariseu de Jerusalém|Centurião gentio temente a Deus|Escriba do templo
+intermediate,Qual cidade se tornou base missionária importante para Paulo e Barnabé?,Antioquia,Samaria|Belém|Antioquia
+intermediate,Onde os seguidores de Jesus foram chamados cristãos pela primeira vez?,Antioquia,Corinto|Antioquia|Jerusalém
+intermediate,Qual igreja enviou Paulo e Barnabé na primeira viagem missionária?,Antioquia,Jerusalém|Roma|Antioquia
+intermediate,Qual concílio em Atos discutiu a entrada dos gentios sem obrigá-los à circuncisão?,Concílio de Jerusalém,Concílio de Niceia|Concílio de Trento|Concílio de Jerusalém
+intermediate,Quem defendeu que os gentios não deveriam ser sobrecarregados além do necessário em Atos 15?,Tiago,Apolo|Pilatos|Tiago
+intermediate,"Qual companheiro de Paulo é descrito como ""filho da consolação""?",Barnabé,Barnabé|Silas|Timóteo
+intermediate,Quem acompanhou Paulo na prisão em Filipos quando houve terremoto?,Silas,Tito|Silas|Lucas
+intermediate,Qual vendedora de púrpura se converteu em Filipos?,Lídia,Damaris|Priscila|Lídia
+intermediate,Qual casal instruiu Apolo com mais precisão no caminho de Deus?,Priscila e Áquila,Ananias e Safira|Febe e Lídia|Priscila e Áquila
+intermediate,Qual pregador eloquente de Alexandria aparece em Atos 18?,Apolo,Trófimo|Ágabo|Apolo
+intermediate,Qual cidade reagiu contra Paulo por causa do culto a Ártemis?,Éfeso,Atenas|Bereia|Éfeso
+intermediate,"Em Atenas, Paulo discursou em qual lugar de debate público?",Areópago,Areópago|Sinédrio|Pretório
+intermediate,Qual povo é elogiado por examinar diariamente as Escrituras?,Bereanos,Efésios|Bereanos|Coríntios
+intermediate,Qual profeta em Atos simbolizou a prisão de Paulo com um cinto?,Ágabo,Ágabo|Zacarias|Ananias
+intermediate,Para qual cidade Paulo apelou ao usar sua cidadania romana?,Roma,Tarso|Roma|Antioquia
+intermediate,Qual rei ouviu a defesa de Paulo e disse que por pouco ele o persuadia?,Agripa,"Herodes, o Grande|Agripa|Félix"
+intermediate,Qual governador manteve Paulo preso esperando vantagem política?,Félix,Quirino|Gálio|Félix
+intermediate,Qual viagem de Paulo terminou em naufrágio antes de chegar a Roma?,Viagem como prisioneiro a Roma,Viagem como prisioneiro a Roma|Viagem para Jerusalém com Jesus|Primeira viagem missionária
+intermediate,Qual ilha recebeu Paulo após o naufrágio em Atos 28?,Malta,Chipre|Creta|Malta
+intermediate,Qual livro mostra a expansão do evangelho de Jerusalém até Roma?,Atos,Apocalipse|Hebreus|Atos
+intermediate,Qual é a função dos sete homens escolhidos em Atos 6?,Servir às mesas e aliviar uma necessidade comunitária,Servir às mesas e aliviar uma necessidade comunitária|Formar um exército|Substituir os apóstolos
+intermediate,Quem evangelizou o eunuco etíope em Atos 8?,Filipe,Estevão|Filipe|Tiago
+intermediate,Qual mágico tentou comprar o poder de conceder o Espírito?,"Simão, o mágico","Simão, o mágico|Barjesus|Elimas"
+intermediate,Qual carta de Paulo desenvolve de modo amplo a justificação pela fé?,Romanos,2 Tessalonicenses|Romanos|Filemom
+intermediate,"Em Romanos, qual figura do Antigo Testamento Paulo usa como exemplo de fé antes da Lei?",Abraão,Abraão|Moisés|Sansão
+intermediate,Qual capítulo de Romanos fala da vida no Espírito em contraste com a condenação?,Romanos 8,Romanos 8|Romanos 15|Romanos 2
+intermediate,"Qual carta corrige divisões, imoralidade e abusos na ceia do Senhor?",1 Coríntios,Filemom|1 Coríntios|Filipenses
+intermediate,Qual capítulo de 1 Coríntios é conhecido pela exposição do amor?,1 Coríntios 13,1 Coríntios 3|1 Coríntios 13|1 Coríntios 9
+intermediate,Qual capítulo de 1 Coríntios defende a ressurreição dos mortos?,1 Coríntios 15,1 Coríntios 15|1 Coríntios 7|1 Coríntios 11
+intermediate,"Qual carta contém o tema ""temos este tesouro em vasos de barro""?",2 Coríntios,2 Coríntios|Colossenses|Gálatas
+intermediate,Qual carta combate a imposição da circuncisão aos gentios como condição de pertencimento?,Gálatas,Gálatas|Efésios|1 Timóteo
+intermediate,"Em Gálatas, qual lista descreve virtudes produzidas pelo Espírito?",Fruto do Espírito,Pragas espirituais|Dons ministeriais|Fruto do Espírito
+intermediate,Qual carta fala da igreja como um só corpo com judeus e gentios reconciliados em Cristo?,Efésios,Efésios|2 João|Judas
+intermediate,Qual capítulo de Efésios descreve a armadura de Deus?,Efésios 6,Efésios 1|Efésios 6|Efésios 3
+intermediate,Qual carta foi escrita a uma igreja que apoiou Paulo financeiramente e enfatiza alegria?,Filipenses,Romanos|Filipenses|Tito
+intermediate,Qual hino cristológico fala de Cristo esvaziando-se e sendo exaltado?,Filipenses 2,Filipenses 2|1 Tessalonicenses 5|Colossenses 4
+intermediate,Qual carta enfatiza a supremacia de Cristo sobre poderes e filosofias humanas?,Colossenses,Colossenses|1 Coríntios|Filemom
+intermediate,"Em Colossenses, Cristo é chamado de quê em relação à criação?",Imagem do Deus invisível e primogênito de toda criação,Apenas um anjo superior|Imagem do Deus invisível e primogênito de toda criação|Um sacerdote levítico comum
+intermediate,Qual carta consola cristãos preocupados com os que morreram antes da volta de Cristo?,1 Tessalonicenses,Gálatas|1 Tessalonicenses|1 Timóteo
+intermediate,Qual carta adverte contra a ociosidade e corrige confusões sobre o dia do Senhor?,2 Tessalonicenses,Efésios|2 Tessalonicenses|Romanos
+intermediate,Quais cartas são chamadas frequentemente de pastorais?,"1 Timóteo, 2 Timóteo e Tito","Hebreus, Tiago e Judas|1 Timóteo, 2 Timóteo e Tito|Romanos, Gálatas e Efésios"
+intermediate,Qual destinatário recebeu instruções de Paulo sobre liderança e cuidado da igreja em Éfeso?,Timóteo,Timóteo|Apolo|Onésimo
+intermediate,Qual carta foi dirigida a um cooperador de Paulo em Creta?,Tito,Filemom|Silas|Tito
+intermediate,"Qual carta pede que Filemom receba Onésimo não apenas como escravo, mas como irmão amado?",Filemom,2 Coríntios|Filemom|Tito
+intermediate,Quem era Onésimo na carta a Filemom?,Um escravo ligado a Filemom que encontrou Paulo,Um escravo ligado a Filemom que encontrou Paulo|Um fariseu do Sinédrio|Um rei persa
+intermediate,Qual expressão em Romanos 12 descreve a vida cristã como resposta de culto?,Sacrifício vivo,Monte santo|Sacrifício vivo|Primogênito do Egito
+intermediate,"Em 1 Coríntios 12, Paulo compara a igreja a quê?",Um corpo com muitos membros,Um corpo com muitos membros|Um tribunal de pedra|Um navio romano
+intermediate,Qual dom é colocado por Paulo como superior quando comparado a dons sem amor?,O amor,O amor|O falar em línguas sem interpretação|A força física
+intermediate,"Qual carta afirma que pela graça somos salvos, mediante a fé, não por obras?",Efésios,Judas|Gálatas|Efésios
+intermediate,"Qual carta contém a frase ""para mim, o viver é Cristo""?",Filipenses,Tito|Romanos|Filipenses
+intermediate,Qual carta apresenta uma coleta para os santos em Jerusalém como expressão de generosidade?,2 Coríntios,2 Coríntios|1 Timóteo|2 João
+intermediate,Qual carta chama a Lei de aio ou tutor até Cristo?,Gálatas,Efésios|Colossenses|Gálatas
+intermediate,"Em Romanos 5, Paulo contrasta quais duas figuras?",Adão e Cristo,Adão e Cristo|Davi e Saul|Moisés e Faraó
+intermediate,"Qual carta fala de ""nova criação"" em Cristo?",Ambas aparecem com essa ênfase,Gálatas|2 Coríntios|Ambas aparecem com essa ênfase
+intermediate,Qual carta afirma que Cristo derrubou o muro de separação entre judeus e gentios?,Efésios,Efésios|Romanos|1 Tessalonicenses
+intermediate,Qual expressão resume o chamado ético de Colossenses 3?,Revestir-se do novo homem,Revestir-se do novo homem|Tomar a cidade pela espada|Construir o tabernáculo
+intermediate,"Em 2 Timóteo, qual frase descreve a Escritura em relação ao ensino?",É inspirada por Deus e útil,Apenas poesia antiga|Somente tradição oral|É inspirada por Deus e útil
+intermediate,Qual carta contém o pedido de Paulo para que Timóteo traga a capa e os livros?,2 Timóteo,Tito|1 Coríntios|2 Timóteo
+intermediate,Qual carta fala que a piedade com contentamento é grande fonte de lucro?,1 Timóteo,1 Timóteo|Romanos|Filipenses
+intermediate,Qual carta inclui instruções sobre presbíteros nas cidades de Creta?,Tito,Filemom|Tito|1 Tessalonicenses
+intermediate,"Qual termo descreve a prática de Paulo de trabalhar com as próprias mãos, como em fabricar tendas?",Autossustento ministerial,Autossustento ministerial|Sacerdócio levítico|Ascetismo essênio
+intermediate,Qual carta foi escrita a cristãos de Roma antes de Paulo visitar a igreja local?,Romanos,Efésios|Romanos|2 Coríntios
+intermediate,Qual carta usa a metáfora de embaixadores da reconciliação?,2 Coríntios,Gálatas|2 Coríntios|Filipenses
+intermediate,Qual carta exorta os cristãos a não se conformarem com este século?,Romanos,Colossenses|Filemom|Romanos
+intermediate,"Qual carta apresenta Cristo como cabeça do corpo, que é a igreja?",Colossenses,Tito|2 Tessalonicenses|Colossenses
+intermediate,Qual carta mostra Paulo tratando de dons espirituais e ordem no culto?,1 Coríntios,Romanos|1 Coríntios|Filemom
+intermediate,"Qual carta afirma que ""todos pecaram e carecem da glória de Deus""?",Romanos,Romanos|1 Timóteo|Efésios
+intermediate,Qual carta termina com uma bênção trinitária muito conhecida?,2 Coríntios,Gálatas|2 Coríntios|Tito
+intermediate,Qual livro do Novo Testamento apresenta Cristo como sumo sacerdote superior?,Hebreus,Hebreus|Tiago|3 João
+intermediate,Qual capítulo de Hebreus é conhecido como galeria dos heróis da fé?,Hebreus 11,Hebreus 3|Hebreus 11|Hebreus 13
+intermediate,Qual carta afirma que a fé sem obras é morta?,Tiago,1 João|1 Pedro|Tiago
+intermediate,Qual carta enfatiza o controle da língua como sinal de maturidade?,Tiago,Judas|2 Pedro|Tiago
+intermediate,"Qual carta foi escrita a cristãos sofrendo, chamando-os a permanecer firmes?",1 Pedro,3 João|1 Pedro|2 João
+intermediate,Qual carta fala dos cristãos como sacerdócio real e nação santa?,1 Pedro,Tiago|1 Pedro|Judas
+intermediate,Qual carta adverte contra falsos mestres e menciona o exemplo de anjos que pecaram?,Judas,1 João|Judas|3 João
+intermediate,Qual carta curta elogia Gaio por sua hospitalidade?,3 João,3 João|Judas|2 João
+intermediate,Qual carta adverte sobre não receber falsos mestres que negam Cristo?,2 João,Tiago|Hebreus|2 João
+intermediate,"Qual conjunto de cartas enfatiza fortemente amor, verdade e discernimento?",Cartas de João,Cartas de João|Carta aos Romanos|Cartas pastorais
+intermediate,"Qual carta declara que ""Deus é amor""?",1 João,Judas|Hebreus|1 João
+intermediate,"Qual carta fala que temos advogado junto ao Pai, Jesus Cristo, o justo?",1 João,1 Pedro|1 João|Tiago
+intermediate,Qual livro começa com uma revelação de Jesus Cristo dada a João?,Apocalipse,Atos|Hebreus|Apocalipse
+intermediate,Quantas igrejas da Ásia recebem mensagens em Apocalipse 2–3?,Sete,Três|Sete|Doze
+intermediate,Qual igreja de Apocalipse é advertida por ser morna?,Laodiceia,Laodiceia|Filadélfia|Esmirna
+intermediate,Qual igreja de Apocalipse é elogiada por perseverar em meio à pobreza e tribulação?,Esmirna,Sardes|Laodiceia|Esmirna
+intermediate,Qual imagem central de Apocalipse 5 representa Cristo vencedor por meio do sacrifício?,Cordeiro morto e em pé,Leão morto sem trono|Águia caída|Cordeiro morto e em pé
+intermediate,Qual número simbólico aparece repetidamente em Apocalipse ligado à plenitude?,Sete,Dezesseis|Quarenta e nove|Sete
+intermediate,Qual cidade aparece em Apocalipse como símbolo do sistema rebelde contra Deus?,Babilônia,Babilônia|Nazaré|Belém
+intermediate,Qual imagem final de Apocalipse descreve a esperança escatológica?,Nova Jerusalém descendo do céu,Nova Jerusalém descendo do céu|Retorno ao Egito|Reconstrução de Babel
+intermediate,"Qual livro afirma que Jesus é o mesmo ontem, hoje e para sempre?",Hebreus,Apocalipse|Hebreus|Tiago
+intermediate,Qual livro fala que toda boa dádiva vem do Pai das luzes?,Tiago,1 João|Tiago|2 Pedro
+intermediate,Qual carta orienta os cristãos a estarem preparados para responder sobre a esperança?,1 Pedro,Judas|1 Pedro|3 João
+intermediate,Qual carta adverte que nos últimos dias surgiriam escarnecedores?,2 Pedro,2 Pedro|Tiago|2 João
+intermediate,Qual carta fala que o amor perfeito lança fora o medo?,1 João,Judas|Hebreus|1 João
+intermediate,Qual livro apresenta Melquisedeque como figura importante para explicar o sacerdócio de Cristo?,Hebreus,Hebreus|Apocalipse|Tiago
+intermediate,Qual carta diz para os presbíteros pastorearem o rebanho de Deus não por ganância?,1 Pedro,2 João|1 Pedro|Tiago
+intermediate,Qual capítulo de Apocalipse mostra cavaleiros associados a juízo?,Apocalipse 6,Apocalipse 1|Apocalipse 6|Apocalipse 21
+intermediate,Qual carta de João combate a negação de que Jesus Cristo veio em carne?,1 João,Hebreus|1 João|Tiago
+intermediate,"Qual livro usa linguagem de templo, sacrifício e aliança para mostrar a superioridade de Cristo?",Hebreus,Filemom|3 João|Hebreus
+intermediate,"Qual carta ensina que a sabedoria do alto é pura, pacífica e cheia de misericórdia?",Tiago,1 Pedro|Judas|Tiago
+intermediate,"Qual livro termina com o clamor ""Vem, Senhor Jesus""?",Apocalipse,Atos|Apocalipse|Hebreus
+intermediate,Qual carta fala que devemos crescer na graça e no conhecimento de Jesus Cristo?,2 Pedro,Tiago|2 João|2 Pedro
+intermediate,Qual livro fala de um novo céu e uma nova terra?,Apocalipse,Apocalipse|Tiago|3 João
+intermediate,Qual carta exorta a batalhar pela fé entregue aos santos?,Judas,Hebreus|1 João|Judas
+intermediate,Qual língua era comum no mundo do Novo Testamento e usada na escrita do NT?,Grego koiné,Aramaico imperial apenas|Latim clássico apenas|Grego koiné
+intermediate,Qual língua Jesus provavelmente falava no cotidiano da Galileia?,Aramaico,Grego homérico|Acadiano|Aramaico
+intermediate,Qual era a função básica de uma sinagoga no judaísmo do primeiro século?,"Local de leitura, ensino e reunião comunitária","Local de leitura, ensino e reunião comunitária|Palácio de César|Templo para sacrifícios de animais"
+intermediate,Qual era o único lugar legítimo para os sacrifícios centrais do judaísmo no período de Jesus?,Templo em Jerusalém,Templo em Jerusalém|Monte Carmelo|Sinagoga de Nazaré
+intermediate,"Quem eram os essênios, em linhas gerais?",Grupo judaico separatista associado por muitos ao deserto e à pureza comunitária,Grupo judaico separatista associado por muitos ao deserto e à pureza comunitária|Discípulos diretos de Paulo|Coletores de impostos romanos
+intermediate,Qual achado é frequentemente associado aos essênios ou a grupos semelhantes?,Manuscritos do Mar Morto,Inscrição de Pilatos no Coliseu|Códice Vaticano medieval|Manuscritos do Mar Morto
+intermediate,O que era o Sinédrio no judaísmo do primeiro século?,Conselho judaico de liderança religiosa e judicial,Escola filosófica grega|Exército romano na Judeia|Conselho judaico de liderança religiosa e judicial
+intermediate,Quem era o sumo sacerdote no contexto judaico?,Líder sacerdotal principal ligado ao templo,Professor itinerante galileu|Governador romano da Síria|Líder sacerdotal principal ligado ao templo
+intermediate,O que eram as parábolas de Jesus?,Narrativas curtas com sentido teológico e provocativo,Hinos gregos ao imperador|Listas de reis de Judá|Narrativas curtas com sentido teológico e provocativo
+intermediate,O que é apocalipse como gênero literário bíblico?,"Revelação simbólica sobre Deus, história e consumação","Registro contábil de impostos|Revelação simbólica sobre Deus, história e consumação|Manual de construção do templo"
+intermediate,Qual livro do Antigo Testamento tem forte caráter apocalíptico?,Daniel,Daniel|Levítico|Rute
+intermediate,Qual livro do Novo Testamento é o principal exemplo de literatura apocalíptica?,Apocalipse,Marcos|Apocalipse|Filemom
+intermediate,"O que significa ""Messias"" em sua ideia básica?",Ungido,Escriba|Ungido|Cobrador
+intermediate,"Qual termo grego corresponde a ""Messias"" no Novo Testamento?",Cristo,Didache|Cristo|Kyrios apenas
+intermediate,"Qual título ""Senhor"" aplicado a Jesus ganha força teológica no contexto do NT?",Kyrios,Kyrios|Rabino apenas|Publicano
+intermediate,Qual festa judaica celebrava a colheita e é o contexto de Atos 2?,Pentecostes,Pentecostes|Purim|Exílio
+intermediate,Qual festa lembra a peregrinação no deserto em tendas?,Tabernáculos,Hanucá|Tabernáculos|Páscoa
+intermediate,Qual festa judaica está ligada à libertação do Egito?,Páscoa,Purim|Páscoa|Dia da Expiação
+intermediate,Qual dia anual estava ligado ao sacrifício e purificação nacional em Levítico 16?,Dia da Expiação,Pentecostes|Dia da Expiação|Sábado semanal
+intermediate,O que era o sábado no judaísmo bíblico?,Dia de descanso e sinal de aliança,Dia de descanso e sinal de aliança|Dia de coroação romana|Dia exclusivo de guerra
+intermediate,Qual região era o principal cenário do ministério inicial de Jesus?,Galileia,Babilônia|Creta|Galileia
+intermediate,Qual rio está associado ao batismo de Jesus?,Jordão,Nilo|Jordão|Eufrates
+intermediate,Qual cidade era centro religioso do judaísmo no tempo de Jesus?,Jerusalém,Tarso|Antioquia|Jerusalém
+intermediate,"Qual cidade era conhecida como importante centro intelectual e cultural, onde Paulo discursou em Atos 17?",Atenas,Jericó|Belém|Atenas
+intermediate,Qual cidade era capital imperial para onde Paulo chegou no final de Atos?,Roma,Roma|Éfeso|Samaria
+intermediate,Qual era a Pax Romana no pano de fundo do NT?,Período de ordem imperial que facilitou circulação e comunicação,Período de ordem imperial que facilitou circulação e comunicação|Festa judaica anual|Seita farisaica
+intermediate,O que era a diáspora judaica?,Judeus vivendo espalhados fora da terra de Israel,Sistema de castas romanas|Judeus vivendo espalhados fora da terra de Israel|Sacrifício diário no templo
+intermediate,Qual versão grega do Antigo Testamento era muito usada no mundo helenista?,Septuaginta,Texto Massorético medieval|Vulgata|Septuaginta
+intermediate,Qual era a principal diferença entre templo e sinagoga?,Templo era centro sacrificial – sinagoga era reunião local de leitura e ensino,Templo era centro sacrificial – sinagoga era reunião local de leitura e ensino|Sinagoga era exclusiva para gentios|Ambos eram palácios romanos
+intermediate,O que é uma epístola no Novo Testamento?,Carta escrita a igrejas ou pessoas,Carta escrita a igrejas ou pessoas|Profecia em forma de sonho|Lei civil romana
+intermediate,O que é um evangelho como gênero no Novo Testamento?,"Narrativa teológica sobre vida, morte e ressurreição de Jesus","Biografia moderna neutra sem teologia|Código de leis romanas|Narrativa teológica sobre vida, morte e ressurreição de Jesus"
+intermediate,"O que significa ""cânon"" quando aplicado à Bíblia?",Conjunto reconhecido de livros normativos,Estilo musical do templo|Moeda romana|Conjunto reconhecido de livros normativos
+intermediate,O que era o denário citado nos evangelhos?,Moeda romana,Tipo de sacrifício|Peça sacerdotal|Moeda romana
+intermediate,Quem eram os herodianos no contexto dos evangelhos?,Grupo ligado aos interesses da dinastia de Herodes,Grupo ligado aos interesses da dinastia de Herodes|Escribas da Babilônia|Discípulos de João em Éfeso
+intermediate,Qual era a tensão básica entre zelo pela Lei e comunhão com gentios no NT?,Como incluir gentios no povo de Deus sem impor identidade judaica completa,Como restaurar o trono do Egito|Como reconstruir Babel|Como incluir gentios no povo de Deus sem impor identidade judaica completa
+intermediate,Como podemos descrever a Trindade de modo mais adequado?,"Um só Deus em três pessoas distintas, Pai, Filho e Espírito Santo","Um só Deus em três pessoas distintas, Pai, Filho e Espírito Santo|Três deuses cooperando entre si|Um Deus que apenas troca de máscaras ao longo da história"
+intermediate,Qual alternativa descreve o modalismo?,"A ideia de que Pai, Filho e Espírito são apenas modos ou máscaras de uma única pessoa divina","A fé em um Deus em três pessoas distintas|A ideia de que Pai, Filho e Espírito são apenas modos ou máscaras de uma única pessoa divina|A negação de qualquer linguagem sobre Deus"
+intermediate,Qual alternativa se aproxima do arianismo histórico?,A ideia de que o Filho foi criado e não é eterno como o Pai,A afirmação da plena divindade do Espírito|A ideia de que o Filho foi criado e não é eterno como o Pai|A ideia de que o Filho é consubstancial ao Pai
+intermediate,Qual concílio é conhecido por enfrentar o arianismo e afirmar a divindade do Filho?,Niceia,Trento|Niceia|Jerusalém em Atos 15
+intermediate,Qual teólogo é associado à defesa da divindade de Cristo contra o arianismo?,Atanásio,Pelágio|Atanásio|Marcião
+intermediate,Qual frase resume a ideia de Anselmo sobre teologia?,Fé que busca entendimento,Fé que busca entendimento|Fé contra todo pensamento|Razão sem fé
+intermediate,"A frase ""o coração inquieto"" que só descansa em Deus é associada a quem?",Agostinho,Lutero|Calvino|Agostinho
+intermediate,"Qual teólogo escreveu Confissões, obra clássica de autobiografia e oração?",Agostinho,Agostinho|John Wesley|Karl Barth
+intermediate,Qual reformador é associado às 95 teses?,Martinho Lutero,Jonathan Edwards|Martinho Lutero|João Calvino
+intermediate,Qual doutrina foi central na Reforma Protestante sobre a salvação?,Justificação pela fé,Reencarnação da alma|Salvação por compra de indulgências|Justificação pela fé
+intermediate,Qual expressão latina da Reforma enfatiza a autoridade final das Escrituras?,Sola Scriptura,Sola Roma|Sola Scriptura|Sola Traditio
+intermediate,Qual expressão da Reforma enfatiza a salvação como dom imerecido?,Sola Gratia,Sola Gratia|Sola Cultura|Sola Potentia
+intermediate,Qual expressão da Reforma enfatiza Cristo como mediador suficiente?,Solus Christus,Solus Imperator|Solus Templum|Solus Christus
+intermediate,Qual reformador é associado às Institutas da Religião Cristã?,João Calvino,João Calvino|John Knox|George Whitefield
+intermediate,"Qual pregador batista ficou conhecido como ""príncipe dos pregadores""?",Charles Spurgeon,Tomás de Aquino|Dietrich Bonhoeffer|Charles Spurgeon
+intermediate,"A expressão ""graça barata"" é associada à crítica de qual teólogo?",Dietrich Bonhoeffer,Irineu|Agostinho|Dietrich Bonhoeffer
+intermediate,"Qual autor popularizou a imagem de Cristo como ""mentiroso, lunático ou Senhor"" em defesa da fé cristã?",C. S. Lewis,C. S. Lewis|João Crisóstomo|John Stott
+intermediate,Qual pastor e teólogo escreveu Cristianismo Básico e A Cruz de Cristo?,John Stott,Jonathan Edwards|John Stott|Tertuliano
+intermediate,Qual teólogo é conhecido por dizer que a igreja existe por missão como o fogo existe por queimar?,Emil Brunner,Agostinho|Emil Brunner|Anselmo
+intermediate,"Qual pregador é associado à frase curta sobre pregação como ""lógica em fogo""?",Martyn Lloyd-Jones,Tomás de Aquino|Martyn Lloyd-Jones|Marcião
+intermediate,"Qual tradição cristã costuma resumir a vida diante de Deus com a expressão ""Coram Deo""?",Reformada,Wicca|Reformada|Gnosticismo
+intermediate,"O que significa ""Coram Deo""?",Diante da face de Deus,Somente na política|Diante da face de Deus|Fora da graça
+intermediate,Qual termo descreve a união das naturezas divina e humana em Cristo em uma só pessoa?,União hipostática,Modalismo|União hipostática|Docetismo
+intermediate,"Qual heresia negava a verdadeira humanidade de Cristo, dizendo que ele apenas parecia humano?",Docetismo,Pelagianismo|Docetismo|Arianismo
+intermediate,Qual heresia minimizava a necessidade da graça ao enfatizar a capacidade humana de obedecer por si mesma?,Pelagianismo,Docetismo|Pelagianismo|Modalismo
+intermediate,Qual doutrina afirma que Jesus é plenamente Deus e plenamente homem?,Cristologia ortodoxa,Cristologia ortodoxa|Adocionismo|Politeísmo
+intermediate,Qual termo descreve a doutrina dos últimos acontecimentos e da esperança final?,Escatologia,Eclesiologia|Escatologia|Hamartiologia
+intermediate,Qual termo descreve a doutrina da igreja?,Eclesiologia,Eclesiologia|Pneumatologia|Cristologia
+intermediate,Qual termo descreve a doutrina do Espírito Santo?,Pneumatologia,Antropologia|Soteriologia|Pneumatologia
+intermediate,Qual termo descreve a doutrina da salvação?,Soteriologia,Ecologia|Soteriologia|Angelografia
+intermediate,Qual termo descreve a doutrina do pecado?,Hamartiologia,Hamartiologia|Numismática|Mariologia
+intermediate,Qual frase é associada a Atanásio na defesa da encarnação?,Deus se fez homem para que o homem participasse da vida de Deus,Deus abandonou a criação|Deus se fez homem para que o homem participasse da vida de Deus|O homem se salva por vencer Roma
+intermediate,Qual teólogo medieval é associado à Suma Teológica?,Tomás de Aquino,Tomás de Aquino|John Bunyan|Charles Finney
+intermediate,"Qual autor escreveu O Peregrino, alegoria cristã muito conhecida?",John Bunyan,John Bunyan|João Calvino|Karl Barth
+intermediate,"Qual avivalista metodista está ligado à frase ""o mundo é minha paróquia""?",John Wesley,Jonathan Edwards|John Knox|John Wesley
