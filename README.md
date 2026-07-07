@@ -1,4 +1,4 @@
-# ARCA FLAM - Duelo Biblico
+# FLAM - Duelo Biblico
 
 App web para o duelo biblico da FLAM.
 

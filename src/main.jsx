@@ -57,7 +57,7 @@ function Shell({ children, path, navigate }) {
         <span className="brand">
           <img className="brand-mark" src={flamLogo} alt="FLAM" />
           <span>
-            <strong>ARCA · FLAM</strong>
+            <strong>FLAM</strong>
             <small>Duelo biblico</small>
           </span>
         </span>
@@ -134,7 +134,7 @@ function ParticipantRegistration() {
       <section className="registration-hero">
         <div className="mini-brand">
           <img className="brand-mark small" src={flamLogo} alt="FLAM" />
-          <span>ARCA · FLAM</span>
+          <span>FLAM</span>
         </div>
         <h1>Duelo biblico</h1>
         <p>{event?.welcome_text || "Entre na fila do duelo biblico."}</p>
@@ -369,7 +369,7 @@ function PublicPanel() {
       <section className="public-inner">
         <div className="public-brand">
           <img className="brand-mark" src={flamLogoWhite} alt="FLAM" />
-          <strong>ARCA · Duelo biblico · FLAM</strong>
+          <strong>Duelo biblico · FLAM</strong>
         </div>
         <div className="public-duel">
           <small>Duelo agora</small>
@@ -546,7 +546,7 @@ function QuestionsAdmin({ navigate }) {
             <h3>QR code do evento</h3>
             <p>Fixo para todo o Pomar 2026. Aponte para a tela de cadastro.</p>
             {qrDataUrl && (
-              <a className="dark" href={qrDataUrl} download="qr-cadastro-arca-flam.png">
+              <a className="dark" href={qrDataUrl} download="qr-cadastro-flam.png">
                 <span className="icon">DL</span>Baixar para impressao
               </a>
             )}

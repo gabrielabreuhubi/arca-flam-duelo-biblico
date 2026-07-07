@@ -29,7 +29,7 @@ export default {
       return env.ASSETS.fetch(request);
     }
 
-    return new Response("ARCA FLAM Duelo Biblico API", { status: 200 });
+    return new Response("FLAM Duelo Biblico API", { status: 200 });
   }
 };
 
