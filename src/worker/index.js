@@ -419,7 +419,7 @@ async function getQuestions(db, url) {
   const bind = [EVENT_ID];
   let where = "q.event_id = ?";
   if (LEVELS.includes(level)) {
-    where += " AND level = ?";
+    where += " AND q.level = ?";
     bind.push(level);
   }
 
@@ -508,17 +508,22 @@ async function fetchDuel(db, duelId) {
 }
 
 async function pickQuestion(db, level) {
-  return db
+  const { results } = await db
     .prepare(
-      `SELECT q.*
+      `SELECT q.*, COALESCE(u.used_count, 0) AS used_count
        FROM questions q
        LEFT JOIN question_usage u ON u.question_id = q.id
        WHERE q.event_id = ? AND q.level = ? AND q.enabled = 1
-       ORDER BY COALESCE(u.used_count, 0) ASC, COALESCE(u.last_used_at, '1970-01-01') ASC, q.created_at ASC
-       LIMIT 1`
+       ORDER BY used_count ASC, COALESCE(u.last_used_at, '1970-01-01') ASC, q.created_at ASC
+       LIMIT 10`
     )
     .bind(EVENT_ID, level)
-    .first();
+    .all();
+  if (!results.length) return null;
+
+  const leastUsedCount = results[0].used_count;
+  const candidates = results.filter((row) => row.used_count === leastUsedCount);
+  return candidates[Math.floor(Math.random() * candidates.length)];
 }
 
 async function recordQuestionUse(db, questionId, level) {
