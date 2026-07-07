@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/arca-flam-duelo-biblico/",
   plugins: [],
   server: {
     port: 5173,
