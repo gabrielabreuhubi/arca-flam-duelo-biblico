@@ -338,7 +338,7 @@ async function getLeads(db) {
   const rows = await db
     .prepare(
       `SELECT
-        p.id, p.full_name, p.phone, p.created_at,
+        p.id, p.full_name, p.phone, p.created_at, p.custom_answers_json,
         COUNT(d.id) AS duel_count,
         SUM(CASE WHEN d.status = 'completed' AND d.winner_participant_id = p.id THEN 1 ELSE 0 END) AS wins,
         SUM(CASE WHEN d.status = 'completed' AND d.winner_participant_id IS NOT NULL AND d.winner_participant_id != p.id THEN 1 ELSE 0 END) AS losses,
@@ -359,10 +359,13 @@ async function getLeads(db) {
     created_at: row.created_at,
     wins: row.wins || 0,
     losses: row.losses || 0,
-    result: resultTag(row)
+    result: resultTag(row),
+    custom_answers: parseJson(row.custom_answers_json, {})
   }));
 
-  return json({ leads });
+  const fields = await listRegistrationFields(db, false);
+
+  return json({ leads, fields });
 }
 
 function resultTag(row) {
@@ -465,9 +468,17 @@ async function createQuestion(request, db) {
   const questionId = id("question");
   await db
     .prepare(
-      "INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled) VALUES (?, ?, ?, ?, ?, ?, 1)"
+      "INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled, difficulty) VALUES (?, ?, ?, ?, ?, ?, 1, ?)"
     )
-    .bind(questionId, EVENT_ID, LEVEL, body.prompt.trim(), body.answer.trim(), JSON.stringify(normalizeOptions(body.options)))
+    .bind(
+      questionId,
+      EVENT_ID,
+      LEVEL,
+      body.prompt.trim(),
+      body.answer.trim(),
+      JSON.stringify(normalizeOptions(body.options)),
+      normalizeDifficulty(body.difficulty)
+    )
     .run();
   return json({ question_id: questionId }, 201);
 }
@@ -497,13 +508,30 @@ async function importQuestions(request, db) {
     imported += 1;
     statements.push(
       db
-        .prepare("INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled) VALUES (?, ?, ?, ?, ?, ?, 1)")
-        .bind(id("question"), EVENT_ID, LEVEL, String(prompt).trim(), String(answer).trim(), JSON.stringify(normalizeOptions(item.options || item.alternativas)))
+        .prepare("INSERT INTO questions (id, event_id, level, prompt, answer, options_json, enabled, difficulty) VALUES (?, ?, ?, ?, ?, ?, 1, ?)")
+        .bind(
+          id("question"),
+          EVENT_ID,
+          LEVEL,
+          String(prompt).trim(),
+          String(answer).trim(),
+          JSON.stringify(normalizeOptions(item.options || item.alternativas)),
+          normalizeDifficulty(item.difficulty || item.dificuldade)
+        )
     );
   }
 
   if (statements.length) await db.batch(statements);
   return json({ imported, skipped });
+}
+
+function normalizeDifficulty(value) {
+  const normalized = String(value || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+  return normalized.includes("dificil") || normalized === "hard" ? "hard" : "easy";
 }
 
 async function fetchDuel(db, duelId) {
@@ -526,22 +554,62 @@ async function fetchDuel(db, duelId) {
 }
 
 async function pickQuestion(db, level) {
+  const forceHard = await shouldForceHardQuestion(db, level);
+
+  if (forceHard) {
+    const hardOnly = await queryQuestionCandidates(db, level, "hard");
+    if (hardOnly.length) return pickRandomLeastUsed(hardOnly);
+  }
+
+  const anyDifficulty = await queryQuestionCandidates(db, level, null);
+  if (anyDifficulty.length) return pickRandomLeastUsed(anyDifficulty);
+
+  return null;
+}
+
+async function queryQuestionCandidates(db, level, difficulty) {
+  const bind = [EVENT_ID, level];
+  let where = "q.event_id = ? AND q.level = ? AND q.enabled = 1";
+  if (difficulty) {
+    where += " AND q.difficulty = ?";
+    bind.push(difficulty);
+  }
+
   const { results } = await db
     .prepare(
       `SELECT q.*, COALESCE(u.used_count, 0) AS used_count
        FROM questions q
        LEFT JOIN question_usage u ON u.question_id = q.id
-       WHERE q.event_id = ? AND q.level = ? AND q.enabled = 1
+       WHERE ${where}
        ORDER BY used_count ASC, COALESCE(u.last_used_at, '1970-01-01') ASC, q.created_at ASC
        LIMIT 10`
     )
-    .bind(EVENT_ID, level)
+    .bind(...bind)
     .all();
-  if (!results.length) return null;
+  return results || [];
+}
 
+function pickRandomLeastUsed(results) {
   const leastUsedCount = results[0].used_count;
   const candidates = results.filter((row) => row.used_count === leastUsedCount);
   return candidates[Math.floor(Math.random() * candidates.length)];
+}
+
+async function shouldForceHardQuestion(db, level) {
+  const { results } = await db
+    .prepare(
+      `SELECT q.difficulty
+       FROM question_usage u
+       JOIN questions q ON q.id = u.question_id
+       WHERE u.event_id = ? AND u.level = ?
+       ORDER BY u.last_used_at DESC
+       LIMIT 2`
+    )
+    .bind(EVENT_ID, level)
+    .all();
+  const recent = results || [];
+  if (recent.length < 2) return false;
+  return recent.every((row) => row.difficulty !== "hard");
 }
 
 async function recordQuestionUse(db, questionId, level) {

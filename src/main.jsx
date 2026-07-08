@@ -531,7 +531,10 @@ function QuestionsAdmin({ navigate }) {
         <div className="question-list">
           {questions.map((question) => (
             <div className={question.used_count >= 20 ? "question-row hot" : "question-row"} key={question.id}>
-              <span>{question.prompt}</span>
+              <span>
+                {question.difficulty === "hard" && <small className="error"> dificil </small>}
+                {question.prompt}
+              </span>
               <small>usada {question.used_count}x</small>
             </div>
           ))}
@@ -573,16 +576,58 @@ function AdminLayout({ active, navigate, children }) {
 
 function LeadsAdmin({ navigate }) {
   const [leads, setLeads] = useState([]);
+  const [fields, setFields] = useState([]);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    api("/api/admin/leads").then((data) => setLeads(data.leads)).catch((err) => setError(err.message));
+    api("/api/admin/leads")
+      .then((data) => {
+        setLeads(data.leads);
+        setFields(data.fields || []);
+      })
+      .catch((err) => setError(err.message));
   }, []);
+
+  const customFields = fields.filter((field) => !["full_name", "phone"].includes(field.field_key));
+
+  const downloadCsv = () => {
+    const columns = [
+      { label: "Nome completo", get: (lead) => lead.full_name },
+      { label: "Telefone", get: (lead) => lead.phone },
+      ...customFields.map((field) => ({ label: field.label, get: (lead) => lead.custom_answers?.[field.field_key] || "" })),
+      { label: "Cadastrado em", get: (lead) => lead.created_at },
+      { label: "Resultado", get: (lead) => lead.result },
+      { label: "Vitorias", get: (lead) => lead.wins },
+      { label: "Derrotas", get: (lead) => lead.losses }
+    ];
+
+    const escape = (value) => {
+      const text = String(value ?? "");
+      return /["\n,]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+    };
+
+    const rows = [columns.map((col) => col.label), ...leads.map((lead) => columns.map((col) => escape(col.get(lead))))];
+    const csv = "﻿" + rows.map((row) => row.join(",")).join("\r\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "leads-flam.csv";
+    link.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <AdminLayout active="leads" navigate={navigate}>
       <section className="panel">
-        <StepLabel step="leads" title="Participantes e resultados" />
+        <div className="page-heading">
+          <div>
+            <StepLabel step="leads" title="Participantes e resultados" />
+          </div>
+          <button className="secondary" onClick={downloadCsv} disabled={!leads.length}>
+            <span className="icon">DL</span>Baixar Excel (CSV)
+          </button>
+        </div>
         <div className="question-list">
           {leads.map((lead) => (
             <div className="question-row" key={lead.id}>
