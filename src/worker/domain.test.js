@@ -24,3 +24,10 @@ test("duel finish and winner rules", () => {
   assert.equal(winnerIdForDuel(duel), "a");
   assert.equal(winnerIdForDuel({ ...duel, score_a: 1, score_b: 1 }), null);
 });
+
+test("round limit does not end a tied duel (sudden death)", () => {
+  const tied = { score_a: 1, score_b: 1, current_round: 4 };
+  assert.equal(isDuelReadyToFinish(tied), false);
+  assert.equal(isDuelReadyToFinish({ ...tied, current_round: 10 }), false);
+  assert.equal(isDuelReadyToFinish({ ...tied, score_a: 2 }), true);
+});

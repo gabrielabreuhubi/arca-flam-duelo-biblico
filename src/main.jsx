@@ -332,6 +332,15 @@ function ResultScreen({ duelId, navigate }) {
     }
   };
 
+  const playAgain = async () => {
+    try {
+      await api(`/api/operator/duels/${duelId}/reset`, { method: "POST" });
+      navigate(`/duelo/${duelId}`);
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
   if (!duel) return <Loading />;
   const winner = duel.score_a === duel.score_b ? null : duel.score_a > duel.score_b ? duel.participant_a : duel.participant_b;
 
@@ -347,6 +356,7 @@ function ResultScreen({ duelId, navigate }) {
         ) : (
           <button className="secondary" onClick={() => navigate("/operador")}><span className="icon">B</span>Voltar para fila</button>
         )}
+        <button className="ghost full" onClick={playAgain}>Jogar novamente</button>
         {error && <div className="error">{error}</div>}
       </section>
     </main>

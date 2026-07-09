@@ -13,11 +13,9 @@ export function operatorParticipantName(fullName = "") {
 }
 
 export function isDuelReadyToFinish(duel, totalRounds = 3, pointsToWin = 2) {
-  return (
-    duel.score_a >= pointsToWin ||
-    duel.score_b >= pointsToWin ||
-    duel.current_round > totalRounds
-  );
+  if (duel.score_a >= pointsToWin || duel.score_b >= pointsToWin) return true;
+  if (duel.score_a === duel.score_b) return false;
+  return duel.current_round > totalRounds;
 }
 
 export function winnerIdForDuel(duel) {

@@ -60,6 +60,9 @@ async function routeApi(request, env, url) {
   const finishMatch = path.match(/^\/api\/operator\/duels\/([^/]+)\/finish$/);
   if (finishMatch && method === "POST") return finishDuel(env.DB, finishMatch[1]);
 
+  const resetMatch = path.match(/^\/api\/operator\/duels\/([^/]+)\/reset$/);
+  if (resetMatch && method === "POST") return resetDuel(env.DB, resetMatch[1]);
+
   if (path === "/api/admin/branding" && method === "GET") return getBranding(env.DB);
   if (path === "/api/admin/branding" && method === "PUT") return updateBranding(request, env.DB);
 
@@ -297,6 +300,32 @@ async function finishDuel(db, duelId) {
       .prepare("UPDATE queue_entries SET status = 'done', updated_at = datetime('now') WHERE id IN (?, ?)")
       .bind(duel.queue_entry_a_id, duel.queue_entry_b_id)
   ]);
+
+  return getDuel(db, duelId);
+}
+
+async function resetDuel(db, duelId) {
+  const duel = await fetchDuel(db, duelId);
+  if (!duel) throw httpError(404, "Duelo nao encontrado");
+
+  const question = await pickQuestion(db, duel.effective_level);
+
+  await db.batch([
+    db
+      .prepare(
+        `UPDATE duels SET
+           score_a = 0, score_b = 0, current_round = 1, current_question_id = ?,
+           status = 'active', winner_participant_id = NULL, completed_at = NULL
+         WHERE id = ?`
+      )
+      .bind(question?.id || null, duelId),
+    db.prepare("DELETE FROM duel_rounds WHERE duel_id = ?").bind(duelId),
+    db
+      .prepare("UPDATE queue_entries SET status = 'in_duel', updated_at = datetime('now') WHERE id IN (?, ?)")
+      .bind(duel.queue_entry_a_id, duel.queue_entry_b_id)
+  ]);
+
+  if (question?.id) await recordQuestionUse(db, question.id, duel.effective_level);
 
   return getDuel(db, duelId);
 }
